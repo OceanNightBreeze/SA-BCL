@@ -1,0 +1,109 @@
+#!/bin/bash
+
+open_sem() {
+  mkfifo pipe-$$
+  exec 3<>pipe-$$
+  rm pipe-$$
+  local i=$1
+  for((;i>0;i--)); do
+    printf %s 000 >&3
+  done
+}
+
+run_with_lock() {
+  local x
+  # this read waits until there is something to read
+  read -u 3 -n 3 x && ((0==x)) || exit $x
+  (
+   ( "$@"; )
+  # push the return code of the command to the semaphore
+  printf '%.3d' $? >&3
+  )&
+}
+
+N=8
+open_sem $N
+method="statement"
+if [ "$1" = "tcm" ]; then
+  dir_type=*-fault
+  echo "tcm"
+else
+  dir_type="1"
+  #
+  start_time=$(date +%s)
+  echo "start time $(date '+%Y-%m-%d %H:%M:%S')"
+  #
+  echo "gzoltar"
+fi
+if [ "$1" = "method" ] || [ "$2" = "method" ]; then
+  method="method"
+fi
+
+metrics=$(python3 $FLITSR_HOME/get_metric_names.py)
+#metrics="barinel"
+
+for proj in *; do
+  if [ ! -d "$proj" ]; then
+    continue;
+  fi
+  echo "Running $proj..."
+  cd "$proj"
+  for dir in $dir_type; do
+    if [ "$1" = "tcm" ]; then
+      cd "$dir"
+      echo "Doing $dir..."
+      for file in *.txt; do
+      	run_with_lock flitsr_rq1 "$file" tcm all;
+      done
+    else
+      for file in */; do run_with_lock flitsr_rq1 "${file%/}" $method all; done
+    fi
+    wait
+    for m in $metrics; do
+      for t in "" flitsr_ flitsr_multi_; do
+        for file in $t${m}_*.txt; do
+          orig=${file#"$t${m}_"}
+          echo "$orig"
+          cat "$file"; rm "$file";
+          echo "--------------------------"
+        done > "$t${m}.results"
+      done
+    done
+    merge > results
+#    echo "Done in $dir"
+#    if [ $1 = "tcm" ]; then
+#      merge rel > results_rel
+#    fi
+    if [ "$1" = "tcm" ]; then
+      cd ../
+    fi
+  done
+  if [ "$1" = "tcm" ]; then
+    merge recurse > results
+  fi
+  echo "Done in $proj"
+  cd ../
+done
+if [ "$1" = "tcm" ]; then
+  merge recurse n=1 > results-1-fault
+  merge recurse n=2 > results-2-fault
+  merge recurse n=4 > results-4-fault
+  merge recurse n=8 > results-8-fault
+  merge recurse n=16 > results-16-fault
+  merge recurse n=32 > results-32-fault
+  merge recurse > results
+  echo "tcm is done~!"
+else
+  merge recurse=1 > results
+  echo "defects4j is done~!"
+fi
+#
+end_time=$(date +%s)
+echo "end time $(date '+%Y-%m-%d %H:%M:%S')"
+time_diff=$((end_time - start_time))
+hours=$((time_diff / 3600))
+minutes=$((time_diff / 60))
+seconds=$((time_diff % 60))
+echo "use time $hours h $minutes m $seconds s"
+#
+echo "rq1 is done~!"
