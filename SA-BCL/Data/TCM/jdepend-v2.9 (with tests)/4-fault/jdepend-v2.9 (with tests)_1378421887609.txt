@@ -1,0 +1,258 @@
+#tests: test_name, ' ', status(PASSED | FAILED | ERROR), ' ', [exception, { trace_mut_index | '(', { alternative_trace_mut_index, ',' }, ')' }]
+jdepend.framework.ClassFileParserTest:testExampleClassFileFromTimDrury()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) 
+jdepend.framework.ClassFileParserTest:testAbstractClass()V PASSED
+jdepend.framework.ClassFileParserTest:testConcreteClass()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (25,139) 
+jdepend.framework.ClassFileParserTest:testInterfaceClass()V PASSED
+jdepend.framework.ClassFileParserTest:testInvalidClassFile()V PASSED
+jdepend.framework.ClassFileParserTest:testInnerClass()V PASSED
+jdepend.framework.ClassFileParserTest:testPackageClass()V PASSED
+jdepend.framework.ClassFileParserTest:testExampleClassFile2()V PASSED
+jdepend.framework.ComponentTest:testJDependComponents()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+jdepend.framework.JarFileParserTest:testJarFile()V FAILED junit.framework.AssertionFailedError 90 
+jdepend.framework.JarFileParserTest:testZipFile()V FAILED junit.framework.AssertionFailedError 90 
+jdepend.framework.JarFileParserTest:testJarFileWithoutInnerClasses()V FAILED junit.framework.AssertionFailedError 90 
+jdepend.framework.JarFileParserTest:testZipFileWithoutInnerClasses()V FAILED junit.framework.AssertionFailedError 90 
+jdepend.framework.JarFileParserTest:testInvalidJarFile()V PASSED
+jdepend.framework.JarFileParserTest:testInvalidZipFile()V PASSED
+jdepend.framework.JarFileParserTest:testCountClasses()V PASSED
+jdepend.framework.ConstraintTest:testJDependConstraints()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+jdepend.framework.ConstraintTest:testMatchFail()V PASSED
+jdepend.framework.ConstraintTest:testMatchPass()V PASSED
+jdepend.framework.CycleTest:testNoCycles()V PASSED
+jdepend.framework.CycleTest:test2Node1BranchCycle()V PASSED
+jdepend.framework.CycleTest:test3Node1BranchCycle()V PASSED
+jdepend.framework.CycleTest:test3Node1BranchSubCycle()V PASSED
+jdepend.framework.CycleTest:test3Node2BranchCycle()V PASSED
+jdepend.framework.CycleTest:test5Node2BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:testNoCycles()V PASSED
+jdepend.framework.CollectAllCyclesTest:test2Node1BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test3Node1BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test3Node1BranchSubCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test3Node2BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test5Node2BranchCycle()V PASSED
+jdepend.framework.FileManagerTest:testJar()V PASSED
+jdepend.framework.FileManagerTest:testZip()V PASSED
+jdepend.framework.FileManagerTest:testWar()V PASSED
+jdepend.framework.FileManagerTest:testInvalidClassFile()V PASSED
+jdepend.framework.FileManagerTest:testEmptyFileManager()V PASSED
+jdepend.framework.FileManagerTest:testBuildDirectory()V PASSED
+jdepend.framework.FileManagerTest:testNonExistentDirectory()V PASSED
+jdepend.framework.FileManagerTest:testInvalidDirectory()V PASSED
+jdepend.framework.FileManagerTest:testClassFile()V PASSED
+jdepend.framework.FileManagerTest:testNonExistentClassFile()V PASSED
+jdepend.framework.FilterTest:testFile()V ERROR java.lang.NullPointerException 4 
+jdepend.framework.FilterTest:testDefault()V ERROR java.lang.NullPointerException 4 
+jdepend.framework.FilterTest:testCollection()V PASSED
+jdepend.framework.FilterTest:testCollectionSubset()V PASSED
+jdepend.framework.MetricTest:testAnalyzeClassFiles()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 39 
+jdepend.framework.MetricTest:testConfiguredVolatility()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+jdepend.framework.PropertyConfiguratorTest:testDefaultFilters()V ERROR java.lang.NullPointerException 4 
+jdepend.framework.PropertyConfiguratorTest:testFiltersFromFile()V ERROR java.lang.NullPointerException 4 
+jdepend.framework.PropertyConfiguratorTest:testDefaultPackages()V ERROR java.lang.NullPointerException 4 
+jdepend.framework.ExampleTest:testOnePackageDistance()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+jdepend.framework.ExampleTest:testOnePackageHasNoCycles()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+jdepend.framework.ExampleTest:testAllPackagesDistance()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+jdepend.framework.ExampleTest:testAllPackagesHaveNoCycles()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+jdepend.framework.ExampleTest:testDependencyConstraint()V ERROR java.lang.ArrayIndexOutOfBoundsException 5 (41,53) (41,53) 7 (25,139) (13,132) 109 73 
+
+#uuts: uut_name, [ '|', mutator_class, '|', change_position_in_file_buffer, '|', change ]
+jdepend.framework.PackageFilter:PackageFilter(Ljava.util.Collection;)V
+jdepend.framework.ClassFileParser:parseConstantPool()[Ljdepend.framework.ClassFileParser.Constant;
+jdepend.framework.PackageFilter:addPackages(Ljava.util.Collection;)V
+jdepend.framework.JavaPackage:addAfferent(Ljdepend.framework.JavaPackage;)V
+jdepend.framework.PropertyConfigurator:getFilteredPackages()Ljava.util.Collection; | ASSIGN | 1785 | = null
+jdepend.framework.ClassFileParser:addAnnotationElementValueReferences([BI)I
+jdepend.framework.FileManager:addFile(Ljava.io.File;Ljava.util.Collection;)V
+jdepend.framework.ClassFileParser:addAnnotationsReferences()V
+jdepend.framework.JDependTestCase:getPackageSubDir()Ljava.lang.String;
+jdepend.framework.JavaClass:getName()Ljava.lang.String;
+jdepend.framework.JDepend:addPackages(Ljava.util.Collection;)V
+jdepend.framework.FileManager:acceptJarFile(Ljava.io.File;)Z
+jdepend.framework.JavaClass:getPackageName()Ljava.lang.String;
+jdepend.framework.JavaClassBuilder:buildClasses(Ljava.util.jar.JarFile;)Ljava.util.Collection;
+jdepend.framework.JavaPackage:containsCycle()Z
+jdepend.framework.JDepend:addPackage(Ljdepend.framework.JavaPackage;)V
+jdepend.framework.JavaPackage:dependsUpon(Ljdepend.framework.JavaPackage;)V
+jdepend.framework.JavaClassBuilder:countClasses()I
+jdepend.framework.JavaPackage:getAfferents()Ljava.util.Collection;
+jdepend.framework.PackageFilter:getFilters()Ljava.util.Collection;
+jdepend.framework.ClassFileParser.FieldOrMethodInfo:FieldOrMethodInfo(Ljdepend.framework.ClassFileParser;III)V
+jdepend.framework.ClassFileParser:parseInterfaces()[Ljava.lang.String;
+jdepend.framework.ClassFileParser.Constant:Constant(Ljdepend.framework.ClassFileParser;BI)V
+jdepend.framework.DependencyConstraint:addPackage(Ljava.lang.String;)Ljdepend.framework.JavaPackage;
+jdepend.framework.JavaClassBuilder:JavaClassBuilder()V
+jdepend.framework.ClassFileParser:parse(Ljava.io.File;)Ljdepend.framework.JavaClass;
+jdepend.framework.DependencyConstraint:equalsAfferents(Ljdepend.framework.JavaPackage;Ljdepend.framework.JavaPackage;)Z
+jdepend.framework.JavaPackage:collectCycle(Ljava.util.List;)Z
+jdepend.framework.ClassFileParser:toUTF8(I)Ljava.lang.String;
+jdepend.framework.ClassFileParser:getPackageName(Ljava.lang.String;)Ljava.lang.String;
+jdepend.framework.JDepend:getFilter()Ljdepend.framework.PackageFilter;
+jdepend.framework.JavaClass:getImportedPackages()Ljava.util.Collection;
+jdepend.framework.PackageFilter:PackageFilter(Ljava.io.File;)V
+jdepend.framework.FileManager:collectFiles(Ljava.io.File;Ljava.util.Collection;)V
+jdepend.framework.JDepend:getPackages()Ljava.util.Collection;
+jdepend.framework.JDepend:addDirectory(Ljava.lang.String;)V
+jdepend.framework.JDependTestCase:getTestDataDir()Ljava.lang.String;
+jdepend.framework.ClassFileParser:ClassFileParser(Ljdepend.framework.PackageFilter;)V
+jdepend.framework.FileManager:acceptClassFileName(Ljava.lang.String;)Z
+jdepend.framework.MetricTest:assertAnalyzePackages()V
+jdepend.framework.JDepend:analyzeInnerClasses(Z)V
+jdepend.framework.ClassFileParser:addAnnotationReferences([BII)I | CONSTANT | 13744 | 2 -> -1
+jdepend.framework.ClassFileParser:parseMethods()[Ljdepend.framework.ClassFileParser.FieldOrMethodInfo;
+jdepend.framework.JavaClass:getSourceFile()Ljava.lang.String;
+jdepend.framework.ClassFileParser:u2([BI)I
+jdepend.framework.JavaClass:addImportedPackage(Ljdepend.framework.JavaPackage;)V
+jdepend.framework.DependencyConstraint:equalsDependencies(Ljdepend.framework.JavaPackage;Ljdepend.framework.JavaPackage;)Z
+jdepend.framework.ClassFileParser.AttributeInfo:setName(Ljava.lang.String;)V
+jdepend.framework.JDependTestCase:getBuildDir()Ljava.lang.String;
+jdepend.framework.JavaPackage:getEfferents()Ljava.util.Collection;
+jdepend.framework.JavaClass:equals(Ljava.lang.Object;)Z | CONDITION | 1584 | if (x) -> if (!x)
+jdepend.framework.CycleTest:assertListEquals(Ljava.util.List;[Ljava.lang.String;)V
+jdepend.framework.JavaClass:isAbstract()Z
+jdepend.framework.ClassFileParser:addAnnotationReferences(Ljdepend.framework.ClassFileParser.AttributeInfo;)V
+jdepend.framework.JDepend:setFilter(Ljdepend.framework.PackageFilter;)V
+jdepend.framework.ClassFileParser:parseFieldOrMethodInfo()Ljdepend.framework.ClassFileParser.FieldOrMethodInfo;
+jdepend.framework.JavaPackage:collectAllCycles(Ljava.util.List;)Z
+jdepend.framework.ClassFileParser.AttributeInfo:getName()Ljava.lang.String;
+jdepend.framework.JDepend:dependencyMatch(Ljdepend.framework.DependencyConstraint;)Z
+jdepend.framework.JavaClass:isAbstract(Z)V
+jdepend.framework.ClassFileParser.Constant:getTag()B
+jdepend.framework.DependencyConstraint:addPackage(Ljdepend.framework.JavaPackage;)V
+jdepend.framework.PackageFilter:accept(Ljava.lang.String;)Z
+jdepend.framework.PropertyConfigurator:getDefaultPropertyFile()Ljava.io.File;
+jdepend.framework.AbstractParser:debug(Ljava.lang.String;)V
+jdepend.framework.FileManager:addDirectory(Ljava.lang.String;)V
+jdepend.framework.FilterTest:assertFiltersExist(Ljdepend.framework.PackageFilter;)V
+jdepend.framework.FileManager:isZip(Ljava.io.File;)Z
+jdepend.framework.ClassFileParser.FieldOrMethodInfo:getDescriptorIndex()I
+jdepend.framework.ClassFileParser:ClassFileParser()V
+jdepend.framework.JavaClass:JavaClass(Ljava.lang.String;)V
+jdepend.framework.JavaPackage:setVolatility(I)V
+jdepend.framework.JDependTestCase:getTestDir()Ljava.lang.String;
+jdepend.framework.JDepend:analyze()Ljava.util.Collection;
+jdepend.framework.JavaClassBuilder:JavaClassBuilder(Ljdepend.framework.AbstractParser;Ljdepend.framework.FileManager;)V
+jdepend.framework.JavaClass:setName(Ljava.lang.String;)V
+jdepend.framework.FileManager:existsWithExtension(Ljava.io.File;Ljava.lang.String;)Z
+jdepend.framework.ClassFileParser:parseAccessFlags()V
+jdepend.framework.ClassFileParser:parseFields()[Ljdepend.framework.ClassFileParser.FieldOrMethodInfo;
+jdepend.framework.ClassFileParser:parseAttributes()V
+jdepend.framework.ClassFileParser:parseSuperClassName()Ljava.lang.String;
+jdepend.framework.FileManager:acceptInnerClasses(Z)V
+jdepend.framework.ClassFileParser:getClassConstantName(I)Ljava.lang.String;
+jdepend.framework.FileManager:FileManager()V
+jdepend.framework.JavaPackage:JavaPackage(Ljava.lang.String;I)V
+jdepend.framework.AbstractParser:onParsedJavaClass(Ljdepend.framework.JavaClass;)V
+jdepend.framework.ClassFileParser.AttributeInfo:setValue([B)V
+jdepend.framework.JavaPackage:equals(Ljava.lang.Object;)Z
+jdepend.framework.ClassFileParser.Constant:Constant(Ljdepend.framework.ClassFileParser;BLjava.lang.Object;)V
+jdepend.framework.ClassFileParser.AttributeInfo:getValue()[B
+jdepend.framework.JarFileParserTest:assertClassesExist(Ljava.util.Collection;)V
+jdepend.framework.FileManager:isJar(Ljava.io.File;)Z
+jdepend.framework.DependencyConstraint:equalsEfferents(Ljdepend.framework.JavaPackage;Ljdepend.framework.JavaPackage;)Z
+jdepend.framework.JDepend:JDepend()V
+jdepend.framework.ClassFileParser:getConstantPoolEntry(I)Ljdepend.framework.ClassFileParser.Constant;
+jdepend.framework.JavaClass:setSourceFile(Ljava.lang.String;)V
+jdepend.framework.ClassFileParser.Constant:getNameIndex()I
+jdepend.framework.ClassFileParser.Constant:Constant(Ljdepend.framework.ClassFileParser;BII)V
+jdepend.framework.AbstractParser:getFilter()Ljdepend.framework.PackageFilter;
+jdepend.framework.FileManager:extractFiles()Ljava.util.Collection;
+jdepend.framework.AbstractParser:AbstractParser()V
+jdepend.framework.JavaClassBuilder.1:parse(Ljava.io.InputStream;)Ljdepend.framework.JavaClass;
+jdepend.framework.JavaPackage:JavaPackage(Ljava.lang.String;)V
+jdepend.framework.PropertyConfigurator:loadProperties(Ljava.io.File;)Ljava.util.Properties;
+jdepend.framework.ClassFileParser:parseClassName()Ljava.lang.String;
+jdepend.framework.ClassFileParser:parseMajorVersion()I
+jdepend.framework.DependencyConstraint:DependencyConstraint()V
+jdepend.framework.ClassFileParser:parseAttribute()Ljdepend.framework.ClassFileParser.AttributeInfo;
+jdepend.framework.JDepend:JDepend(Ljdepend.framework.PackageFilter;)V
+jdepend.framework.JavaClassBuilder:build()Ljava.util.Collection;
+jdepend.framework.FileManager:acceptFile(Ljava.io.File;)Z
+jdepend.framework.AbstractParser:setFilter(Ljdepend.framework.PackageFilter;)V
+jdepend.framework.CollectAllCyclesTest:assertListEquals(Ljava.util.List;[Ljava.lang.String;)V
+jdepend.framework.ClassFileParser:addClassConstantReferences()V
+jdepend.framework.PackageFilter:addPackage(Ljava.lang.String;)V
+jdepend.framework.FileManager:acceptClassFile(Ljava.io.File;)Z
+jdepend.framework.PropertyConfigurator:PropertyConfigurator(Ljava.io.File;)V
+jdepend.framework.PropertyConfigurator:PropertyConfigurator()V
+jdepend.framework.JDepend:setComponents(Ljava.lang.String;)V
+jdepend.framework.DependencyConstraint:match(Ljava.util.Collection;)Z
+jdepend.framework.ClassFileParser:parseMinorVersion()I
+jdepend.framework.DependencyConstraint:matchPackage(Ljdepend.framework.JavaPackage;)Z
+jdepend.framework.JavaPackage:getName()Ljava.lang.String;
+jdepend.framework.ClassFileParser.Constant:getValue()Ljava.lang.Object;
+jdepend.framework.PropertyConfigurator:getConfiguredPackages()Ljava.util.Collection;
+jdepend.framework.JavaClass:setPackageName(Ljava.lang.String;)V
+jdepend.framework.ClassFileParser:addImport(Ljava.lang.String;)V
+jdepend.framework.ClassFileParser:parseNextConstant()Ljdepend.framework.ClassFileParser.Constant;
+jdepend.framework.PropertyConfigurator:PropertyConfigurator(Ljava.util.Properties;)V
+jdepend.framework.ClassFileParser:descriptorToTypes(Ljava.lang.String;)[Ljava.lang.String;
+jdepend.framework.PropertyConfigurator:getAnalyzeInnerClasses()Z
+jdepend.framework.JDepend:countClasses()I
+jdepend.framework.JavaClassBuilder:buildClasses(Ljava.io.File;)Ljava.util.Collection;
+jdepend.framework.PackageFilter:PackageFilter()V
+jdepend.framework.JavaClassBuilder:JavaClassBuilder(Ljdepend.framework.FileManager;)V
+jdepend.framework.JDependTestCase:getHomeDir()Ljava.lang.String;
+jdepend.framework.ClassFileParser:parseMagic()I
+jdepend.framework.FileManager:isWar(Ljava.io.File;)Z
+jdepend.framework.ClassFileParser:slashesToDots(Ljava.lang.String;)Ljava.lang.String;
+jdepend.framework.ClassFileParser:parse(Ljava.io.InputStream;)Ljdepend.framework.JavaClass;
+jdepend.framework.ClassFileParser:reset()V
+jdepend.framework.AbstractParser:AbstractParser(Ljdepend.framework.PackageFilter;)V
+jdepend.framework.JavaPackage:addEfferent(Ljdepend.framework.JavaPackage;)V
+
+#matrix (1 line per test, in order of tests): { mut_index, ' ', mut_call_count, ' ' }
+59 1 1 1 60 12 62 5 64 6 68 2 70 1 71 5 5 1 7 1 12 5 75 1 77 1 78 1 79 1 80 1 82 2 84 5 19 5 20 2 86 3 21 1 88 1 89 1 22 1 94 12 95 1 28 10 96 3 97 3 29 6 98 5 102 5 104 1 105 1 107 3 113 1 120 1 122 5 41 1 42 1 123 10 44 3 45 5 125 1 126 5 127 1 129 2 47 3 53 1 55 2 138 9 136 1 139 1 57 1 140 1 
+59 1 60 11 1 1 62 5 64 8 68 2 70 1 71 6 7 1 9 1 8 1 12 5 75 1 77 1 78 1 79 1 80 1 82 3 84 6 19 5 20 2 85 1 86 2 87 1 21 1 88 1 89 1 22 1 25 1 94 12 95 1 28 9 96 4 97 3 29 6 98 5 31 1 102 6 104 1 105 1 107 2 113 1 120 1 122 6 123 9 42 1 43 1 45 5 125 1 126 5 127 1 129 2 47 2 48 1 52 1 55 2 136 1 138 10 139 1 57 1 140 1 
+59 1 60 14 1 1 62 8 64 7 68 2 70 1 71 8 5 3 7 1 8 1 12 8 75 1 77 1 78 1 79 1 80 1 82 2 84 8 19 8 20 2 86 2 21 1 88 1 89 1 22 1 25 1 94 14 95 1 28 12 96 3 97 3 29 9 98 8 102 8 104 1 105 1 107 2 113 1 120 1 122 8 41 2 123 12 42 1 44 5 45 8 125 1 126 8 127 1 129 3 47 2 48 1 53 1 55 2 136 1 138 12 139 1 57 1 140 1 
+59 1 60 9 1 1 62 3 64 6 68 1 70 1 71 4 7 1 9 1 8 1 12 3 75 1 77 1 78 1 79 1 80 1 82 2 84 4 19 3 20 1 85 1 86 2 87 1 21 1 88 1 89 1 22 1 25 1 94 9 95 1 28 7 96 3 97 2 29 4 98 3 31 1 102 4 104 1 105 1 107 2 113 1 120 1 122 4 123 7 42 1 43 1 45 3 125 1 126 3 127 1 129 1 47 2 48 1 52 1 55 1 136 1 138 7 139 1 57 1 140 1 
+8 1 25 1 136 1 64 1 139 1 140 1 70 1 72 1 
+59 1 60 10 1 1 62 4 64 7 68 2 70 1 71 5 7 1 9 1 8 1 12 4 75 1 77 1 78 1 79 1 80 1 82 2 84 5 19 4 20 2 85 1 86 2 87 1 21 1 88 1 89 1 22 1 25 1 94 10 95 1 28 8 96 3 97 3 29 5 98 4 31 1 102 5 104 1 105 1 107 2 113 1 120 1 122 5 123 8 42 1 43 1 45 4 125 1 126 4 127 1 129 2 47 2 48 1 52 1 55 2 136 1 138 8 139 1 57 1 140 1 
+59 1 60 9 1 1 62 2 64 6 68 1 70 1 71 3 7 1 9 1 8 1 12 2 75 1 77 1 78 1 79 1 80 1 82 2 84 3 19 2 20 1 85 1 86 2 87 1 21 1 88 1 89 1 22 1 25 1 94 9 95 1 28 7 96 3 97 3 29 3 98 2 31 1 102 3 104 1 105 1 107 2 113 1 120 1 122 3 123 7 42 1 43 1 45 2 125 1 126 2 127 1 129 1 47 2 48 1 52 1 55 1 136 1 138 6 139 1 57 1 140 1 
+59 1 1 1 60 12 62 5 64 6 68 2 70 1 71 5 5 1 7 1 12 5 75 1 77 1 78 1 79 1 80 1 82 2 84 5 19 5 20 2 85 1 86 3 21 1 88 1 89 1 22 1 94 12 95 1 28 10 96 3 97 3 29 6 98 5 102 5 104 1 105 1 107 3 113 1 120 1 122 5 41 1 42 1 123 10 44 2 45 5 125 1 126 5 127 1 129 2 47 3 53 1 55 2 138 9 136 1 139 1 57 1 140 1 
+59 2 1 2 60 27 62 14 65 1 64 14 68 4 67 7 71 14 70 2 5 3 7 2 6 3 73 1 11 7 12 14 75 2 13 1 76 20 78 2 77 2 79 2 80 2 82 6 84 14 20 4 19 14 85 2 86 5 21 2 88 2 89 2 22 2 91 7 94 29 95 2 97 6 96 8 28 23 29 16 98 14 99 1 33 7 102 14 104 2 105 2 107 5 109 1 110 6 113 2 115 7 118 1 35 1 120 2 38 7 122 14 41 2 42 2 123 23 44 5 45 14 125 2 126 14 127 2 129 6 47 5 48 1 53 1 132 1 55 4 136 2 137 6 138 24 139 2 57 2 140 2 
+0 1 59 1 1 1 60 12 62 5 2 2 63 1 64 7 68 2 71 5 69 1 70 2 4 1 7 1 11 1 74 1 12 5 75 1 13 1 76 1 78 1 77 1 79 1 80 1 82 3 84 5 83 1 20 2 19 5 85 1 86 3 21 1 88 1 90 1 89 1 22 1 91 1 24 1 94 13 95 1 97 3 96 4 28 10 29 6 98 5 102 5 103 1 104 1 105 1 107 3 111 1 113 1 115 1 117 1 116 1 37 1 120 1 38 2 122 5 42 1 123 10 45 5 125 1 126 5 127 1 129 3 128 1 47 3 50 1 132 1 55 2 133 1 136 1 138 10 139 1 57 1 140 2 141 1 
+0 1 59 1 1 1 60 12 62 5 2 2 63 1 64 7 68 2 67 1 71 5 69 1 70 2 4 1 7 1 11 1 74 1 12 5 75 1 13 1 76 2 78 1 77 1 79 1 80 1 82 3 84 5 83 1 20 2 19 5 85 1 86 3 21 1 88 1 90 1 89 1 22 1 91 1 24 1 94 13 95 1 97 3 96 4 28 10 29 6 98 5 102 5 103 1 104 1 105 1 107 3 111 1 113 1 115 1 117 1 116 1 37 1 120 1 38 2 122 5 42 1 123 10 45 5 125 1 126 5 127 1 129 3 128 1 47 3 50 1 132 1 55 2 133 1 136 1 138 10 139 1 57 1 140 2 141 1 
+0 1 59 1 1 1 60 11 62 5 2 2 63 1 64 7 68 2 71 5 69 1 70 2 4 1 7 1 11 1 74 1 12 5 75 1 13 1 76 1 78 1 77 1 79 1 80 1 81 1 82 3 84 5 83 1 20 2 19 5 85 1 86 2 21 1 88 1 90 1 89 1 22 1 91 1 94 12 95 1 97 3 96 4 28 9 29 6 98 5 102 5 103 1 104 1 105 1 107 2 111 1 113 1 115 1 117 1 116 1 37 1 120 1 38 2 122 5 42 1 123 9 45 5 125 1 126 5 127 1 129 3 128 1 47 2 50 1 132 1 55 2 133 1 134 1 136 1 138 10 139 1 57 1 140 2 141 1 
+0 1 59 1 1 1 60 11 62 5 2 2 63 1 64 7 68 2 67 1 71 5 69 1 70 2 4 1 7 1 11 1 74 1 12 5 75 1 13 1 76 2 78 1 77 1 79 1 80 1 81 1 82 3 84 5 83 1 20 2 19 5 85 1 86 2 21 1 88 1 90 1 89 1 22 1 91 1 94 12 95 1 97 3 96 4 28 9 29 6 98 5 102 5 103 1 104 1 105 1 107 2 111 1 113 1 115 1 117 1 116 1 37 1 120 1 38 2 122 5 42 1 123 9 45 5 125 1 126 5 127 1 129 3 128 1 47 2 50 1 132 1 55 2 133 1 134 1 136 1 138 10 139 1 57 1 140 2 141 1 
+0 1 2 2 63 1 67 1 103 1 69 1 4 1 111 1 74 1 11 1 115 1 116 1 117 1 36 1 76 3 37 1 83 1 128 1 91 1 132 1 24 1 133 1 137 1 141 1 140 1 
+0 1 2 2 63 1 67 1 103 1 69 1 4 1 111 1 74 1 11 1 115 1 116 1 117 1 36 1 76 3 37 1 83 1 128 1 91 1 132 1 24 1 133 1 137 1 141 1 140 1 
+0 2 99 1 100 1 2 4 63 3 101 1 65 1 33 4 67 4 103 3 70 1 4 2 108 1 6 1 110 3 109 1 111 2 10 1 11 4 74 2 115 4 116 3 117 3 35 1 36 1 13 1 76 12 37 1 38 5 40 2 81 2 17 1 83 1 124 1 128 3 91 4 131 1 130 1 132 1 54 1 133 2 93 1 137 4 141 2 140 1 
+59 2 1 2 60 28 62 14 65 1 64 14 68 4 67 7 71 13 70 2 5 3 7 2 6 3 73 1 11 7 12 13 75 2 13 1 76 20 78 2 77 2 79 2 80 2 82 6 84 13 20 4 19 14 85 2 86 6 21 2 88 2 89 2 22 2 91 7 94 30 95 2 97 6 96 8 28 24 29 16 98 14 99 1 33 7 102 13 104 2 105 2 107 6 109 1 110 6 113 2 115 7 35 1 120 2 38 7 122 13 41 2 42 2 123 24 44 5 45 13 125 2 126 14 127 2 129 6 47 6 48 1 53 1 132 1 55 4 136 2 137 6 138 24 139 2 57 2 140 2 
+16 1 121 1 122 10 18 1 84 2 61 1 102 2 87 5 46 1 34 1 71 2 106 1 3 1 49 1 23 1 92 1 26 1 119 1 58 1 15 1 142 1 
+16 1 121 1 122 9 18 1 84 2 61 1 102 2 87 4 46 1 34 1 71 2 106 1 3 1 49 1 23 1 92 1 26 1 119 1 58 1 15 1 142 1 
+16 1 122 6 84 1 102 1 87 4 71 1 3 1 49 4 51 1 14 1 27 4 142 1 
+16 1 122 7 84 1 102 1 87 4 71 1 3 1 49 4 51 1 14 1 27 6 142 1 
+16 1 122 9 84 1 102 1 87 6 71 1 3 1 49 6 51 1 14 1 27 8 142 1 
+16 1 122 10 84 1 102 1 87 7 71 1 3 1 49 6 51 1 14 1 27 8 142 1 
+16 1 122 11 84 1 102 1 87 8 71 1 3 1 49 6 51 1 14 1 27 8 142 1 
+16 1 122 15 84 1 102 1 87 12 71 1 3 1 49 10 51 1 14 1 27 12 142 1 
+16 1 122 6 84 1 102 1 87 4 71 1 3 1 112 1 49 4 56 2 14 1 27 2 142 1 
+16 1 122 7 84 1 102 1 87 4 71 1 3 1 112 1 49 4 56 3 14 1 27 3 142 1 
+16 1 122 9 84 1 102 1 87 6 71 1 3 1 112 1 49 6 56 4 14 1 27 4 142 1 
+16 1 122 10 84 1 102 1 87 7 71 1 3 1 112 1 49 6 56 4 14 1 27 4 142 1 
+16 1 122 11 84 1 102 1 87 8 71 1 3 1 112 1 49 6 56 4 14 1 27 4 142 1 
+16 1 122 15 84 1 102 1 87 12 71 1 3 1 112 1 49 10 56 6 14 1 27 6 142 1 
+91 1 11 1 65 1 36 1 76 1 
+91 1 11 1 65 1 36 1 67 1 76 2 
+91 1 11 1 137 1 65 1 36 1 67 1 76 3 
+115 1 83 1 135 1 38 1 
+99 1 
+99 1 65 1 33 7 67 6 6 3 110 6 48 1 91 6 11 6 115 6 137 6 76 18 38 5 
+91 1 48 1 11 1 137 1 65 1 67 1 76 3 
+8 1 91 1 11 1 137 1 65 1 67 1 76 3 72 1 
+8 1 48 1 115 1 83 1 38 1 
+48 1 115 1 83 1 
+0 1 116 1 2 1 32 1 36 1 103 1 4 1 128 1 
+0 1 116 1 117 1 2 1 133 1 63 1 103 1 4 1 128 1 
+0 1 2 1 62 1 19 3 66 1 114 1 
+0 1 114 1 2 1 19 2 
+0 1 1 2 2 2 5 3 4 1 6 6 7 2 11 14 12 11 13 2 17 1 19 15 20 4 21 2 22 2 28 23 30 1 29 16 33 14 35 1 38 14 39 1 41 2 42 2 44 5 45 11 47 5 48 1 53 1 55 4 57 2 59 2 60 27 62 14 63 1 65 1 64 14 67 14 68 4 70 4 71 11 73 1 74 1 75 2 76 40 77 2 78 2 79 2 80 2 82 6 84 11 85 2 86 5 88 2 89 2 91 14 94 29 95 2 97 6 96 8 98 14 100 1 99 2 101 2 102 11 103 1 104 2 105 2 107 5 111 1 109 2 110 12 114 1 113 2 115 14 117 1 116 1 120 2 122 11 123 23 125 2 126 14 127 2 128 1 129 6 131 1 132 2 133 1 136 2 137 12 138 24 139 2 140 2 141 1 
+59 2 1 2 60 27 62 14 65 1 64 14 68 4 67 7 71 13 70 2 5 3 7 2 6 3 73 1 11 7 12 11 75 2 13 1 76 20 78 2 77 2 79 2 15 1 80 2 82 6 84 12 20 4 19 14 85 2 86 5 21 2 88 2 89 2 22 2 91 7 94 29 95 2 97 6 96 8 28 23 29 16 98 14 99 1 33 7 102 12 104 2 105 2 107 5 110 6 109 1 113 2 115 7 35 1 120 2 38 7 122 12 41 2 42 2 123 23 44 5 45 11 125 2 126 14 127 2 129 6 47 5 48 1 53 1 132 1 55 4 137 6 136 2 138 24 139 2 57 2 140 2 
+116 1 117 1 63 1 103 1 4 1 128 1 
+116 1 36 1 103 1 4 1 128 1 
+0 1 116 1 117 1 2 1 133 1 93 1 63 1 103 1 4 1 128 1 
+59 2 1 2 60 28 62 14 64 14 68 4 67 7 70 2 71 13 5 3 7 2 6 3 73 1 11 7 12 13 75 2 13 1 76 20 78 2 77 2 79 2 80 2 82 6 84 13 20 4 19 14 85 2 86 6 21 2 88 2 89 2 22 2 91 7 94 30 95 2 97 6 96 8 28 24 29 16 98 14 99 1 33 7 102 13 104 2 105 2 107 6 109 1 110 6 113 2 115 7 120 2 38 7 122 13 41 2 42 2 123 24 44 5 45 13 125 2 126 14 127 2 129 6 47 6 53 1 132 1 55 4 136 2 137 6 138 24 139 2 57 2 140 2 
+59 2 1 2 60 28 62 14 64 14 68 4 67 7 70 2 71 13 5 3 7 2 6 3 73 1 11 7 12 13 75 2 13 1 76 20 78 2 77 2 79 2 80 2 82 6 84 13 20 4 19 14 85 2 86 6 21 2 88 2 89 2 22 2 91 7 94 30 95 2 97 6 96 8 28 24 29 16 98 14 99 1 33 7 102 13 104 2 105 2 107 6 109 1 110 6 113 2 115 7 120 2 38 7 122 13 41 2 42 2 123 24 44 5 45 13 125 2 126 14 127 2 129 6 47 6 53 1 132 1 55 4 136 2 137 6 138 24 139 2 57 2 140 2 
+59 2 1 2 60 28 62 14 64 14 68 4 67 7 70 2 71 13 5 3 7 2 6 3 73 1 11 7 12 13 75 2 13 1 76 20 78 2 77 2 79 2 80 2 82 6 84 13 20 4 19 14 85 2 86 6 21 2 88 2 89 2 22 2 91 7 94 30 95 2 97 6 96 8 28 24 29 16 98 14 99 1 33 7 102 13 104 2 105 2 107 6 109 1 110 6 113 2 115 7 120 2 38 7 122 13 41 2 42 2 123 24 44 5 45 13 125 2 126 14 127 2 129 6 47 6 53 1 132 1 55 4 136 2 137 6 138 24 139 2 57 2 140 2 
+59 2 1 2 60 28 62 14 64 14 68 4 67 7 70 2 71 13 5 3 7 2 6 3 73 1 11 7 12 13 75 2 13 1 76 20 78 2 77 2 79 2 80 2 82 6 84 13 20 4 19 14 85 2 86 6 21 2 88 2 89 2 22 2 91 7 94 30 95 2 97 6 96 8 28 24 29 16 98 14 99 1 33 7 102 13 104 2 105 2 107 6 109 1 110 6 113 2 115 7 120 2 38 7 122 13 41 2 42 2 123 24 44 5 45 13 125 2 126 14 127 2 129 6 47 6 53 1 132 1 55 4 136 2 137 6 138 24 139 2 57 2 140 2 
+59 2 1 2 60 28 62 14 61 1 64 14 68 4 67 7 71 14 70 2 3 1 5 3 7 2 6 3 73 1 11 7 12 13 75 2 13 1 76 20 78 2 77 2 79 2 80 2 16 1 82 6 84 14 20 4 19 14 85 2 86 6 21 2 87 3 88 2 89 2 22 2 91 7 23 1 94 30 95 2 97 6 96 8 28 24 29 16 98 14 99 1 33 7 102 14 104 2 105 2 106 1 107 6 110 6 109 1 113 2 115 7 120 2 38 7 122 19 41 2 42 2 123 24 44 5 45 13 125 2 126 14 127 2 129 6 47 6 53 1 132 1 55 4 137 6 136 2 138 24 139 2 57 2 140 2 142 1 

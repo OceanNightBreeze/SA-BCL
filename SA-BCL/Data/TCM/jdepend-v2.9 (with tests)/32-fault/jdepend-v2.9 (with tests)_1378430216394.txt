@@ -1,0 +1,127 @@
+#tests: test_name, ' ', status(PASSED | FAILED | ERROR), ' ', [exception, { trace_mut_index | '(', { alternative_trace_mut_index, ',' }, ')' }]
+jdepend.framework.JarFileParserTest:testJarFileWithoutInnerClasses()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.JarFileParserTest:testZipFileWithoutInnerClasses()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.JarFileParserTest:testInvalidJarFile()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.JarFileParserTest:testInvalidZipFile()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.JarFileParserTest:testCountClasses()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.JarFileParserTest:testJarFile()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.JarFileParserTest:testZipFile()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.CycleTest:test2Node1BranchCycle()V PASSED
+jdepend.framework.CycleTest:test3Node1BranchCycle()V PASSED
+jdepend.framework.CycleTest:test3Node1BranchSubCycle()V PASSED
+jdepend.framework.CycleTest:test3Node2BranchCycle()V PASSED
+jdepend.framework.CycleTest:test5Node2BranchCycle()V PASSED
+jdepend.framework.CycleTest:testNoCycles()V PASSED
+jdepend.framework.CollectAllCyclesTest:test2Node1BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test3Node1BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test3Node1BranchSubCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test3Node2BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:test5Node2BranchCycle()V PASSED
+jdepend.framework.CollectAllCyclesTest:testNoCycles()V PASSED
+jdepend.framework.FileManagerTest:testInvalidClassFile()V PASSED
+jdepend.framework.FileManagerTest:testEmptyFileManager()V PASSED
+jdepend.framework.FileManagerTest:testBuildDirectory()V FAILED junit.framework.AssertionFailedError 
+jdepend.framework.FileManagerTest:testNonExistentDirectory()V PASSED
+jdepend.framework.FileManagerTest:testInvalidDirectory()V PASSED
+jdepend.framework.FileManagerTest:testClassFile()V PASSED
+jdepend.framework.FileManagerTest:testNonExistentClassFile()V PASSED
+jdepend.framework.FileManagerTest:testJar()V PASSED
+jdepend.framework.FileManagerTest:testZip()V PASSED
+jdepend.framework.FileManagerTest:testWar()V PASSED
+jdepend.framework.FilterTest:testCollection()V FAILED junit.framework.AssertionFailedError 34 
+jdepend.framework.FilterTest:testCollectionSubset()V PASSED
+jdepend.framework.FilterTest:testFile()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.FilterTest:testDefault()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.PropertyConfiguratorTest:testDefaultFilters()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.PropertyConfiguratorTest:testFiltersFromFile()V ERROR java.lang.NullPointerException 46 
+jdepend.framework.PropertyConfiguratorTest:testDefaultPackages()V ERROR java.lang.NullPointerException 46 
+
+#uuts: uut_name, [ '|', mutator_class, '|', change_position_in_file_buffer, '|', change ]
+jdepend.framework.PackageFilter:getFilters()Ljava.util.Collection;
+jdepend.framework.PackageFilter:addPackage(Ljava.lang.String;)V | OPERATOR | 2725 | - -> >>>
+jdepend.framework.FileManager:acceptJarFile(Ljava.io.File;)Z
+jdepend.framework.FileManager:isWar(Ljava.io.File;)Z
+jdepend.framework.JavaPackage:getName()Ljava.lang.String;
+jdepend.framework.PackageFilter:PackageFilter(Ljava.util.Collection;)V
+jdepend.framework.FileManager:isJar(Ljava.io.File;)Z
+jdepend.framework.JavaPackage:setVolatility(I)V
+jdepend.framework.JavaClassBuilder:JavaClassBuilder(Ljdepend.framework.FileManager;)V
+jdepend.framework.JavaPackage:containsCycle()Z
+jdepend.framework.PackageFilter:accept(Ljava.lang.String;)Z | STATEMENT | 2321 | stmt -> ;
+jdepend.framework.FileManager:acceptFile(Ljava.io.File;)Z
+jdepend.framework.JavaPackage:JavaPackage(Ljava.lang.String;I)V
+jdepend.framework.PropertyConfigurator:getDefaultPropertyFile()Ljava.io.File;
+jdepend.framework.PackageFilter:addPackages(Ljava.util.Collection;)V
+jdepend.framework.FileManager:isZip(Ljava.io.File;)Z
+jdepend.framework.JDependTestCase:getHomeDir()Ljava.lang.String;
+jdepend.framework.PropertyConfigurator:PropertyConfigurator()V
+jdepend.framework.PropertyConfigurator:PropertyConfigurator(Ljava.util.Properties;)V
+jdepend.framework.JDependTestCase:getBuildDir()Ljava.lang.String;
+jdepend.framework.PackageFilter:PackageFilter()V
+jdepend.framework.FileManager:existsWithExtension(Ljava.io.File;Ljava.lang.String;)Z
+jdepend.framework.JavaPackage:JavaPackage(Ljava.lang.String;)V
+jdepend.framework.JavaPackage:addEfferent(Ljdepend.framework.JavaPackage;)V
+jdepend.framework.JavaPackage:dependsUpon(Ljdepend.framework.JavaPackage;)V | STATEMENT | 4189 | stmt -> ;
+jdepend.framework.FileManager:extractFiles()Ljava.util.Collection;
+jdepend.framework.PropertyConfigurator:PropertyConfigurator(Ljava.io.File;)V
+jdepend.framework.FileManager:addFile(Ljava.io.File;Ljava.util.Collection;)V
+jdepend.framework.JDependTestCase:getTestDataDir()Ljava.lang.String;
+jdepend.framework.ClassFileParser:ClassFileParser()V
+jdepend.framework.JDependTestCase:getTestDir()Ljava.lang.String;
+jdepend.framework.JavaPackage:collectAllCycles(Ljava.util.List;)Z
+jdepend.framework.FileManager:acceptInnerClasses(Z)V
+jdepend.framework.PropertyConfigurator:loadProperties(Ljava.io.File;)Ljava.util.Properties;
+jdepend.framework.FilterTest:assertFiltersExist(Ljdepend.framework.PackageFilter;)V
+jdepend.framework.PackageFilter:PackageFilter(Ljava.io.File;)V
+jdepend.framework.JDepend:JDepend()V
+jdepend.framework.FileManager:acceptClassFile(Ljava.io.File;)Z
+jdepend.framework.FileManager:acceptClassFileName(Ljava.lang.String;)Z | STATEMENT | 1535 | stmt -> ;
+jdepend.framework.FileManager:FileManager()V
+jdepend.framework.JDependTestCase:getPackageSubDir()Ljava.lang.String;
+jdepend.framework.JavaClassBuilder:JavaClassBuilder()V
+jdepend.framework.FileManager:addDirectory(Ljava.lang.String;)V
+jdepend.framework.JavaPackage:equals(Ljava.lang.Object;)Z
+jdepend.framework.CycleTest:assertListEquals(Ljava.util.List;[Ljava.lang.String;)V
+jdepend.framework.JavaPackage:collectCycle(Ljava.util.List;)Z
+jdepend.framework.PropertyConfigurator:getFilteredPackages()Ljava.util.Collection; | ASSIGN | 1692 | = null
+jdepend.framework.FileManager:collectFiles(Ljava.io.File;Ljava.util.Collection;)V
+jdepend.framework.CollectAllCyclesTest:assertListEquals(Ljava.util.List;[Ljava.lang.String;)V
+jdepend.framework.JavaPackage:getEfferents()Ljava.util.Collection;
+
+#matrix (1 line per test, in order of tests): { mut_index, ' ', mut_call_count, ' ' }
+33 1 20 1 39 1 5 1 46 1 29 1 13 1 14 1 8 1 32 1 17 1 18 1 26 1 
+33 1 20 1 39 1 5 1 46 1 29 1 13 1 14 1 8 1 32 1 17 1 18 1 26 1 
+33 1 20 1 5 1 46 1 29 1 13 1 14 1 41 1 17 1 18 1 26 1 
+33 1 20 1 5 1 46 1 29 1 13 1 14 1 41 1 17 1 18 1 26 1 
+33 1 20 1 5 1 46 1 13 1 36 1 14 1 17 1 18 1 26 1 
+33 1 20 1 5 1 46 1 29 1 13 1 14 1 41 1 17 1 18 1 26 1 
+33 1 20 1 5 1 46 1 29 1 13 1 14 1 41 1 17 1 18 1 26 1 
+9 1 12 1 4 6 43 4 44 1 45 6 7 1 22 1 24 1 23 1 49 4 
+9 1 12 1 4 8 43 6 44 1 45 8 7 1 22 1 24 1 23 1 49 6 
+9 1 12 1 4 8 43 6 44 1 45 8 7 1 22 1 24 1 23 1 49 6 
+9 1 12 1 4 9 43 7 44 1 45 8 7 1 22 1 24 1 23 1 49 6 
+9 1 12 1 4 13 43 11 44 1 45 12 7 1 22 1 24 1 23 1 49 10 
+9 1 12 1 4 5 43 4 44 1 45 4 7 1 22 1 24 1 23 1 49 4 
+9 1 12 1 31 3 4 6 43 4 45 3 48 1 7 1 22 1 24 1 23 1 49 4 
+9 1 12 1 31 4 4 8 43 6 45 4 48 1 7 1 22 1 24 1 23 1 49 6 
+9 1 12 1 31 4 4 8 43 6 45 4 48 1 7 1 22 1 24 1 23 1 49 6 
+9 1 12 1 31 4 4 9 43 7 45 4 48 1 7 1 22 1 24 1 23 1 49 6 
+9 1 12 1 31 6 4 13 43 11 45 6 48 1 7 1 22 1 24 1 23 1 49 10 
+9 1 12 1 31 2 4 5 43 4 45 2 48 1 7 1 22 1 24 1 23 1 49 4 
+37 1 38 1 39 1 16 1 
+25 1 
+37 6 27 3 38 5 11 6 2 6 3 6 42 1 15 6 19 1 47 7 21 18 6 6 25 1 
+19 1 2 1 21 3 6 1 3 1 42 1 15 1 
+2 1 21 3 6 1 40 1 30 1 3 1 42 1 15 1 
+37 1 38 1 19 1 39 1 40 1 
+37 1 19 1 39 1 
+2 1 21 1 6 1 28 1 42 1 
+2 1 21 2 6 1 28 1 42 1 15 1 
+2 1 21 3 6 1 28 1 3 1 42 1 15 1 
+0 3 1 1 10 1 14 1 5 1 34 1 
+0 2 1 1 5 1 14 1 
+33 1 5 1 46 1 28 1 35 1 14 1 18 1 26 1 
+33 1 20 1 5 1 46 1 13 1 14 1 17 1 18 1 26 1 
+33 1 46 1 13 1 17 1 18 1 26 1 
+33 1 46 1 28 1 18 1 26 1 
+33 1 20 1 5 1 46 1 13 1 36 1 14 1 17 1 18 1 26 1 
