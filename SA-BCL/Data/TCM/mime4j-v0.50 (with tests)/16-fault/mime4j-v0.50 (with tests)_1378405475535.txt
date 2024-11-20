@@ -1,0 +1,1195 @@
+#tests: test_name, ' ', status(PASSED | FAILED | ERROR), ' ', [exception, { trace_mut_index | '(', { alternative_trace_mut_index, ',' }, ')' }]
+org.apache.james.mime4j.util.MessageUtilsTest:testAllASCII()V PASSED
+org.apache.james.mime4j.util.MessageUtilsTest:testNonASCII()V PASSED
+org.apache.james.mime4j.message.MessageWriteToTest:testSimpleMailStrictIgnore()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 672 
+org.apache.james.mime4j.message.MessageWriteToTest:testSimpleMailStrictError()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 672 
+org.apache.james.mime4j.message.MessageWriteToTest:testSimpleMailLenient()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 672 
+org.apache.james.mime4j.message.MessageWriteToTest:testBinaryAttachmentLenient()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 672 
+org.apache.james.mime4j.message.MessageWriteToTest:testBinaryAttachmentStrictError()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 672 
+org.apache.james.mime4j.message.MessageWriteToTest:testBinaryAttachmentStrictIgnore()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 672 
+org.apache.james.mime4j.util.TestByteArrayBuffer:testConstructor()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testSimpleAppend()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testExpandAppend()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testInvalidAppend()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testAppendOneByte()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testSetLength()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testSetInvalidLength()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testAppendCharArrayAsAscii()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testAppendNullCharArray()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testAppendEmptyCharArray()V PASSED
+org.apache.james.mime4j.util.TestByteArrayBuffer:testInvalidAppendCharArrayAsAscii()V PASSED
+org.apache.james.mime4j.parser.MimeTokenEmbeddedMessageTest:testWhenRecurseShouldVisitInnerMailsAndInnerMultiparts()V FAILED junit.framework.ComparisonFailure 595 
+org.apache.james.mime4j.parser.MimeTokenEmbeddedMessageTest:testWhenFlatAtStartShouldIgnoreMultipartStructure()V PASSED
+org.apache.james.mime4j.parser.MimeTokenEmbeddedMessageTest:testWhenFlatShouldIgnoreInnerMailsAndInnerMultiparts()V FAILED junit.framework.ComparisonFailure 595 
+org.apache.james.mime4j.field.ContentTransferEncodingFieldTest:testGetEncoding()V PASSED
+org.apache.james.mime4j.field.ContentTransferEncodingFieldTest:testGetEncodingStatic()V PASSED
+org.apache.james.mime4j.parser.StrictMimeTokenStreamTest:testUnexpectedEndOfHeaders()V PASSED
+org.apache.james.mime4j.parser.StrictMimeTokenStreamTest:testCorrectEndOfHeaders()V PASSED
+org.apache.james.mime4j.field.contenttype.ContentTypeTest:testContentType()V PASSED
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:testShouldReadSimpleBody()V PASSED
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:testShouldReadPartBodies()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:testShouldReadOnePartMimeASCIIBody()V PASSED
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:testShouldReadOnePartMime8859Body()V FAILED junit.framework.ComparisonFailure 92 634 
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:testShouldReadOnePartMimeBase64ASCIIBody()V PASSED
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:testShouldReadOnePartMimeBase64Latin1Body()V FAILED junit.framework.ComparisonFailure 92 634 
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:testShouldReadOnePartMimeQuotedPrintable()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testInvalidInput()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testBasicOperations()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testPatternMatching1()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testPatternMatching2()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testPatternMatching3()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testPatternMatching4()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testPatternOutOfBound()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:testCharOutOfBound()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamBufferTest:test0xFFInBinaryStream()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStreamTest:testEncode()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStreamTest:testEncodeUnderlyingStreamStaysOpen()V PASSED
+org.apache.james.mime4j.decoder.DecoderUtilTest:testDecodeEncodedWords()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.decoder.DecoderUtilTest:testDecodeB()V PASSED
+org.apache.james.mime4j.decoder.DecoderUtilTest:testDecodeQ()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.parser.MimeStreamParserTest:testBoundaryInEpilogue()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.parser.MimeStreamParserTest:testParseOneLineFields()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testCRWithoutLFInHeader()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testParseMultiLineFields()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testInvalidFields()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testEmptyStream()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testEmpyHeader()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testEmptyBody()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testPrematureEOFAfterFields()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testAutomaticContentDecoding()V PASSED
+org.apache.james.mime4j.parser.MimeStreamParserTest:testStop()V PASSED
+org.apache.james.mime4j.util.StringArrayMapTest:testGetNameArray()V PASSED
+org.apache.james.mime4j.util.StringArrayMapTest:testGetValues()V PASSED
+org.apache.james.mime4j.util.StringArrayMapTest:testGetValueEnum()V PASSED
+org.apache.james.mime4j.util.StringArrayMapTest:testGetMap()V PASSED
+org.apache.james.mime4j.util.StringArrayMapTest:testGetNames()V PASSED
+org.apache.james.mime4j.util.StringArrayMapTest:testGetValue()V PASSED
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testGetParameters()V FAILED junit.framework.AssertionFailedError 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testGetMimeType()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testParameters()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testMimeVersionDefault()V PASSED
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testMimeVersion()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentId()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentDescription()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testMimeVersionHeaderBreak()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentDispositionType()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testLanguageParameters()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentLocationFoldedUrl()V FAILED junit.framework.AssertionFailedError (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentMD5Url()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testAddField()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testDoDefaultToUsAsciiWhenUntyped()V PASSED
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testDoNotDefaultToUsAsciiForNonTextTypes()V FAILED junit.framework.AssertionFailedError 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentDispositionTypeCaseConversion()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentDispositionParameters()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentDispositionStandardParameters()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 139 591 255 512 460 (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentLocationRelativeUrl()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentLocationAbsoluteUrl()V FAILED junit.framework.AssertionFailedError (341,563) 
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:testContentLocationWithComment()V FAILED junit.framework.AssertionFailedError (341,563) 
+org.apache.james.mime4j.field.address.AddressTest:testEmptyGroup()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testMessyGroupAndMailbox()V ERROR java.lang.NullPointerException 250 168 394 445 350 156 194 2 
+org.apache.james.mime4j.field.address.AddressTest:testEmptyAddressList()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testSimpleForm()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testTortureTest()V ERROR java.lang.NullPointerException 250 168 394 445 350 156 194 2 
+org.apache.james.mime4j.field.address.AddressTest:testLexicalError()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testAddressList()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testEmptyDomainList()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testDomainList()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testEmptyMailboxList()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testMailboxList()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testGroupSerialization()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testParse1()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testParse2()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testFlatten()V ERROR java.lang.NullPointerException 250 168 394 445 350 156 194 2 
+org.apache.james.mime4j.field.address.AddressTest:testNullConstructorAndBadUsage()V PASSED
+org.apache.james.mime4j.field.address.AddressTest:testEmptyQuotedStringBeforeDotAtomInLocalPart()V PASSED
+org.apache.james.mime4j.io.PositionInputStreamTest:testPositionCounting()V PASSED
+org.apache.james.mime4j.parser.MimeEntityTest:testSimpleEntity()V PASSED
+org.apache.james.mime4j.parser.MimeEntityTest:testMultipartEntity()V FAILED junit.framework.AssertionFailedError 
+org.apache.james.mime4j.parser.MimeEntityTest:testRawEntity()V FAILED junit.framework.AssertionFailedError 
+org.apache.james.mime4j.parser.MimeEntityTest:testMaxLineLimitCheck()V PASSED
+org.apache.james.mime4j.parser.MimeEntityTest:testMaxHeaderCount()V PASSED
+org.apache.james.mime4j.parser.MimeEntityTest:testMaxContentLimitCheck()V PASSED
+org.apache.james.mime4j.parser.MimeEntityTest:testMaxLineLimitCheckFoldedLines()V PASSED
+org.apache.james.mime4j.parser.MimeTokenStreamBodyDescriptorTest:testShouldReturnValidDescriptorForPreamble()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.parser.MimeTokenStreamBodyDescriptorTest:testShouldReturnValidDescriptorForEpilogue()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.parser.MimeStreamTokenMessageRfc822Test:testShouldParseMessageRFC822CorrectWithFlat()V PASSED
+org.apache.james.mime4j.parser.MimeStreamTokenMessageRfc822Test:testShouldParseMessageRFC822CorrectWithDefaultConfiguration()V FAILED junit.framework.ComparisonFailure 485 
+org.apache.james.mime4j.parser.MimeStreamTokenMessageRfc822Test:testShouldParseMessageRFC822CorrectWithNoRecurse()V PASSED
+org.apache.james.mime4j.io.EOLConvertingInputStreamTest:testRead()V ERROR java.io.IOException 448 183 
+org.apache.james.mime4j.decoder.Base64InputStreamTest:testDecodePrematureClose()V PASSED
+org.apache.james.mime4j.decoder.Base64InputStreamTest:testDecode()V PASSED
+org.apache.james.mime4j.field.FieldTest:testGetName()V PASSED
+org.apache.james.mime4j.field.FieldTest:testParse()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testConstructor()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testSimpleAppend()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testExpandAppend()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testSetLength()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testSetInvalidLength()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendString()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendNullString()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendCharArrayBuffer()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendSingleChar()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.util.TestCharArrayBuffer:testInvalidCharArrayAppend()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testEnsureCapacity()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testSubstring()V ERROR java.lang.IndexOutOfBoundsException 502 
+org.apache.james.mime4j.util.TestCharArrayBuffer:testSubstringIndexOfOutBound()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendAsciiByteArray()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendISOByteArray()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendNullByteArray()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testIndexOf()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendNullCharArrayBuffer()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testAppendNullByteArrayBuffer()V PASSED
+org.apache.james.mime4j.util.TestCharArrayBuffer:testInvalidAppendAsciiByteArray()V PASSED
+org.apache.james.mime4j.io.LimitedInputStreamTest:testUpToLimitRead()V PASSED
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptorTest:testGetParameters()V FAILED junit.framework.AssertionFailedError 
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptorTest:testGetMimeType()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptorTest:testParameters()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptorTest:testAddField()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptorTest:testDoDefaultToUsAsciiWhenUntyped()V PASSED
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptorTest:testDoNotDefaultToUsAsciiForNonTextTypes()V FAILED junit.framework.AssertionFailedError 
+org.apache.james.mime4j.message.MessageCompleteMailTest:testMultipartAlternative()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 66 
+org.apache.james.mime4j.message.MessageCompleteMailTest:testMultipartMixed()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 66 
+org.apache.james.mime4j.message.MessageTest:testGetMimeType()V PASSED
+org.apache.james.mime4j.message.MessageTest:testWriteTo()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 
+org.apache.james.mime4j.message.MessageTest:testDisposeGetsPropagatedToBody()V PASSED
+org.apache.james.mime4j.message.MessageTest:testIsMultipart()V PASSED
+org.apache.james.mime4j.message.MessageTest:testAddHeaderWriteTo()V ERROR java.lang.NumberFormatException 657 427 637 302 600 387 79 669 231 
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:testEscapedSoftBreak()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:testPlainAsciiSoftBreak()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:testPlainASCII()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:testEncodeSpace()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:testLetterEncoding()V PASSED
+org.apache.james.mime4j.field.UnstructuredFieldTest:testGetBody()V PASSED
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testLenientLineDelimiterReading()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 386 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testBasicReading()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 386 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testBasicReadingSmallBuffer1()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 386 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testBasicReadingSmallBuffer2()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 386 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testBasicReadingByOneByte()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 335 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testCRLFPrecedingBoundary()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 386 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testImmediateBoundary()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testHasMoreParts()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testPrefixIsBoundary()V ERROR java.lang.IndexOutOfBoundsException 185 75 (368,473) 386 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testBasicReadLine()V ERROR java.lang.IndexOutOfBoundsException 185 75 47 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testReadEmptyLine()V ERROR java.lang.IndexOutOfBoundsException 185 75 47 
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:testboundaryLongerThanBuffer()V PASSED
+org.apache.james.mime4j.message.storage.SimpleTempStorageTest:testCreateTempFileStringString()V ERROR java.lang.NullPointerException 
+org.apache.james.mime4j.message.storage.SimpleTempStorageTest:testGetRootTempPath()V PASSED
+org.apache.james.mime4j.message.storage.SimpleTempStorageTest:testCreateTempPath()V ERROR java.lang.NullPointerException 
+org.apache.james.mime4j.message.storage.SimpleTempStorageTest:testCreateTempPathString()V ERROR java.lang.NullPointerException 
+org.apache.james.mime4j.message.storage.SimpleTempStorageTest:testCreateTempFile()V ERROR java.lang.NullPointerException 
+org.apache.james.mime4j.message.storage.SimpleTempStorageTest:testDeleteTempFile()V ERROR java.lang.NullPointerException 
+org.apache.james.mime4j.decoder.CodecUtilTest:testCopy()V PASSED
+org.apache.james.mime4j.decoder.CodecUtilTest:testEncodeQuotedPrintableLargeInput()V PASSED
+org.apache.james.mime4j.decoder.CodecUtilTest:testEncodeQuotedPrintableNonAsciiChars()V PASSED
+org.apache.james.mime4j.decoder.CodecUtilTest:testBase64OutputStream()V ERROR java.lang.NullPointerException 272 (86,217) 328 382 
+org.apache.james.mime4j.parser.MultipartStreamTest:testShouldSupplyInputStreamForSimpleBody()V FAILED junit.framework.ComparisonFailure 322 
+org.apache.james.mime4j.parser.MultipartStreamTest:testInputStreamShouldReadOnlyMessage()V FAILED junit.framework.ComparisonFailure 322 
+org.apache.james.mime4j.decoder.LineBreakingOutputStreamTest:testLongLine()V PASSED
+org.apache.james.mime4j.decoder.LineBreakingOutputStreamTest:testLineLengthLongerThanInput()V PASSED
+org.apache.james.mime4j.decoder.LineBreakingOutputStreamTest:testLineLengthShorterThanInput()V PASSED
+org.apache.james.mime4j.decoder.LineBreakingOutputStreamTest:testLineLengthEqualInput()V PASSED
+org.apache.james.mime4j.decoder.LineBreakingOutputStreamTest:testZeroLengthInput()V PASSED
+org.apache.james.mime4j.field.datetime.DateTimeTest:testNormalDate()V ERROR java.lang.NumberFormatException 657 427 637 302 600 
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTest:testPlainLine()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 377 434 267 
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTest:testLineWithComments()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 377 434 267 
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTest:testLineWithNestedComments()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 377 434 267 
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTest:testEmptyLine()V ERROR org.apache.james.mime4j.field.mimeversion.TokenMgrError 339 592 77 377 434 
+org.apache.james.mime4j.field.ContentTypeFieldTest:testGetMimeType()V PASSED
+org.apache.james.mime4j.field.ContentTypeFieldTest:testMimeTypeWithSemiColonNoParams()V PASSED
+org.apache.james.mime4j.field.ContentTypeFieldTest:testGetMimeTypeStatic()V PASSED
+org.apache.james.mime4j.field.ContentTypeFieldTest:testGetCharsetStatic()V PASSED
+org.apache.james.mime4j.field.ContentTypeFieldTest:testGetParameter()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testDontEscapeSpaceBeforeLineEnd()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testDontEscapeTabsBeforeLineEnd()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testDontWhiteSpaceBeforeLineEnd()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testEscapedSoftBreak()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testPlainAsciiSoftBreak()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testPlainASCII()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testEncodeSpace()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testLetterEncoding()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testCRLFShouldResetLineCount()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testDontEscapeLF()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testDontEscapeCR()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:testEscapeSpaceAtLineEnd()V PASSED
+org.apache.james.mime4j.parser.MultipartTokensTest:testShouldParseMessagesWithEmbeddedQuotedPrintableEncodedMessage()V FAILED junit.framework.ComparisonFailure 414 
+org.apache.james.mime4j.parser.MultipartTokensTest:testShouldParseMoreComplexMessage()V FAILED junit.framework.ComparisonFailure 414 
+org.apache.james.mime4j.parser.MultipartTokensTest:testShouldParseMessageWithEmbeddedMessage()V FAILED junit.framework.ComparisonFailure 414 
+org.apache.james.mime4j.parser.MultipartTokensTest:testMultipartMessageWithoutHeader()V FAILED junit.framework.ComparisonFailure 414 
+org.apache.james.mime4j.parser.MultipartTokensTest:testShouldParseSimpleMessage()V FAILED junit.framework.ComparisonFailure 414 
+org.apache.james.mime4j.field.structured.StructuredFieldParserTest:testTrim()V PASSED
+org.apache.james.mime4j.field.structured.StructuredFieldParserTest:testFolding()V PASSED
+org.apache.james.mime4j.field.structured.StructuredFieldParserTest:testComments()V PASSED
+org.apache.james.mime4j.field.structured.StructuredFieldParserTest:testSimpleField()V PASSED
+org.apache.james.mime4j.field.structured.StructuredFieldParserTest:testQuotedString()V PASSED
+org.apache.james.mime4j.field.structured.StructuredFieldParserTest:testQuotedInComments()V PASSED
+org.apache.james.mime4j.message.HeaderTest:testHeader()V PASSED
+org.apache.james.mime4j.message.HeaderTest:testSetField()V PASSED
+org.apache.james.mime4j.message.HeaderTest:testWriteInStrictMode()V FAILED junit.framework.ComparisonFailure 
+org.apache.james.mime4j.message.HeaderTest:testWriteInLenientMode()V PASSED
+org.apache.james.mime4j.message.HeaderTest:testRemoveFields()V PASSED
+org.apache.james.mime4j.message.HeaderTest:testRemoveNonExistantField()V PASSED
+org.apache.james.mime4j.message.HeaderTest:testSetNonExistantField()V PASSED
+org.apache.james.mime4j.decoder.Base64OutputStreamTest:testEncode()V PASSED
+org.apache.james.mime4j.decoder.Base64OutputStreamTest:testEncodeUnderlyingStreamStaysOpen()V PASSED
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptorTest:testBasicOperations()V PASSED
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptorTest:testBasicReadLine()V PASSED
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptorTest:testReadEmptyLine()V PASSED
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptorTest:testReadEmptyLineMaxLimit()V PASSED
+org.apache.james.mime4j.parser.MimeTokenNoRecurseTest:testWhenRecurseShouldRecurseInnerMail()V FAILED junit.framework.ComparisonFailure 506 
+org.apache.james.mime4j.parser.MimeTokenNoRecurseTest:testWhenRecurseShouldTreatInnerMailAsAnyOtherPart()V FAILED junit.framework.ComparisonFailure 506 
+org.apache.james.mime4j.parser.MimeTokenNoRecurseTest:testWhenNoRecurseInputStreamShouldContainInnerMail()V FAILED junit.framework.ComparisonFailure 506 
+org.apache.james.mime4j.parser.MimeTokenNoRecurseTest:testSetNoRecurseSoInputStreamShouldContainInnerMail()V FAILED junit.framework.ComparisonFailure 506 
+org.apache.james.mime4j.io.RootInputStreamTest:testTruncate()V PASSED
+org.apache.james.mime4j.io.RootInputStreamTest:testReadSingleByte()V PASSED
+org.apache.james.mime4j.io.RootInputStreamTest:testReadManyBytes()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamTest:testBasicOperations()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamTest:testBasicReadLine()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamTest:testReadEmptyLine()V PASSED
+org.apache.james.mime4j.io.BufferedLineReaderInputStreamTest:testReadEmptyLineMaxLimit()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableInputStreamTest:testDecodePrematureClose()V PASSED
+org.apache.james.mime4j.decoder.QuotedPrintableInputStreamTest:testDecode()V PASSED
+org.apache.james.mime4j.parser.MimeTokenStreamTest:testSetRecursionModeBeforeParse()V FAILED junit.framework.ComparisonFailure 202 
+org.apache.james.mime4j.message.MultipartFormTest:testMultipartFormContent()V PASSED
+
+#uuts: uut_name, [ '|', mutator_class, '|', change_position_in_file_buffer, '|', change ]
+org.apache.james.mime4j.message.Multipart:setParent(Lorg.apache.james.mime4j.message.Entity;)V
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:pushNode(Lorg.apache.james.mime4j.field.address.parser.Node;)V
+org.apache.james.mime4j.field.address.AddressList:parse(Ljava.lang.String;)Lorg.apache.james.mime4j.field.address.AddressList;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:jjMoveStringLiteralDfa0_0()I
+org.apache.james.mime4j.parser.AbstractContentHandler:endMessage()V
+org.apache.james.mime4j.parser.MimeStreamParserTest.10:field(Ljava.lang.String;)V
+org.apache.james.mime4j.util.StringArrayMapTest:getSampleMap()Lorg.apache.james.mime4j.util.StringArrayMap;
+org.apache.james.mime4j.field.address.MailboxList:print()V
+org.apache.james.mime4j.field.ContentTypeField:isMultipart()Z
+org.apache.james.mime4j.field.address.Mailbox:getRoute()Lorg.apache.james.mime4j.field.address.DomainList;
+org.apache.james.mime4j.decoder.Base64OutputStream:containsBase64Byte([B)Z
+org.apache.james.mime4j.decoder.QuotedPrintableInputStream:populatePushbackQueue()V
+org.apache.james.mime4j.field.Field:getBody()Ljava.lang.String;
+org.apache.james.mime4j.io.PositionInputStream:read()I
+org.apache.james.mime4j.parser.MimeEntity:getDataStream()Lorg.apache.james.mime4j.io.LineReaderInputStream;
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjMoveNfa_0(II)I
+org.apache.james.mime4j.io.EOLConvertingInputStreamTest:testConvertBoth(Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.parser.MimeStreamParserTest.6:field(Ljava.lang.String;)V
+org.apache.james.mime4j.decoder.DecoderUtil:decodeQ(Ljava.lang.String;Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:checkRoundtrip(Ljava.lang.String;Ljava.nio.charset.Charset;)V
+org.apache.james.mime4j.parser.MimeStreamParserTest.11:field(Ljava.lang.String;)V
+org.apache.james.mime4j.parser.MimeEntity:skipHeader(Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:local_part()V
+org.apache.james.mime4j.field.UnstructuredField.Parser:parse(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.parser.Event:Event(Ljava.lang.String;)V
+org.apache.james.mime4j.util.CharArrayBuffer:toString()Ljava.lang.String;
+org.apache.james.mime4j.field.ContentTypeField:getCharset()Ljava.lang.String;
+org.apache.james.mime4j.field.structured.SimpleCharStream:readChar()C
+org.apache.james.mime4j.field.address.parser.AddressListParser:phrase()V
+org.apache.james.mime4j.parser.MimeStreamParserTest.7:startHeader()V
+org.apache.james.mime4j.util.StringArrayMap:getMap()Ljava.util.Map;
+org.apache.james.mime4j.message.storage.SimpleTempStorage.SimpleTempPath:createTempPath(Ljava.lang.String;)Lorg.apache.james.mime4j.message.storage.TempPath;
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:write(B)V
+org.apache.james.mime4j.decoder.Base64OutputStreamTest:toString([B)Ljava.lang.String;
+org.apache.james.mime4j.message.Header:getField(Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.EncodeUtils:toInt(B)I
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:checkRoundtrip(Ljava.lang.String;)V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:hasBufferedData()Z
+org.apache.james.mime4j.field.contenttype.parser.ParseException:ParseException(Lorg.apache.james.mime4j.field.contenttype.parser.Token;[[I[Ljava.lang.String;)V
+org.apache.james.mime4j.parser.MimeEntityConfig:getMaxLineLen()I
+org.apache.james.mime4j.field.address.parser.ParseException:ParseException(Ljava.lang.String;)V
+org.apache.james.mime4j.parser.AbstractContentHandler:startMessage()V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjFillToken()Lorg.apache.james.mime4j.field.contenttype.parser.Token;
+org.apache.james.mime4j.util.CharArrayBuffer:append([CII)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjCheckNAdd(I)V
+org.apache.james.mime4j.parser.MimeEntity:getContentStream()Ljava.io.InputStream;
+org.apache.james.mime4j.field.structured.SimpleCharStream:UpdateLineColumn(C)V
+org.apache.james.mime4j.io.MimeBoundaryInputStream:readLine(Lorg.apache.james.mime4j.util.ByteArrayBuffer;)I
+org.apache.james.mime4j.parser.AbstractContentHandler:startHeader()V
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:MoreLexicalActions()V
+org.apache.james.mime4j.message.MultipartFormTest.StringPart:StringPart(Lorg.apache.james.mime4j.message.MultipartFormTest;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.util.CharArrayBuffer:isFull()Z
+org.apache.james.mime4j.field.structured.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;II)V
+org.apache.james.mime4j.parser.AbstractEntity:message(Lorg.apache.james.mime4j.parser.Event;)Ljava.lang.String;
+org.apache.james.mime4j.field.contenttype.parser.ParseException:add_escapes(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjFillToken()Lorg.apache.james.mime4j.field.address.parser.Token;
+org.apache.james.mime4j.parser.MimeEntityConfig:getMaxContentLen()J
+org.apache.james.mime4j.parser.Event:toString()Ljava.lang.String;
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:addField(Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.message.Header:removeFields(Ljava.lang.String;)I
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:indexOf(BII)I
+org.apache.james.mime4j.util.MimeUtil:getHeaderParams(Ljava.lang.String;)Ljava.util.Map; | CONDITION | 11098 | if (x) -> if (!x)
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:getBeginLine()I
+org.apache.james.mime4j.decoder.QuotedPrintableInputStream:QuotedPrintableInputStream(Ljava.io.InputStream;)V
+org.apache.james.mime4j.util.CharsetUtil.Charset:Charset(Ljava.lang.String;Ljava.lang.String;[Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.DomainList:toRouteString()Ljava.lang.String;
+org.apache.james.mime4j.message.MessageCompleteMailTest:createMessage([B)Lorg.apache.james.mime4j.message.Message; | RETURN | 2086 | return null
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptor:LineReaderInputStreamAdaptor(Ljava.io.InputStream;)V
+org.apache.james.mime4j.parser.MimeEntityConfig:setStrictParsing(Z)V
+org.apache.james.mime4j.field.structured.SimpleCharStream:GetImage()Ljava.lang.String;
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:getBeginColumn()I
+org.apache.james.mime4j.field.structured.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;III)V
+org.apache.james.mime4j.field.mimeversion.SimpleCharStream:getEndColumn()I
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:capacity()I
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:jjCheckNAdd(I)V
+org.apache.james.mime4j.io.MimeBoundaryInputStream:skipBoundary()V | OPERATOR | 8325 | + -> >>>
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:getBeginColumn()I
+org.apache.james.mime4j.field.mimeversion.MimeVersionParser:parse()V
+org.apache.james.mime4j.io.RootInputStream:read([BII)I
+org.apache.james.mime4j.field.Field:parse(Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.field.address.parser.AddressListParser:domain()V
+org.apache.james.mime4j.message.HeaderTest:constructString([I)Ljava.lang.String; | OPERATOR | 2470 | < -> >=
+org.apache.james.mime4j.field.address.parser.SimpleNode:SimpleNode(I)V
+org.apache.james.mime4j.decoder.QuotedPrintableInputStream:asciiCharToNumericValue(B)B
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:generateParseException()Lorg.apache.james.mime4j.field.contenttype.parser.ParseException;
+org.apache.james.mime4j.parser.AbstractEntity:getBodyDescriptor()Lorg.apache.james.mime4j.descriptor.BodyDescriptor;
+org.apache.james.mime4j.decoder.Base64OutputStream:write(I)V
+org.apache.james.mime4j.util.CharArrayBuffer:isEmpty()Z
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:getEndColumn()I
+org.apache.james.mime4j.util.ByteArrayBuffer:setLength(I)V
+org.apache.james.mime4j.field.address.DomainList:get(I)Ljava.lang.String;
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:getMimeMajorVersion()I
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:checkBody(Ljava.lang.String;)V
+org.apache.james.mime4j.field.ContentTypeField:getCharset(Lorg.apache.james.mime4j.field.ContentTypeField;)Ljava.lang.String;
+org.apache.james.mime4j.message.storage.SimpleTempStorage:SimpleTempStorage()V
+org.apache.james.mime4j.parser.AbstractEntity:stateToString(I)Ljava.lang.String;
+org.apache.james.mime4j.field.mimeversion.MimeVersionParser:MimeVersionParser(Ljava.io.Reader;)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:softBreak()V
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptor:doReadLine(Lorg.apache.james.mime4j.util.ByteArrayBuffer;)I
+org.apache.james.mime4j.decoder.UnboundedFifoByteBuffer:remove()B
+org.apache.james.mime4j.field.structured.StructuredFieldParser:setFoldingPreserved(Z)V
+org.apache.james.mime4j.io.LimitedInputStream:read()I
+org.apache.james.mime4j.decoder.ByteQueue:ByteQueue(I)V
+org.apache.james.mime4j.util.MessageUtils:isASCII(Ljava.lang.String;)Z
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:getTransferEncoding()Ljava.lang.String;
+org.apache.james.mime4j.io.RootInputStream:RootInputStream(Ljava.io.InputStream;)V
+org.apache.james.mime4j.parser.MimeTokenStream:stateToString(I)Ljava.lang.String;
+org.apache.james.mime4j.parser.TestHandler:endMessage()V
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:backup(I)V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveStringLiteralDfa0_2()I
+org.apache.james.mime4j.message.Multipart:getBodyParts()Ljava.util.List;
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_scan_token(I)Z
+org.apache.james.mime4j.field.address.parser.SimpleNode:jjtClose()V
+org.apache.james.mime4j.io.LineReaderInputStream:LineReaderInputStream(Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.AddressListField.Parser:parse(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptorTest:newBodyDescriptor()Lorg.apache.james.mime4j.descriptor.MutableBodyDescriptor;
+org.apache.james.mime4j.field.structured.StructuredFieldParserTest:parse(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.Token:newToken(I)Lorg.apache.james.mime4j.field.address.parser.Token;
+org.apache.james.mime4j.field.Field:Field(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.Group:getMailboxes()Lorg.apache.james.mime4j.field.address.MailboxList;
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:skip(I)I
+org.apache.james.mime4j.message.MessageBuilder:MessageBuilder(Lorg.apache.james.mime4j.message.Entity;)V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:BufferedLineReaderInputStream(Ljava.io.InputStream;II)V
+org.apache.james.mime4j.field.address.Builder.ChildNodeIterator:ChildNodeIterator(Lorg.apache.james.mime4j.field.address.parser.SimpleNode;)V
+org.apache.james.mime4j.field.ContentTypeField:isMimeType(Ljava.lang.String;)Z
+org.apache.james.mime4j.parser.AbstractEntity:fillFieldBuffer()V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_3R_13()Z
+org.apache.james.mime4j.message.storage.SimpleTempStorage:createTempPath(Lorg.apache.james.mime4j.message.storage.TempPath;Ljava.lang.String;)Lorg.apache.james.mime4j.message.storage.TempPath; | RETURN | 2967 | return null
+org.apache.james.mime4j.parser.TestHandler:escape(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:DateTimeParserTokenManager(Lorg.apache.james.mime4j.field.datetime.parser.SimpleCharStream;)V
+org.apache.james.mime4j.parser.MimeStreamParserTest.8:body(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveStringLiteralDfa0_3()I
+org.apache.james.mime4j.field.ContentTypeField:getMimeType()Ljava.lang.String;
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:getMimeMinorVersion()I
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:getMimeType()Ljava.lang.String;
+org.apache.james.mime4j.message.Header:getFields()Ljava.util.List;
+org.apache.james.mime4j.message.Multipart:getPreamble()Ljava.lang.String;
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:buf()[B
+org.apache.james.mime4j.field.structured.StructuredFieldParser:jj_consume_token(I)Lorg.apache.james.mime4j.field.structured.Token;
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:parseMimeVersion(Ljava.lang.String;)V
+org.apache.james.mime4j.message.Entity:getHeader()Lorg.apache.james.mime4j.message.Header;
+org.apache.james.mime4j.util.StringArrayMap:getValues(Ljava.lang.String;)[Ljava.lang.String;
+org.apache.james.mime4j.util.ByteArrayBuffer:buffer()[B
+org.apache.james.mime4j.message.MessageBuilder:startMessage()V
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:UpdateLineColumn(C)V
+org.apache.james.mime4j.parser.TestHandler:startMessage()V
+org.apache.james.mime4j.util.ByteArrayBuffer:expand(I)V
+org.apache.james.mime4j.decoder.CodecUtil:encodeQuotedPrintable(Ljava.io.InputStream;Ljava.io.OutputStream;)V
+org.apache.james.mime4j.message.Entity:getMimeType()Ljava.lang.String;
+org.apache.james.mime4j.decoder.UnboundedFifoByteBuffer:UnboundedFifoByteBuffer()V
+org.apache.james.mime4j.field.mimeversion.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;III)V
+org.apache.james.mime4j.message.Entity:getBody()Lorg.apache.james.mime4j.message.Body;
+org.apache.james.mime4j.parser.MimeEntityConfig:getMaxHeaderCount()I
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:indexOf(B)I
+org.apache.james.mime4j.parser.MimeEntity:setRecursionMode(I)V
+org.apache.james.mime4j.message.Multipart:dispose()V
+org.apache.james.mime4j.field.address.parser.AddressListParser:parseAll()V
+org.apache.james.mime4j.parser.MimeEntityConfig:isMaximalBodyDescriptor()Z
+org.apache.james.mime4j.io.LimitedInputStream:getBytesLeft()I
+org.apache.james.mime4j.util.CharsetUtil:getCharset(Ljava.lang.String;)Ljava.nio.charset.Charset;
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_consume_token(I)Lorg.apache.james.mime4j.field.address.parser.Token;
+org.apache.james.mime4j.field.address.Builder.ChildNodeIterator:nextNode()Lorg.apache.james.mime4j.field.address.parser.Node;
+org.apache.james.mime4j.parser.MimeTokenStream:getBodyDescriptor()Lorg.apache.james.mime4j.descriptor.BodyDescriptor;
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:value()Ljava.lang.String;
+org.apache.james.mime4j.io.MimeBoundaryInputStream:MimeBoundaryInputStream(Lorg.apache.james.mime4j.io.BufferedLineReaderInputStream;Ljava.lang.String;)V
+org.apache.james.mime4j.decoder.CodecUtilTest:assertEquals([B[B)V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:SwitchTo(I)V
+org.apache.james.mime4j.parser.MimeStreamParserTest.9:body(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:mailbox()V | ASSIGN | 6388 | = null
+org.apache.james.mime4j.util.MimeUtil:isQuotedPrintableEncoded(Ljava.lang.String;)Z
+org.apache.james.mime4j.field.structured.StructuredFieldParser:jj_la1_0()V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveNfa_1(II)I
+org.apache.james.mime4j.io.PositionInputStream:PositionInputStream(Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.address.parser.SimpleNode:jjtOpen()V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_ntk()I
+org.apache.james.mime4j.field.address.MailboxList:get(I)Lorg.apache.james.mime4j.field.address.Mailbox;
+org.apache.james.mime4j.util.StringArrayMap.1:hasMoreElements()Z
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_3R_12()Z
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjCheckNAdd(I)V
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:clearNodeScope(Lorg.apache.james.mime4j.field.address.parser.Node;)V
+org.apache.james.mime4j.util.CharArrayBuffer:indexOf(III)I
+org.apache.james.mime4j.ExampleMail:join([B[B)[B
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:nodeArity()I
+org.apache.james.mime4j.io.EOLConvertingInputStreamTest:testConvertLF(Ljava.lang.String;Ljava.lang.String;)V | ASSIGN | 4141 | = null
+org.apache.james.mime4j.parser.TestHandler:endHeader()V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:charAt(I)B
+org.apache.james.mime4j.field.MailboxListField.Parser:parse(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.field.address.NamedMailbox:getAddressString(Z)Ljava.lang.String;
+org.apache.james.mime4j.decoder.ByteQueue:ByteQueue()V
+org.apache.james.mime4j.parser.AbstractContentHandler:body(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.structured.SimpleCharStream:GetSuffix(I)[C
+org.apache.james.mime4j.parser.Event:equals(Ljava.lang.Object;)Z
+org.apache.james.mime4j.util.CharsetUtil:toJavaCharset(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:clear()V
+org.apache.james.mime4j.field.address.parser.AddressListParser:parse()Lorg.apache.james.mime4j.field.address.parser.ASTaddress_list;
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjStopAtPos(II)I
+org.apache.james.mime4j.util.CharArrayBuffer:append([BII)V
+org.apache.james.mime4j.field.UnstructuredField:getValue()Ljava.lang.String;
+org.apache.james.mime4j.util.ByteArrayBuffer:isFull()Z
+org.apache.james.mime4j.field.address.parser.SimpleNode:jjtAddChild(Lorg.apache.james.mime4j.field.address.parser.Node;I)V
+org.apache.james.mime4j.decoder.Base64OutputStream:close()V
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:getEndColumn()I
+org.apache.james.mime4j.parser.MimeTokenStreamTest:checkNextIs(I)V
+org.apache.james.mime4j.field.address.Mailbox:getAddressString(Z)Ljava.lang.String;
+org.apache.james.mime4j.parser.MimeTokenStream:doParse(Ljava.io.InputStream;Ljava.lang.String;)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjMoveStringLiteralDfa0_0()I
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:getParamNames()Ljava.util.ArrayList;
+org.apache.james.mime4j.field.address.parser.TokenMgrError:TokenMgrError(Ljava.lang.String;I)V
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptor:readLine(Lorg.apache.james.mime4j.util.ByteArrayBuffer;)I
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:read([B)I
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjMoveStringLiteralDfa0_2()I
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:GetSuffix(I)[C
+org.apache.james.mime4j.field.structured.SimpleCharStream:FillBuff()V
+org.apache.james.mime4j.util.StringArrayMap:asMap(Ljava.util.Map;)Ljava.util.Map;
+org.apache.james.mime4j.parser.MimeStreamParser:stop()V
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:BeginToken()C
+org.apache.james.mime4j.decoder.Base64InputStreamTest:fromString(Ljava.lang.String;)[B
+org.apache.james.mime4j.decoder.Base64OutputStream:write([BII)V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:getNextToken()Lorg.apache.james.mime4j.field.structured.Token;
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;III)V
+org.apache.james.mime4j.field.mimeversion.TokenMgrError:addEscapes(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.parser.MimeEntityConfig:setMaxLineLen(I)V
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:readChar()C
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:escape(B)V
+org.apache.james.mime4j.field.mimeversion.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;II)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:encode(B)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:parameter()V
+org.apache.james.mime4j.decoder.Base64OutputStream:flush()V
+org.apache.james.mime4j.field.address.parser.TokenMgrError:TokenMgrError(ZIIILjava.lang.String;CI)V
+org.apache.james.mime4j.io.RootInputStream:truncate()V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjMoveNfa_1(II)I
+org.apache.james.mime4j.parser.MimeStreamParser:parse(Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.address.Builder:buildAddrSpec(Lorg.apache.james.mime4j.field.address.parser.ASTaddr_spec;)Lorg.apache.james.mime4j.field.address.Mailbox;
+org.apache.james.mime4j.decoder.ByteQueue:enqueue(B)V
+org.apache.james.mime4j.util.CharArrayBuffer:append(C)V | OPERATOR | 3123 | + -> %
+org.apache.james.mime4j.message.MultipartFormTest.StringPart:StringPart(Lorg.apache.james.mime4j.message.MultipartFormTest;Ljava.lang.String;)V
+org.apache.james.mime4j.ExampleMail:join([[B)[B
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:backup(I)V
+org.apache.james.mime4j.field.mimeversion.MimeVersionParser:jj_la1_0()V
+org.apache.james.mime4j.decoder.LineBreakingOutputStream:write([BII)V
+org.apache.james.mime4j.message.Header:addField(Lorg.apache.james.mime4j.field.Field;)V
+org.apache.james.mime4j.field.address.NamedMailbox:getName()Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjMoveStringLiteralDfa0_0()I
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:readChar()C
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:checkRoundtrip(Ljava.lang.String;)V
+org.apache.james.mime4j.parser.MimeStreamParserTest.9:field(Ljava.lang.String;)V
+org.apache.james.mime4j.parser.AbstractContentHandler:field(Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jjtreeOpenNodeScope(Lorg.apache.james.mime4j.field.address.parser.Node;)V
+org.apache.james.mime4j.field.contenttype.ContentTypeTest:test(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.util.StringArrayMap:asStringEnum(Ljava.lang.Object;)Ljava.util.Enumeration;
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:openNodeScope(Lorg.apache.james.mime4j.field.address.parser.Node;)V
+org.apache.james.mime4j.field.structured.Token:newToken(I)Lorg.apache.james.mime4j.field.structured.Token;
+org.apache.james.mime4j.io.EOLConvertingInputStream:EOLConvertingInputStream(Ljava.io.InputStream;I)V
+org.apache.james.mime4j.field.address.Builder.ChildNodeIterator:hasNext()Z
+org.apache.james.mime4j.field.address.Builder:buildAddrSpec(Lorg.apache.james.mime4j.field.address.DomainList;Lorg.apache.james.mime4j.field.address.parser.ASTaddr_spec;)Lorg.apache.james.mime4j.field.address.Mailbox;
+org.apache.james.mime4j.parser.AbstractEntity:parseField()Z
+org.apache.james.mime4j.util.ByteArrayBuffer:append(I)V
+org.apache.james.mime4j.field.structured.StructuredFieldParser:StructuredFieldParser(Ljava.io.Reader;)V
+org.apache.james.mime4j.decoder.QuotedPrintableInputStream:fillBuffer()V
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStream:write(I)V
+org.apache.james.mime4j.EncodeUtils:checkLineLength([BI)I
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:encodeChunk([BII)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:jj_la1_0()V
+org.apache.james.mime4j.util.StringArrayMap:getNameArray()[Ljava.lang.String;
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:indexOf([B)I
+org.apache.james.mime4j.field.address.Builder:buildString(Lorg.apache.james.mime4j.field.address.parser.SimpleNode;Z)Ljava.lang.String;
+org.apache.james.mime4j.field.address.AddressList:get(I)Lorg.apache.james.mime4j.field.address.Address;
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTest:check(Ljava.lang.String;II)V
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;III)V
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:DefaultBodyDescriptor()V
+org.apache.james.mime4j.EncodeUtils:toBase64([B)[B
+org.apache.james.mime4j.decoder.Base64InputStream:Base64InputStream(Ljava.io.InputStream;)V
+org.apache.james.mime4j.decoder.Base64OutputStream:resizeBuf()V | ASSIGN | 9659 | = null
+org.apache.james.mime4j.field.structured.StructuredFieldParser:jj_ntk()I
+org.apache.james.mime4j.field.UnstructuredField:UnstructuredField(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_la1_1()V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:read([BII)I
+org.apache.james.mime4j.field.Field:getName()Ljava.lang.String;
+org.apache.james.mime4j.field.MailboxListField:MailboxListField(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Lorg.apache.james.mime4j.field.address.MailboxList;Lorg.apache.james.mime4j.field.address.parser.ParseException;)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:ContentTypeParserTokenManager(Lorg.apache.james.mime4j.field.contenttype.parser.SimpleCharStream;)V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:readLine(Lorg.apache.james.mime4j.util.ByteArrayBuffer;)I
+org.apache.james.mime4j.io.LimitedInputStream:LimitedInputStream(Ljava.io.InputStream;J)V
+org.apache.james.mime4j.field.structured.StructuredFieldParser:doParse()Ljava.lang.String;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:jjFillToken()Lorg.apache.james.mime4j.field.datetime.parser.Token;
+org.apache.james.mime4j.parser.MimeTokenStream:getState()I
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjMoveNfa_3(II)I
+org.apache.james.mime4j.field.ContentTypeField:getParameter(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:checkRoundtrip(Ljava.lang.String;Ljava.nio.charset.Charset;)V
+org.apache.james.mime4j.field.contenttype.parser.Token:newToken(I)Lorg.apache.james.mime4j.field.contenttype.parser.Token;
+org.apache.james.mime4j.field.address.Group:toString()Ljava.lang.String;
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptor:LineReaderInputStreamAdaptor(Ljava.io.InputStream;I)V
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:getContentTypeParameters()Ljava.util.Map;
+org.apache.james.mime4j.decoder.UnboundedFifoByteBuffer:UnboundedFifoByteBuffer(I)V
+org.apache.james.mime4j.EncodeUtils:setResult([BIB)I
+org.apache.james.mime4j.decoder.Base64InputStreamTest:read(Ljava.io.InputStream;)[B
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjFillToken()Lorg.apache.james.mime4j.field.structured.Token;
+org.apache.james.mime4j.field.ContentTransferEncodingField:ContentTransferEncodingField(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:day_of_week()Ljava.lang.String;
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:TokenLexicalActions(Lorg.apache.james.mime4j.field.contenttype.parser.Token;)V
+org.apache.james.mime4j.parser.MimeStreamParser:MimeStreamParser(Lorg.apache.james.mime4j.parser.MimeEntityConfig;)V
+org.apache.james.mime4j.field.address.parser.SimpleNode:jjtGetNumChildren()I
+org.apache.james.mime4j.util.ByteArrayBuffer:toByteArray()[B
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:date_time()Lorg.apache.james.mime4j.field.datetime.DateTime;
+org.apache.james.mime4j.util.CharArrayBuffer:append(Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_la1_0()V
+org.apache.james.mime4j.decoder.Base64OutputStreamTest:fromString(Ljava.lang.String;)[B
+org.apache.james.mime4j.field.address.parser.AddressListParser:angle_addr()V
+org.apache.james.mime4j.util.ByteArrayBuffer:capacity()I
+org.apache.james.mime4j.message.MessageTest.DummyBody:dispose()V
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:JJTAddressListParserState()V
+org.apache.james.mime4j.io.LimitedInputStream:skip(J)J
+org.apache.james.mime4j.message.Entity:setHeader(Lorg.apache.james.mime4j.message.Header;)V
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjCheckNAdd(I)V
+org.apache.james.mime4j.field.address.Mailbox:toString()Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:AddressListParserTokenManager(Lorg.apache.james.mime4j.field.address.parser.SimpleCharStream;)V
+org.apache.james.mime4j.parser.MimeParseEventException:getEvent()Lorg.apache.james.mime4j.parser.Event;
+org.apache.james.mime4j.parser.AbstractEntity:AbstractEntity(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;IILorg.apache.james.mime4j.parser.MimeEntityConfig;)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:AddressListParser(Ljava.io.Reader;)V
+org.apache.james.mime4j.field.mimeversion.TokenMgrError:TokenMgrError(ZIIILjava.lang.String;CI)V
+org.apache.james.mime4j.decoder.Base64InputStream:read()I
+org.apache.james.mime4j.parser.MimeEntityConfig:setMaxHeaderCount(I)V
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:getBeginLine()I
+org.apache.james.mime4j.parser.MultipartStreamTest:checkState(I)V
+org.apache.james.mime4j.util.StringArrayMap:getNames()Ljava.util.Enumeration;
+org.apache.james.mime4j.field.address.AddressList:size()I
+org.apache.james.mime4j.io.MimeBoundaryInputStream:endOfStream()Z
+org.apache.james.mime4j.parser.MimeStreamParserTest.2:field(Ljava.lang.String;)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjMoveNfa_0(II)I
+org.apache.james.mime4j.decoder.CodecUtil:copy(Ljava.io.InputStream;Ljava.io.OutputStream;)V
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStream:write([BII)V
+org.apache.james.mime4j.message.Multipart:getParent()Lorg.apache.james.mime4j.message.Entity;
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:GetSuffix(I)[C
+org.apache.james.mime4j.field.address.parser.ASTaddr_spec:ASTaddr_spec(I)V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveNfa_3(II)I
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:jjMoveStringLiteralDfa1_0(J)I
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:readByOneByte(Ljava.io.InputStream;)Ljava.lang.String;
+org.apache.james.mime4j.util.ByteArrayBuffer:append([BII)V
+org.apache.james.mime4j.field.address.AddressList:AddressList(Ljava.util.ArrayList;Z)V
+org.apache.james.mime4j.field.address.MailboxList:MailboxList(Ljava.util.ArrayList;Z)V
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTokenManager:getNextToken()Lorg.apache.james.mime4j.field.mimeversion.Token;
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStream:close()V
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:describe([BI)Lorg.apache.james.mime4j.descriptor.MaximalBodyDescriptor;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:jj_la1_1()V
+org.apache.james.mime4j.field.structured.SimpleCharStream:getBeginColumn()I
+org.apache.james.mime4j.field.ContentTransferEncodingField:getEncoding(Lorg.apache.james.mime4j.field.ContentTransferEncodingField;)Ljava.lang.String;
+org.apache.james.mime4j.decoder.ByteQueue:count()I
+org.apache.james.mime4j.message.MultipartFormTest.StringPart:getReader()Ljava.io.Reader;
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:check(Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:BeginToken()C
+org.apache.james.mime4j.message.Entity:getContentTransferEncoding()Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.AddressListParser:address_list()V
+org.apache.james.mime4j.io.PositionInputStream:skip(J)J
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveStringLiteralDfa0_1()I
+org.apache.james.mime4j.parser.MimeTokenStream:stop()V
+org.apache.james.mime4j.message.Header:Header()V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjStopAtPos(II)I
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:read()I
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:FillBuff()V
+org.apache.james.mime4j.parser.MimeStreamParserTest.3:field(Ljava.lang.String;)V
+org.apache.james.mime4j.field.DelegatingFieldParser:getParser(Ljava.lang.String;)Lorg.apache.james.mime4j.field.FieldParser;
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:getNextToken()Lorg.apache.james.mime4j.field.address.parser.Token;
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:UpdateLineColumn(C)V
+org.apache.james.mime4j.MimeException:MimeException(Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_save(II)V
+org.apache.james.mime4j.util.CharArrayBuffer:append(Lorg.apache.james.mime4j.util.ByteArrayBuffer;II)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:check([B[B)V
+org.apache.james.mime4j.message.Message:Message()V
+org.apache.james.mime4j.util.CharArrayBuffer:capacity()I
+org.apache.james.mime4j.io.MimeBoundaryInputStream:read([BII)I
+org.apache.james.mime4j.field.ContentTypeField:getBoundary()Ljava.lang.String;
+org.apache.james.mime4j.message.storage.SimpleTempStorage.SimpleTempPath:getAbsolutePath()Ljava.lang.String;
+org.apache.james.mime4j.decoder.QuotedPrintableInputStreamTest:read(Ljava.io.InputStream;)[B
+org.apache.james.mime4j.parser.MimeTokenStream:setRecursionMode(I)V
+org.apache.james.mime4j.decoder.Base64OutputStream:Base64OutputStream(Ljava.io.OutputStream;I[B)V
+org.apache.james.mime4j.util.StringArrayMap:addValue(Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.message.Multipart:addBodyPart(Lorg.apache.james.mime4j.message.BodyPart;)V
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:GetImage()Ljava.lang.String;
+org.apache.james.mime4j.field.mimeversion.MimeVersionParser:parseAll()V
+org.apache.james.mime4j.parser.MimeTokenStream:createStrictValidationStream()Lorg.apache.james.mime4j.parser.MimeTokenStream;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:DateTimeParser(Ljava.io.Reader;)V
+org.apache.james.mime4j.field.Field:toString()Ljava.lang.String;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:jj_ntk()I
+org.apache.james.mime4j.decoder.CodecUtilTest:roundtripUsingOutputStream(Ljava.lang.String;)Ljava.lang.String; | ASSIGN | 4046 | = null
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:parseContentType(Ljava.lang.String;)V
+org.apache.james.mime4j.field.address.Group:Group(Ljava.lang.String;Lorg.apache.james.mime4j.field.address.MailboxList;)V
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:MaximalBodyDescriptor()V
+org.apache.james.mime4j.io.MimeBoundaryInputStreamTest:read(Ljava.io.InputStream;I)Ljava.lang.String;
+org.apache.james.mime4j.field.DelegatingFieldParser:parse(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.parser.TestHandler:field(Ljava.lang.String;)V
+org.apache.james.mime4j.parser.MimeParseEventException:MimeParseEventException(Lorg.apache.james.mime4j.parser.Event;)V
+org.apache.james.mime4j.util.CharArrayBuffer:buffer()[C
+org.apache.james.mime4j.util.CharArrayBuffer:length()I
+org.apache.james.mime4j.util.CharArrayBuffer:ensureCapacity(I)V
+org.apache.james.mime4j.decoder.Base64OutputStream:Base64OutputStream(Ljava.io.OutputStream;I)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:group_body()V
+org.apache.james.mime4j.io.MimeBoundaryInputStream:calculateBoundaryLen()V
+org.apache.james.mime4j.decoder.DecoderUtil:decodeEncodedWords(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:getNextToken()Lorg.apache.james.mime4j.field.datetime.parser.Token;
+org.apache.james.mime4j.parser.AbstractEntity:warn(Lorg.apache.james.mime4j.parser.Event;)V
+org.apache.james.mime4j.util.MimeUtil:isMultipart(Ljava.lang.String;)Z
+org.apache.james.mime4j.field.structured.SimpleCharStream:BeginToken()C
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;III)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:assertEquals([B[B)V
+org.apache.james.mime4j.util.CharArrayBuffer:append(Lorg.apache.james.mime4j.util.CharArrayBuffer;)V
+org.apache.james.mime4j.parser.MimeEntity:MimeEntity(Lorg.apache.james.mime4j.io.RootInputStream;Lorg.apache.james.mime4j.io.BufferedLineReaderInputStream;Lorg.apache.james.mime4j.descriptor.BodyDescriptor;II)V
+org.apache.james.mime4j.parser.AbstractEntity:getField()Ljava.lang.String;
+org.apache.james.mime4j.decoder.DecoderUtil:decodeBase64(Ljava.lang.String;)[B
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjStopAtPos(II)I
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:ContentTypeParser(Ljava.io.Reader;)V
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;II)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:completeEncoding()V
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:rootNode()Lorg.apache.james.mime4j.field.address.parser.Node;
+org.apache.james.mime4j.io.LimitedInputStream:enforceLimit()V
+org.apache.james.mime4j.field.datetime.parser.Token:newToken(I)Lorg.apache.james.mime4j.field.datetime.parser.Token;
+org.apache.james.mime4j.parser.MultipartTokensTest:checkState(I)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjMoveStringLiteralDfa0_1()I
+org.apache.james.mime4j.util.CharArrayBuffer:expand(I)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_3R_11()Z
+org.apache.james.mime4j.parser.MimeEntity:getLimitedContentStream()Ljava.io.InputStream;
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStream:QuotedPrintableOutputStream(Ljava.io.OutputStream;Z)V
+org.apache.james.mime4j.field.address.Builder:buildAngleAddr(Lorg.apache.james.mime4j.field.address.parser.ASTangle_addr;)Lorg.apache.james.mime4j.field.address.Mailbox;
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:getMimeVersionParseException()Lorg.apache.james.mime4j.MimeException;
+org.apache.james.mime4j.decoder.Base64OutputStream:Base64OutputStream(Ljava.io.OutputStream;)V
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:BeginToken()C
+org.apache.james.mime4j.field.address.parser.AddressListParser:jjtreeCloseNodeScope(Lorg.apache.james.mime4j.field.address.parser.Node;)V
+org.apache.james.mime4j.ExampleMail:breakLines(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.field.address.NamedMailbox:NamedMailbox(Ljava.lang.String;Lorg.apache.james.mime4j.field.address.Mailbox;)V
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:day()I
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_3R_10()Z
+org.apache.james.mime4j.parser.MimeEntity:MimeEntity(Lorg.apache.james.mime4j.io.RootInputStream;Lorg.apache.james.mime4j.io.BufferedLineReaderInputStream;Lorg.apache.james.mime4j.descriptor.BodyDescriptor;IILorg.apache.james.mime4j.parser.MimeEntityConfig;)V
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:TokenLexicalActions(Lorg.apache.james.mime4j.field.address.parser.Token;)V
+org.apache.james.mime4j.field.address.DomainList:size()I
+org.apache.james.mime4j.util.ByteArrayBuffer:byteAt(I)I
+org.apache.james.mime4j.parser.MimeEntity:getLineNumber()I
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTest:parse(Ljava.lang.String;)Lorg.apache.james.mime4j.field.mimeversion.MimeVersionParser;
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTokenManager:jjMoveStringLiteralDfa0_0()I
+org.apache.james.mime4j.message.storage.SimpleTempStorage.SimpleTempPath:createTempPath()Lorg.apache.james.mime4j.message.storage.TempPath;
+org.apache.james.mime4j.io.PositionInputStream:read([BII)I
+org.apache.james.mime4j.field.address.AddressList:flatten()Lorg.apache.james.mime4j.field.address.MailboxList;
+org.apache.james.mime4j.field.structured.SimpleCharStream:getEndLine()I
+org.apache.james.mime4j.decoder.LineBreakingOutputStream:LineBreakingOutputStream(Ljava.io.OutputStream;I)V
+org.apache.james.mime4j.field.address.NamedMailbox:NamedMailbox(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.util.MimeUtil:isMessage(Ljava.lang.String;)Z
+org.apache.james.mime4j.parser.TestHandler:escape(C)Ljava.lang.String;
+org.apache.james.mime4j.util.ByteArrayBuffer:clear()V
+org.apache.james.mime4j.field.address.parser.AddressListParser:address()V
+org.apache.james.mime4j.io.EOLConvertingInputStreamTest:toString([BI)Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.SimpleNode:jjtSetParent(Lorg.apache.james.mime4j.field.address.parser.Node;)V
+org.apache.james.mime4j.io.EOLConvertingInputStream:read()I
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:getNextToken()Lorg.apache.james.mime4j.field.contenttype.parser.Token;
+org.apache.james.mime4j.util.ByteArrayBuffer:ByteArrayBuffer(I)V
+org.apache.james.mime4j.util.MessageUtilsTest:constructString([I)Ljava.lang.String;
+org.apache.james.mime4j.decoder.ByteQueue:clear()V
+org.apache.james.mime4j.util.CharArrayBuffer:charAt(I)C
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:getBeginLine()I
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTokenManager:jjMoveNfa_0(II)I
+org.apache.james.mime4j.parser.MimeEntityConfig:setMaxContentLen(J)V
+org.apache.james.mime4j.decoder.Base64OutputStream:isBase64(B)Z
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjMoveNfa_2(II)I
+org.apache.james.mime4j.decoder.Base64InputStream:close()V
+org.apache.james.mime4j.parser.MimeTokenStream:next()I
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:StructuredFieldParserTokenManager(Lorg.apache.james.mime4j.field.structured.SimpleCharStream;)V
+org.apache.james.mime4j.field.structured.StructuredFieldParser:parse()Ljava.lang.String;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:jj_la1_0()V
+org.apache.james.mime4j.decoder.QuotedPrintableInputStream:read()I
+org.apache.james.mime4j.parser.MimeEntityConfig:isStrictParsing()Z
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:jj_consume_token(I)Lorg.apache.james.mime4j.field.datetime.parser.Token;
+org.apache.james.mime4j.parser.MimeTokenStream:getDecodedInputStream()Ljava.io.InputStream;
+org.apache.james.mime4j.field.mimeversion.SimpleCharStream:readChar()C | CONDITION | 5971 | if (x) -> if (!x)
+org.apache.james.mime4j.field.address.Builder:buildGroupBody(Lorg.apache.james.mime4j.field.address.parser.ASTgroup_body;)Lorg.apache.james.mime4j.field.address.MailboxList;
+org.apache.james.mime4j.message.Entity:dispose()V
+org.apache.james.mime4j.field.address.Mailbox:getDomain()Ljava.lang.String;
+org.apache.james.mime4j.util.StringArrayMap:getValue(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.io.MimeBoundaryInputStream:read()I
+org.apache.james.mime4j.field.address.Mailbox:getAddressString()Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_3_1()Z
+org.apache.james.mime4j.parser.MimeTokenStream:getReader()Ljava.io.Reader;
+org.apache.james.mime4j.field.mimeversion.SimpleCharStream:BeginToken()C
+org.apache.james.mime4j.field.structured.SimpleCharStream:getBeginLine()I
+org.apache.james.mime4j.message.Multipart:getEpilogue()Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:closeNodeScope(Lorg.apache.james.mime4j.field.address.parser.Node;Z)V
+org.apache.james.mime4j.io.RootInputStream:read()I
+org.apache.james.mime4j.io.MaxHeaderLimitException:MaxHeaderLimitException(Ljava.lang.String;)V
+org.apache.james.mime4j.io.RootInputStream:getLineNumber()I
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:MoreLexicalActions()V
+org.apache.james.mime4j.parser.MimeStreamTokenMessageRfc822Test:nextIs(I)V
+org.apache.james.mime4j.message.Header:getFields(Ljava.lang.String;)Ljava.util.List;
+org.apache.james.mime4j.message.MessageBuilder:startHeader()V
+org.apache.james.mime4j.parser.AbstractEntity:getFieldName()Ljava.lang.String;
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:lineBreak()V
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:jjMoveNfa_0(II)I
+org.apache.james.mime4j.message.storage.SimpleTempStorage.SimpleTempPath:SimpleTempPath(Lorg.apache.james.mime4j.message.storage.SimpleTempStorage;Ljava.lang.String;)V
+org.apache.james.mime4j.parser.MimeStreamParser:MimeStreamParser()V
+org.apache.james.mime4j.field.ContentTypeField:ContentTypeField(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.util.Map;Lorg.apache.james.mime4j.field.contenttype.parser.ParseException;)V
+org.apache.james.mime4j.decoder.DecoderUtil:decodeB(Ljava.lang.String;Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.field.structured.SimpleCharStream:backup(I)V
+org.apache.james.mime4j.field.address.parser.ASTlocal_part:ASTlocal_part(I)V
+org.apache.james.mime4j.field.address.Mailbox:getLocalPart()Ljava.lang.String;
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:indexOf([BII)I
+org.apache.james.mime4j.message.Entity:setParent(Lorg.apache.james.mime4j.message.Entity;)V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:pos()I
+org.apache.james.mime4j.field.structured.SimpleCharStream:getEndColumn()I
+org.apache.james.mime4j.util.CharArrayBuffer:substringTrimmed(II)Ljava.lang.String; | CONDITION | 6428 | if (x) -> if (!x)
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:fillBuffer()I
+org.apache.james.mime4j.field.DateTimeField.Parser:parse(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.parser.AbstractEntity:newBodyDescriptor(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;)Lorg.apache.james.mime4j.descriptor.MutableBodyDescriptor;
+org.apache.james.mime4j.parser.MimeTokenNoRecurseTest:nextIs(I)V
+org.apache.james.mime4j.parser.MimeTokenEmbeddedMessageTest:checkInputStream(Ljava.lang.String;)V
+org.apache.james.mime4j.ExampleMail:ascii(Ljava.lang.String;)[B
+org.apache.james.mime4j.util.CharArrayBuffer:toCharArray()[C
+org.apache.james.mime4j.field.address.Builder:addSpecials(Ljava.lang.StringBuffer;Lorg.apache.james.mime4j.field.address.parser.Token;)V
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:getEndColumn()I
+org.apache.james.mime4j.parser.MimeEntity:advance()Lorg.apache.james.mime4j.parser.EntityStateMachine; | RETURN | 5133 | return null
+org.apache.james.mime4j.decoder.QuotedPrintableInputStream:close()V
+org.apache.james.mime4j.message.Entity:setBody(Lorg.apache.james.mime4j.message.Body;)V
+org.apache.james.mime4j.field.address.parser.TokenMgrError:addEscapes(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.field.mimeversion.MimeVersionParserTokenManager:MimeVersionParserTokenManager(Lorg.apache.james.mime4j.field.mimeversion.SimpleCharStream;)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:parse()V
+org.apache.james.mime4j.message.MessageTest:getRawMessageAsByteArray()[B
+org.apache.james.mime4j.decoder.CodecUtil:encodeQuotedPrintableBinary(Ljava.io.InputStream;Ljava.io.OutputStream;)V
+org.apache.james.mime4j.field.mimeversion.TokenMgrError:LexicalError(ZIIILjava.lang.String;C)Ljava.lang.String;
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:readChar()C
+org.apache.james.mime4j.parser.TestHandler:body(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;Ljava.io.InputStream;)V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:length()I
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;II)V
+org.apache.james.mime4j.field.AddressListField:AddressListField(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Lorg.apache.james.mime4j.field.address.AddressList;Lorg.apache.james.mime4j.field.address.parser.ParseException;)V
+org.apache.james.mime4j.decoder.Base64OutputStream:flushBuffer()V
+org.apache.james.mime4j.field.ContentTransferEncodingField.Parser:parse(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:FillBuff()V
+org.apache.james.mime4j.parser.MimeTokenStream:parse(Ljava.io.InputStream;)V
+org.apache.james.mime4j.util.CharArrayBuffer:substring(II)Ljava.lang.String;
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveNfa_0(II)I
+org.apache.james.mime4j.parser.MimeStreamParserTest.5:endHeader()V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:jj_consume_token(I)Lorg.apache.james.mime4j.field.contenttype.parser.Token;
+org.apache.james.mime4j.message.Entity:isMultipart()Z
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:newBodyDescriptor()Lorg.apache.james.mime4j.descriptor.MutableBodyDescriptor;
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:getParamValues()Ljava.util.ArrayList;
+org.apache.james.mime4j.field.address.parser.ASTangle_addr:ASTangle_addr(I)V
+org.apache.james.mime4j.field.address.NamedMailbox:NamedMailbox(Ljava.lang.String;Lorg.apache.james.mime4j.field.address.DomainList;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:BufferedLineReaderInputStream(Ljava.io.InputStream;I)V
+org.apache.james.mime4j.field.address.MailboxList:size()I
+org.apache.james.mime4j.message.storage.SimpleTempStorage:getRootTempPath()Lorg.apache.james.mime4j.message.storage.TempPath;
+org.apache.james.mime4j.parser.MimeStreamParserTest.7:startMessage()V
+org.apache.james.mime4j.decoder.QuotedPrintableEncodeTest:checkRoundtrip([B)V
+org.apache.james.mime4j.field.address.parser.ASTaddress:ASTaddress(I)V
+org.apache.james.mime4j.field.mimeversion.SimpleCharStream:backup(I)V
+org.apache.james.mime4j.io.EOLConvertingInputStreamTest:fromString(Ljava.lang.String;)[B
+org.apache.james.mime4j.util.StringArrayMapTest:assertEquals([Ljava.lang.String;Ljava.util.Enumeration;)V
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:getEndLine()I
+org.apache.james.mime4j.field.address.parser.TokenMgrError:getMessage()Ljava.lang.String;
+org.apache.james.mime4j.field.mimeversion.SimpleCharStream:getEndLine()I
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:SkipLexicalActions(Lorg.apache.james.mime4j.field.structured.Token;)V
+org.apache.james.mime4j.parser.MimeStreamParser:setContentDecoding(Z)V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveNfa_2(II)I
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:writePending()V
+org.apache.james.mime4j.parser.MimeStreamParserTest.7:endMessage()V
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:getCharset()Ljava.lang.String;
+org.apache.james.mime4j.field.DefaultFieldParser:DefaultFieldParser()V
+org.apache.james.mime4j.field.ContentTypeField.Parser:parse(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)Lorg.apache.james.mime4j.field.Field;
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptor:read([BII)I
+org.apache.james.mime4j.field.address.parser.ASTaddress_list:ASTaddress_list(I)V
+org.apache.james.mime4j.decoder.Base64InputStreamTest:toString([B)Ljava.lang.String;
+org.apache.james.mime4j.field.mimeversion.TokenMgrError:TokenMgrError(Ljava.lang.String;I)V
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptorTest:describe([B)Lorg.apache.james.mime4j.descriptor.MaximalBodyDescriptor;
+org.apache.james.mime4j.decoder.UnboundedFifoByteBuffer:isEmpty()Z
+org.apache.james.mime4j.field.ContentTypeField:getMimeType(Lorg.apache.james.mime4j.field.ContentTypeField;Lorg.apache.james.mime4j.field.ContentTypeField;)Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.AddressListParser:getToken(I)Lorg.apache.james.mime4j.field.address.parser.Token;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:jjMoveStringLiteralDfa2_0(JJ)I
+org.apache.james.mime4j.decoder.ByteQueue:dequeue()B
+org.apache.james.mime4j.parser.MimeTokenStream:parseHeadless(Ljava.io.InputStream;Ljava.lang.String;)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:initEncoding(Ljava.io.OutputStream;)V
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:SimpleCharStream(Ljava.io.Reader;II)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_2_1(I)Z
+org.apache.james.mime4j.field.address.parser.JJTAddressListParserState:popNode()Lorg.apache.james.mime4j.field.address.parser.Node;
+org.apache.james.mime4j.field.address.Builder:buildAddress(Lorg.apache.james.mime4j.field.address.parser.ASTaddress;)Lorg.apache.james.mime4j.field.address.Address;
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_3R_8()Z
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStreamTest:fromString(Ljava.lang.String;)[B
+org.apache.james.mime4j.parser.MimeTokenStream:getInputStream()Ljava.io.InputStream;
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:flushOutput()V
+org.apache.james.mime4j.io.MaxLineLimitException:MaxLineLimitException(Ljava.lang.String;)V
+org.apache.james.mime4j.parser.MimeStreamParserTest.7:body(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.ContentTransferEncodingField:getEncoding()Ljava.lang.String;
+org.apache.james.mime4j.util.StringArrayMap.1:nextElement()Ljava.lang.Object;
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:clearPending()V
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:FillBuff()V
+org.apache.james.mime4j.io.LimitedInputStream:read([BII)I
+org.apache.james.mime4j.message.Header:writeTo(Ljava.io.OutputStream;I)V
+org.apache.james.mime4j.field.address.DomainList:DomainList(Ljava.util.ArrayList;Z)V
+org.apache.james.mime4j.decoder.UnboundedFifoByteBuffer:size()I
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:checkRoundtrip([B)V
+org.apache.james.mime4j.field.address.Builder:getInstance()Lorg.apache.james.mime4j.field.address.Builder;
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:addField(Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.field.mimeversion.MimeVersionParser:jj_consume_token(I)Lorg.apache.james.mime4j.field.mimeversion.Token;
+org.apache.james.mime4j.parser.AbstractContentHandler:endHeader()V
+org.apache.james.mime4j.util.StringArrayMap:getValueEnum(Ljava.lang.String;)Ljava.util.Enumeration;
+org.apache.james.mime4j.parser.MimeTokenEmbeddedMessageTest:nextIs(I)V
+org.apache.james.mime4j.util.CharArrayBuffer:indexOf(I)I
+org.apache.james.mime4j.util.StringArrayMap:addMapValue(Ljava.util.Map;Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:GetImage()Ljava.lang.String;
+org.apache.james.mime4j.parser.TestHandler:startHeader()V
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:parseAll()Lorg.apache.james.mime4j.field.datetime.DateTime;
+org.apache.james.mime4j.field.contenttype.parser.SimpleCharStream:getEndLine()I
+org.apache.james.mime4j.decoder.Base64InputStream:decodeAndEnqueue([BI)V
+org.apache.james.mime4j.util.ByteArrayBuffer:append([CII)V
+org.apache.james.mime4j.parser.MimeStreamParserTest.4:field(Ljava.lang.String;)V
+org.apache.james.mime4j.util.CharArrayBuffer:append(Lorg.apache.james.mime4j.util.CharArrayBuffer;II)V
+org.apache.james.mime4j.io.LineReaderInputStreamAdaptor:read()I
+org.apache.james.mime4j.ExampleMail:latin1(Ljava.lang.String;)[B
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:GetImage()Ljava.lang.String; | RETURN | 10906 | return null
+org.apache.james.mime4j.parser.MimeEntityConfig:MimeEntityConfig()V
+org.apache.james.mime4j.field.datetime.parser.DateTimeParserTokenManager:jjStopAtPos(II)I
+org.apache.james.mime4j.message.Header:setField(Lorg.apache.james.mime4j.field.Field;)V
+org.apache.james.mime4j.field.address.parser.ASTdomain:ASTdomain(I)V
+org.apache.james.mime4j.message.MultipartFormTest.StringPart:writeTo(Ljava.io.OutputStream;I)V
+org.apache.james.mime4j.util.StringArrayMap:asString(Ljava.lang.Object;)Ljava.lang.String;
+org.apache.james.mime4j.field.address.parser.ASTphrase:ASTphrase(I)V
+org.apache.james.mime4j.message.Message:Message(Ljava.io.InputStream;Lorg.apache.james.mime4j.parser.MimeEntityConfig;)V
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:getBeginColumn()I
+org.apache.james.mime4j.field.address.parser.ASTgroup_body:ASTgroup_body(I)V
+org.apache.james.mime4j.util.ByteArrayBuffer:length()I
+org.apache.james.mime4j.field.address.parser.SimpleCharStream:getEndLine()I
+org.apache.james.mime4j.parser.MimeTokenStream:MimeTokenStream(Lorg.apache.james.mime4j.parser.MimeEntityConfig;)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:getType()Ljava.lang.String;
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:check([B[B)V
+org.apache.james.mime4j.field.address.parser.SimpleNode:jjtGetChild(I)Lorg.apache.james.mime4j.field.address.parser.Node;
+org.apache.james.mime4j.message.Multipart:Multipart(Ljava.lang.String;)V
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:MaximalBodyDescriptor(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;)V
+org.apache.james.mime4j.field.address.Mailbox:Mailbox(Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.decoder.DecoderUtil:decodeBaseQuotedPrintable(Ljava.lang.String;)[B
+org.apache.james.mime4j.descriptor.DefaultBodyDescriptor:DefaultBodyDescriptor(Lorg.apache.james.mime4j.descriptor.BodyDescriptor;)V
+org.apache.james.mime4j.util.MessageUtils:isASCII(C)Z
+org.apache.james.mime4j.decoder.Base64InputStream:fillBuffer()V
+org.apache.james.mime4j.parser.AbstractEntity:monitor(Lorg.apache.james.mime4j.parser.Event;)V
+org.apache.james.mime4j.io.PositionInputStream:getPosition()J
+org.apache.james.mime4j.parser.MimeTokenStreamReaderTest:checkSimpleMail([BLjava.lang.String;I)V
+org.apache.james.mime4j.message.MessageBuilder:expect(Ljava.lang.Class;)V
+org.apache.james.mime4j.util.StringArrayMap:asStringArray(Ljava.lang.Object;)[Ljava.lang.String;
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:date()Lorg.apache.james.mime4j.field.datetime.parser.DateTimeParser.Date;
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjMoveNfa_4(II)I
+org.apache.james.mime4j.io.MimeBoundaryInputStream:fillBuffer()I
+org.apache.james.mime4j.parser.MimeStreamParser:setContentHandler(Lorg.apache.james.mime4j.parser.ContentHandler;)V
+org.apache.james.mime4j.io.MimeBoundaryInputStream:hasData()Z
+org.apache.james.mime4j.decoder.UnboundedFifoByteBuffer:add(B)Z
+org.apache.james.mime4j.util.CharArrayBuffer:clear()V
+org.apache.james.mime4j.io.BufferedLineReaderInputStream:limit()I
+org.apache.james.mime4j.field.address.Group:getName()Ljava.lang.String;
+org.apache.james.mime4j.util.ByteArrayBuffer:isEmpty()Z
+org.apache.james.mime4j.util.StringArrayMap:convertName(Ljava.lang.String;)Ljava.lang.String;
+org.apache.james.mime4j.parser.MimeTokenStream:getField()Ljava.lang.String;
+org.apache.james.mime4j.decoder.QuotedPrintableOutputStreamTest:toString([B)Ljava.lang.String;
+org.apache.james.mime4j.parser.AbstractEntity:getFieldValue()Ljava.lang.String;
+org.apache.james.mime4j.parser.MimeStreamParserTest.7:endHeader()V
+org.apache.james.mime4j.field.address.parser.TokenMgrError:LexicalError(ZIIILjava.lang.String;C)Ljava.lang.String;
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:jj_ntk()I
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:TokenLexicalActions(Lorg.apache.james.mime4j.field.structured.Token;)V
+org.apache.james.mime4j.field.address.Builder:buildAddressList(Lorg.apache.james.mime4j.field.address.parser.ASTaddress_list;)Lorg.apache.james.mime4j.field.address.AddressList;
+org.apache.james.mime4j.decoder.QuotedPrintableTextEncodeTest:assertEquals([B[B)V
+org.apache.james.mime4j.field.datetime.parser.DateTimeParser:parseDigits(Lorg.apache.james.mime4j.field.datetime.parser.Token;)I
+org.apache.james.mime4j.message.Message:Message(Ljava.io.InputStream;)V
+org.apache.james.mime4j.field.structured.StructuredFieldParserTokenManager:jjMoveStringLiteralDfa0_0()I
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:parseAll()V
+org.apache.james.mime4j.message.Entity:getParent()Lorg.apache.james.mime4j.message.Entity;
+org.apache.james.mime4j.field.address.parser.AddressListParser:jj_3R_9()Z
+org.apache.james.mime4j.message.Multipart:writeTo(Ljava.io.OutputStream;I)V
+org.apache.james.mime4j.field.DelegatingFieldParser:setFieldParser(Ljava.lang.String;Lorg.apache.james.mime4j.field.FieldParser;)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:plain(B)V
+org.apache.james.mime4j.field.contenttype.parser.ParseException:getMessage()Ljava.lang.String;
+org.apache.james.mime4j.message.AbstractBody:setParent(Lorg.apache.james.mime4j.message.Entity;)V
+org.apache.james.mime4j.message.Header:toString()Ljava.lang.String;
+org.apache.james.mime4j.message.MessageBuilder:field(Ljava.lang.String;)V
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:backup(I)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParserTokenManager:jjMoveStringLiteralDfa0_3()I
+org.apache.james.mime4j.message.MessageWriteToTest:createMessage([B)Lorg.apache.james.mime4j.message.Message;
+org.apache.james.mime4j.util.CharArrayBuffer:CharArrayBuffer(I)V
+org.apache.james.mime4j.field.contenttype.parser.ContentTypeParser:getSubType()Ljava.lang.String;
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:QuotedPrintableEncoder(IZ)V
+org.apache.james.mime4j.field.address.parser.AddressListParser:addr_spec()V
+org.apache.james.mime4j.parser.AbstractEntity:getState()I
+org.apache.james.mime4j.field.address.parser.AddressListParserTokenManager:jjMoveStringLiteralDfa0_4()I
+org.apache.james.mime4j.message.Entity:writeTo(Ljava.io.OutputStream;I)V
+org.apache.james.mime4j.field.datetime.parser.SimpleCharStream:UpdateLineColumn(C)V
+org.apache.james.mime4j.decoder.QuotedPrintableEncoder:encode(Ljava.io.InputStream;Ljava.io.OutputStream;)V
+org.apache.james.mime4j.io.EOLConvertingInputStreamTest:testConvertCR(Ljava.lang.String;Ljava.lang.String;)V
+org.apache.james.mime4j.util.MimeUtil:isBase64Encoding(Ljava.lang.String;)Z
+org.apache.james.mime4j.util.CharArrayBuffer:setLength(I)V
+org.apache.james.mime4j.util.CharsetUtil:isDecodingSupported(Ljava.lang.String;)Z
+org.apache.james.mime4j.descriptor.MaximalBodyDescriptor:getContentLocation()Ljava.lang.String;
+org.apache.james.mime4j.field.address.Mailbox:Mailbox(Lorg.apache.james.mime4j.field.address.DomainList;Ljava.lang.String;Ljava.lang.String;)V
+
+#matrix (1 line per test, in order of tests): { mut_index, ' ', mut_call_count, ' ' }
+103 1 630 1 64 1 159 1 
+103 1 451 1 630 1 
+528 1 1 14 529 1 160 12 161 6 530 1 348 14 2 2 3 3 350 2 354 1 9 2 537 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 181 1 182 14 548 3 22 2 186 1 25 3 376 8 28 2 379 1 557 1 381 1 560 2 35 1 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 572 2 196 1 573 8 199 8 201 14 204 1 574 2 575 2 397 3 396 2 208 1 405 1 409 2 219 2 411 2 413 3 222 6 55 14 417 2 58 1 420 2 60 1 584 4 231 1 423 3 590 2 62 14 424 14 425 1 236 1 237 10 240 1 426 2 70 3 427 1 596 1 242 12 429 1 243 22 430 12 432 1 74 1 600 1 247 14 78 1 250 14 79 1 607 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 260 1 617 14 619 2 620 14 444 1 621 1 445 2 265 4 266 1 447 8 624 8 268 1 270 1 275 1 277 1 450 1 629 1 278 1 105 1 453 1 280 1 635 1 637 1 283 3 284 1 111 6 460 1 463 1 290 1 112 14 113 2 466 3 114 1 293 1 471 2 640 1 475 2 117 14 118 2 643 1 297 1 120 1 299 1 648 1 480 14 121 1 300 8 302 1 122 1 123 6 125 1 303 2 304 1 129 1 306 2 487 1 490 1 309 2 312 8 655 2 314 2 316 1 657 1 317 2 658 1 137 1 321 3 662 2 664 1 324 2 496 2 497 2 142 1 143 1 500 1 503 1 504 1 505 1 669 1 332 2 670 1 334 1 672 1 673 3 508 1 336 1 337 2 338 1 510 4 676 2 677 3 512 1 680 6 342 1 152 1 153 1 154 1 684 1 156 2 524 1 525 1 157 1 687 4 
+528 1 529 1 160 12 1 14 161 6 530 1 348 14 2 2 3 3 350 2 354 1 9 2 537 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 182 14 548 3 22 2 186 1 25 3 376 8 28 2 379 1 381 1 560 2 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 572 2 196 1 573 8 199 8 201 14 204 1 574 2 575 2 396 2 397 3 208 1 405 1 409 2 219 2 411 2 413 3 222 6 55 14 417 2 58 1 420 2 60 1 584 4 231 1 590 2 62 14 423 3 424 14 237 10 240 1 426 2 70 3 427 1 596 1 242 12 429 1 243 22 430 12 432 1 74 1 600 1 247 14 78 1 250 14 79 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 617 14 619 2 620 14 444 1 621 1 445 2 265 4 266 1 447 8 624 8 268 1 277 1 450 1 629 1 278 1 105 1 453 1 280 1 635 1 637 1 283 3 284 1 111 6 460 1 290 1 113 2 112 14 466 3 114 1 640 1 471 2 475 2 117 14 118 2 643 1 297 1 120 1 299 1 648 1 480 14 121 1 300 8 122 1 302 1 123 6 125 1 303 2 129 1 487 1 306 2 490 1 309 2 312 8 655 2 314 2 316 1 657 1 317 2 658 1 137 1 321 3 662 2 496 2 324 2 497 2 142 1 143 1 500 1 503 1 504 1 669 1 505 1 332 2 670 1 334 1 672 1 673 3 336 1 337 2 510 4 338 1 676 2 677 3 512 1 680 6 152 1 153 1 154 1 684 1 156 2 157 1 525 1 524 1 687 4 
+528 1 529 1 160 12 1 14 161 6 530 1 348 14 2 2 3 3 350 2 354 1 9 2 537 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 182 14 548 3 22 2 186 1 25 3 376 8 28 2 379 1 381 1 560 2 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 572 2 196 1 573 8 199 8 201 14 204 1 574 2 575 2 396 2 397 3 208 1 405 1 409 2 219 2 411 2 413 3 222 6 55 14 417 2 58 1 420 2 60 1 584 4 231 1 590 2 62 14 423 3 424 14 237 10 240 1 426 2 70 3 427 1 596 1 242 12 429 1 243 22 430 12 432 1 74 1 600 1 247 14 78 1 250 14 79 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 617 14 619 2 620 14 444 1 621 1 445 2 265 4 266 1 447 8 624 8 268 1 277 1 450 1 629 1 278 1 105 1 453 1 280 1 635 1 637 1 283 3 284 1 111 6 460 1 290 1 113 2 112 14 466 3 114 1 640 1 471 2 475 2 117 14 118 2 643 1 297 1 120 1 299 1 648 1 480 14 121 1 300 8 122 1 302 1 123 6 125 1 303 2 129 1 487 1 306 2 490 1 309 2 312 8 655 2 314 2 316 1 657 1 317 2 658 1 137 1 321 3 662 2 496 2 324 2 497 2 142 1 143 1 500 1 503 1 504 1 669 1 505 1 332 2 670 1 334 1 672 1 673 3 336 1 337 2 510 4 338 1 676 2 677 3 512 1 680 6 152 1 153 1 154 1 684 1 156 2 157 1 525 1 524 1 687 4 
+528 1 529 1 160 12 1 14 161 6 530 1 348 14 2 2 163 1 3 3 350 2 354 1 533 4 9 2 536 1 537 2 357 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 182 14 548 3 22 2 23 1 186 1 25 5 376 8 28 2 379 1 558 1 381 1 560 2 383 1 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 571 1 572 2 196 1 573 8 199 8 201 14 42 4 204 1 574 2 44 3 205 4 206 1 575 2 397 3 396 3 208 1 399 1 401 1 405 1 215 4 407 5 408 1 409 2 219 2 411 2 413 3 222 6 55 14 416 2 417 2 58 1 226 1 420 2 60 1 584 4 61 1 231 1 423 3 590 2 62 14 424 14 234 1 237 10 240 1 426 2 70 3 427 1 596 1 242 12 598 3 429 1 243 22 430 12 432 1 74 1 76 4 600 1 247 14 601 4 78 1 250 14 79 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 617 14 619 2 262 1 620 14 444 1 621 1 445 2 265 4 266 1 622 1 447 8 624 8 268 1 449 4 274 1 277 1 450 1 629 1 278 1 105 1 279 1 453 1 280 1 635 1 454 4 637 1 108 4 283 3 284 1 111 6 285 1 460 1 288 4 290 1 113 2 112 14 466 3 114 1 471 2 640 1 475 2 117 14 118 4 643 1 297 1 298 4 120 1 299 1 648 1 480 14 121 1 300 8 484 1 302 1 122 1 123 6 125 1 303 3 129 1 487 1 306 2 490 1 653 2 309 2 312 8 655 2 314 2 316 1 657 1 493 1 317 2 658 1 660 1 137 1 321 3 662 2 324 2 496 2 497 2 142 1 143 1 500 1 327 2 144 7 503 1 504 1 331 2 505 1 669 1 332 2 670 1 146 1 334 1 671 1 672 1 673 5 674 1 336 1 337 2 338 1 510 4 676 2 511 4 677 3 512 1 680 6 152 1 517 1 153 1 154 1 521 8 684 1 156 2 524 1 525 1 157 1 687 4 
+528 1 529 1 160 12 1 14 161 6 530 1 348 14 2 2 163 1 3 3 350 2 354 1 533 4 9 2 536 1 537 2 357 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 182 14 548 3 22 2 186 1 23 1 25 5 376 8 28 2 379 1 558 1 381 1 560 2 383 1 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 571 1 572 2 196 1 573 8 199 8 201 14 42 4 204 1 574 2 44 3 205 4 206 1 575 2 397 3 396 3 208 1 399 1 401 1 405 1 215 4 407 5 409 2 408 1 219 2 411 2 413 3 222 6 55 14 416 2 417 2 58 1 226 1 420 2 60 1 584 4 61 1 231 1 423 3 590 2 62 14 424 14 234 1 237 10 240 1 426 2 70 3 427 1 596 1 242 12 598 3 429 1 243 22 430 12 432 1 74 1 76 4 600 1 247 14 601 4 78 1 250 14 79 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 617 14 619 2 620 14 444 1 621 1 445 2 265 4 266 1 622 1 447 8 624 8 268 1 449 4 274 1 277 1 450 1 629 1 278 1 105 1 279 1 453 1 280 1 635 1 454 4 637 1 108 4 283 3 284 1 111 6 285 1 460 1 288 4 290 1 113 2 112 14 466 3 114 1 640 1 471 2 475 2 117 14 118 4 643 1 297 1 298 4 120 1 299 1 648 1 480 14 121 1 300 8 484 1 302 1 122 1 123 6 125 1 303 3 129 1 487 1 306 2 490 1 653 2 309 2 312 8 655 2 314 2 316 1 657 1 493 1 317 2 658 1 660 1 137 1 321 3 662 2 496 2 324 2 497 2 142 1 143 1 500 1 327 2 144 7 503 1 504 1 331 2 669 1 505 1 332 2 670 1 146 1 334 1 671 1 672 1 673 5 674 1 336 1 337 2 510 4 338 1 676 2 511 4 677 3 512 1 680 6 152 1 517 1 153 1 154 1 521 8 684 1 156 2 524 1 157 1 525 1 687 4 
+528 1 529 1 160 12 1 14 161 6 530 1 348 14 2 2 163 1 3 3 350 2 354 1 533 4 9 2 536 1 537 2 357 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 182 14 548 3 22 2 186 1 23 1 25 5 376 8 28 2 379 1 558 1 381 1 560 2 383 1 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 571 1 572 2 196 1 573 8 199 8 201 14 42 4 204 1 574 2 44 3 205 4 206 1 575 2 397 3 396 3 208 1 399 1 401 1 405 1 215 4 407 5 409 2 408 1 219 2 411 2 413 3 222 6 55 14 416 2 417 2 58 1 226 1 420 2 60 1 584 4 61 1 231 1 423 3 590 2 62 14 424 14 234 1 237 10 240 1 426 2 70 3 427 1 596 1 242 12 598 3 429 1 243 22 430 12 432 1 74 1 76 4 600 1 247 14 601 4 78 1 250 14 79 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 617 14 619 2 620 14 444 1 621 1 445 2 265 4 266 1 622 1 447 8 624 8 268 1 449 4 274 1 277 1 450 1 629 1 278 1 105 1 279 1 453 1 280 1 635 1 454 4 637 1 108 4 283 3 284 1 111 6 285 1 460 1 288 4 290 1 113 2 112 14 466 3 114 1 640 1 471 2 475 2 117 14 118 4 643 1 297 1 298 4 120 1 299 1 648 1 480 14 121 1 300 8 484 1 302 1 122 1 123 6 125 1 303 3 129 1 487 1 306 2 490 1 653 2 309 2 312 8 655 2 314 2 316 1 657 1 493 1 317 2 658 1 660 1 137 1 321 3 662 2 496 2 324 2 497 2 142 1 143 1 500 1 327 2 144 7 503 1 504 1 331 2 669 1 505 1 332 2 670 1 146 1 334 1 671 1 672 1 673 5 674 1 336 1 337 2 510 4 338 1 676 2 511 4 677 3 512 1 680 6 152 1 517 1 153 1 154 1 521 8 684 1 156 2 524 1 157 1 525 1 687 4 
+450 1 619 1 142 1 307 1 
+307 1 450 1 619 1 646 1 198 1 432 1 301 1 444 1 336 1 
+146 1 450 1 619 1 336 1 307 1 
+450 1 336 1 
+146 1 450 1 256 1 619 1 432 1 307 1 
+450 1 89 1 619 1 
+450 1 89 1 
+146 1 450 1 603 1 301 1 
+450 1 619 1 603 1 
+450 1 619 1 603 1 
+450 1 603 1 
+125 1 255 1 208 1 399 2 530 1 442 1 619 2 95 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 142 1 453 1 280 1 500 1 364 1 234 1 180 1 106 1 503 1 595 1 372 1 596 1 460 1 25 2 673 1 432 1 336 1 383 1 677 1 512 1 78 1 37 1 643 1 152 1 39 1 153 1 391 2 120 1 196 1 154 1 684 1 
+125 1 255 1 45 1 208 1 399 1 577 1 530 1 619 2 95 1 444 1 56 1 134 1 418 1 356 1 58 1 137 1 60 1 14 1 61 1 142 1 453 1 280 1 500 1 364 1 234 1 180 1 106 1 503 2 595 1 372 1 596 1 507 1 460 1 25 2 673 1 432 1 336 1 383 1 677 1 512 1 78 2 37 2 643 1 152 1 606 1 39 1 153 1 391 2 120 1 196 1 154 1 684 1 
+125 1 106 1 255 1 503 1 208 1 399 2 595 1 442 1 530 1 596 1 460 1 619 2 673 1 25 2 95 1 432 1 444 1 336 1 134 1 383 1 58 1 677 1 512 1 137 1 37 1 78 1 60 1 643 1 152 1 14 1 39 1 391 2 153 1 61 1 196 1 120 1 684 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 
+527 1 387 1 581 1 118 1 296 1 359 1 79 1 
+527 1 387 1 344 1 581 1 118 1 296 1 359 1 79 1 
+125 1 255 1 208 1 529 1 530 1 619 2 315 1 316 1 444 1 621 1 57 1 58 1 137 1 60 1 14 1 450 1 629 1 362 1 105 1 142 1 453 1 632 1 280 1 364 1 500 1 180 1 503 1 68 1 505 1 596 1 460 1 24 1 25 1 429 1 673 1 465 1 378 1 290 1 432 1 113 2 336 1 191 1 677 2 512 1 78 1 37 1 389 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 609 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 316 1 444 1 621 1 58 1 137 1 60 1 14 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 180 1 503 1 68 1 505 1 596 1 460 1 25 1 429 1 673 1 378 1 290 1 432 1 113 2 336 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 609 1 122 1 157 1 204 1 
+454 4 44 4 205 4 108 6 331 2 401 1 285 1 653 2 163 1 215 4 407 7 408 1 671 1 288 4 598 3 674 1 415 2 533 4 76 4 511 4 622 1 226 1 601 4 357 3 660 1 248 1 449 4 517 1 230 2 298 4 571 1 521 10 279 1 484 2 327 3 144 9 42 4 
+125 1 255 1 45 1 208 1 399 1 529 1 442 1 530 1 162 2 92 1 619 2 95 1 316 1 444 1 169 1 56 1 134 1 418 1 58 1 137 1 60 1 14 1 276 1 450 1 104 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 180 1 634 1 106 1 503 2 505 1 596 1 460 1 556 1 25 1 429 1 673 1 290 1 432 1 113 2 467 1 336 1 559 1 677 4 512 1 78 2 37 2 643 1 476 1 152 1 39 3 153 1 391 2 683 1 196 1 120 1 154 1 684 1 85 2 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 95 1 316 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 37 1 78 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 45 1 208 1 399 2 529 1 442 1 530 1 162 2 92 1 619 2 95 1 316 1 444 1 169 1 56 1 134 1 416 1 418 1 58 1 137 1 60 1 14 1 276 1 61 1 450 1 104 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 634 1 106 1 503 2 505 1 596 1 146 1 460 1 556 1 25 2 429 1 673 2 290 1 432 1 113 2 467 1 336 1 559 1 383 1 677 4 512 1 78 2 37 2 643 1 476 1 152 1 39 3 153 1 391 2 683 1 196 1 120 1 154 1 684 1 85 2 122 1 157 1 204 1 
+125 1 255 1 45 1 208 1 399 2 529 1 442 1 530 1 162 2 92 1 619 2 95 1 316 1 444 1 169 1 56 1 134 1 416 1 418 1 58 1 137 1 60 1 14 1 276 1 61 1 450 1 104 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 634 1 106 1 503 2 505 1 596 1 146 1 460 1 556 1 25 2 429 1 673 2 290 1 432 1 113 2 467 1 336 1 559 1 383 1 677 4 512 1 78 2 37 2 643 1 476 1 152 1 39 3 153 1 391 2 683 1 196 1 120 1 154 1 684 1 85 2 122 1 157 1 204 1 
+255 1 529 1 530 1 442 1 162 2 92 1 619 2 95 1 444 1 356 1 99 1 271 1 14 1 102 1 450 1 629 1 104 1 105 1 631 1 453 1 280 1 364 1 634 1 180 1 106 1 460 1 556 1 25 2 290 1 113 2 292 1 467 1 383 1 564 1 37 2 642 1 568 1 643 1 476 1 39 3 391 2 120 1 196 1 122 1 204 1 125 1 45 1 208 1 399 2 316 1 416 1 134 1 56 1 418 1 58 1 319 1 137 1 60 1 61 1 588 3 142 1 233 1 500 1 234 1 503 2 505 1 596 1 146 1 673 2 429 1 432 1 336 1 677 4 602 1 512 1 78 2 152 1 606 1 153 1 683 1 154 1 684 1 345 1 85 2 157 1 
+255 1 529 1 530 1 442 1 162 2 92 1 619 2 95 1 444 1 356 1 99 1 271 1 14 1 450 1 102 1 629 1 104 1 105 1 631 1 453 1 280 1 364 1 634 1 180 1 106 1 460 1 556 1 25 2 290 1 113 2 467 1 292 1 383 1 564 1 37 2 642 1 568 1 643 1 476 1 39 3 391 2 120 1 196 1 122 1 204 1 125 1 45 1 208 1 399 2 316 1 416 1 134 1 56 1 418 1 58 1 319 1 137 1 60 1 61 1 588 3 142 1 233 1 500 1 234 1 503 2 505 1 596 1 146 1 673 2 429 1 432 1 336 1 677 4 602 1 512 1 78 2 152 1 606 1 153 1 683 1 154 1 684 1 345 1 85 2 157 1 
+255 1 258 1 529 1 530 1 442 1 162 2 92 1 619 2 95 1 444 1 169 1 356 1 99 2 11 1 14 1 450 1 629 1 104 1 105 1 452 1 453 1 280 1 364 1 634 1 180 1 106 1 460 1 556 1 464 1 25 2 188 1 290 1 113 2 292 2 467 1 383 1 564 2 37 2 642 2 568 2 643 1 476 1 39 3 391 2 120 1 196 1 122 1 204 1 125 1 45 1 208 1 399 2 316 1 416 1 134 1 56 1 418 1 58 1 137 1 60 1 61 1 588 7 63 1 142 1 233 2 500 1 234 1 503 2 505 1 596 1 146 1 673 2 429 1 149 2 432 1 336 1 677 4 512 1 78 2 152 1 606 1 153 1 83 1 683 1 154 1 684 1 345 3 85 2 157 1 
+185 1 356 1 503 1 498 1 37 1 113 1 60 1 122 1 539 1 
+356 1 503 3 209 1 37 2 539 1 276 1 644 1 113 1 523 1 122 1 500 1 
+503 1 498 1 113 1 122 1 264 1 539 1 
+503 1 498 1 113 1 122 1 264 1 539 1 
+503 1 498 1 113 1 122 1 264 1 539 1 
+503 1 498 1 113 1 122 1 264 1 539 1 
+503 1 209 1 37 1 539 1 276 1 498 1 113 1 523 1 122 1 500 1 
+276 1 503 1 209 1 37 1 113 1 60 1 523 1 500 1 122 1 539 1 
+503 1 498 1 113 1 122 1 264 1 539 1 
+32 3 329 1 225 1 340 1 419 1 583 2 576 1 261 1 570 1 554 2 578 1 665 2 410 1 675 1 649 1 223 1 
+32 3 329 2 225 1 340 1 419 1 583 2 576 1 259 1 261 1 570 1 554 2 578 1 665 2 410 1 675 1 649 1 223 1 
+303 2 192 1 396 1 11 1 258 1 588 3 628 1 464 1 63 1 673 2 25 2 452 1 685 1 345 3 18 1 188 1 149 2 292 2 234 1 
+564 1 494 1 99 1 319 1 602 1 642 1 568 1 271 1 406 1 102 1 588 3 345 1 631 1 292 1 233 1 
+303 1 258 1 464 1 25 1 673 1 188 1 149 2 292 2 564 2 99 2 11 1 642 2 568 2 628 1 588 7 83 1 63 1 452 1 18 1 345 3 233 2 234 1 
+125 1 255 1 45 1 208 1 399 2 577 1 529 1 442 1 530 1 162 1 405 1 4 1 48 1 619 2 492 1 444 1 316 1 621 1 56 1 134 1 418 1 58 1 137 1 60 1 14 1 61 1 450 1 231 1 629 1 105 1 593 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 1 284 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 189 1 432 1 113 2 336 1 640 1 246 1 383 1 677 4 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 41 1 196 1 120 1 299 1 648 1 154 1 684 1 85 1 122 1 609 1 157 1 204 1 
+255 1 529 1 442 1 530 1 162 1 4 1 619 2 444 1 621 1 14 1 450 1 629 1 105 1 453 1 632 1 280 1 364 1 180 1 284 1 460 1 25 1 465 1 290 1 189 1 113 2 640 1 37 1 643 1 39 3 391 2 41 1 299 1 120 1 196 1 648 1 483 1 122 1 204 1 125 1 45 1 398 1 208 1 399 1 577 1 405 1 48 1 53 1 492 1 316 1 56 1 134 1 57 1 418 1 58 1 137 1 60 1 231 1 593 1 142 1 326 1 500 1 503 1 505 1 596 1 673 1 429 1 432 1 336 1 433 1 677 4 512 1 78 1 152 1 153 1 154 1 684 1 85 1 157 1 609 1 
+255 1 529 1 442 1 530 1 162 1 4 1 619 2 444 1 621 1 358 1 14 1 450 1 629 1 105 1 453 1 632 1 280 1 364 1 180 1 284 1 460 1 25 1 465 1 290 1 189 1 113 2 640 1 37 1 643 1 39 3 391 2 41 1 299 1 120 1 196 1 648 1 483 1 122 1 204 1 125 1 45 1 398 1 208 1 399 1 577 1 405 1 48 1 53 1 492 1 316 1 56 1 134 1 57 1 418 1 58 1 137 1 60 1 231 1 593 1 142 1 500 1 503 1 505 1 596 1 673 1 429 1 432 1 336 1 433 1 677 4 512 1 78 1 152 1 153 1 154 1 684 1 85 1 157 1 609 1 
+255 1 529 1 442 1 530 1 162 1 4 1 619 2 444 1 621 1 14 1 450 1 629 1 105 1 453 1 632 1 280 1 364 1 180 1 284 1 460 1 25 1 465 1 290 1 189 1 113 2 640 1 37 1 643 1 39 3 391 2 41 1 299 1 120 1 196 1 648 1 483 1 122 1 204 1 125 1 45 1 398 1 208 1 399 1 577 1 405 1 48 1 53 1 492 1 316 1 56 1 134 1 416 1 57 1 418 1 58 1 137 1 60 1 231 1 593 1 142 1 500 1 503 1 505 1 596 1 673 1 429 1 432 1 336 1 433 1 677 4 512 1 604 1 78 1 152 1 153 1 154 1 684 1 85 1 157 1 609 1 
+255 1 529 1 442 1 530 1 162 1 4 1 619 2 444 1 621 1 14 1 17 1 450 1 629 1 105 1 453 1 632 2 280 1 364 1 180 1 284 1 460 1 25 1 465 2 290 1 189 1 113 2 640 1 37 1 643 1 39 3 391 2 41 1 299 1 120 1 196 1 648 1 483 2 122 1 204 1 125 1 45 1 398 2 208 1 399 1 577 1 405 1 48 1 53 2 492 1 316 1 56 1 134 1 57 2 418 1 58 1 137 1 60 1 231 1 593 1 142 1 500 1 503 1 505 1 596 1 673 1 429 1 432 1 336 1 433 2 677 4 512 1 78 1 152 1 153 1 154 1 684 1 85 1 157 1 609 1 
+255 1 529 1 442 1 162 1 619 1 444 1 621 1 14 1 450 1 542 1 629 1 105 1 632 2 280 1 180 1 284 1 460 1 555 1 25 1 465 2 290 1 113 2 29 1 640 1 37 1 643 1 39 3 391 2 299 1 483 2 122 1 204 1 125 1 45 1 398 2 208 1 399 1 651 1 577 1 580 1 53 2 492 1 316 1 56 1 134 1 57 2 418 1 231 1 503 1 505 1 596 1 673 1 429 1 433 2 677 3 512 1 78 1 152 1 154 1 684 1 85 1 157 1 609 1 
+255 1 529 1 442 1 162 1 4 1 619 2 444 1 621 1 356 1 14 1 450 1 629 1 105 1 632 1 280 1 180 1 284 1 460 1 25 1 465 1 290 1 113 2 640 1 37 2 643 1 39 3 391 2 41 1 299 1 120 1 483 1 122 1 204 1 125 1 45 1 398 1 208 1 399 1 577 1 130 1 48 1 53 1 492 1 316 1 56 1 134 1 57 1 418 1 137 1 60 1 231 1 593 1 500 1 503 2 505 1 596 1 673 1 429 1 432 1 336 1 433 1 677 3 512 1 78 2 152 1 606 1 153 1 154 1 684 1 85 1 157 1 609 1 
+125 1 255 1 45 1 208 1 399 1 577 1 529 1 442 1 530 1 162 1 405 1 4 1 48 1 619 2 492 1 444 1 316 1 167 1 621 1 56 1 134 1 418 1 356 1 58 1 137 1 60 1 14 1 450 1 231 1 629 1 105 1 593 1 142 1 453 1 280 1 364 1 500 1 180 1 503 2 284 1 505 1 596 1 460 1 25 1 429 1 673 1 290 1 432 1 113 2 336 1 245 1 640 1 677 4 512 1 78 2 37 2 643 1 152 1 606 1 39 3 153 1 391 2 41 1 196 1 120 1 299 1 648 1 154 1 684 1 85 1 122 1 609 1 157 1 204 1 
+255 1 529 1 442 1 530 1 162 1 4 1 619 2 5 1 444 1 621 1 14 1 450 1 629 1 105 1 453 1 632 1 280 1 364 1 180 1 20 1 284 1 460 1 25 1 465 1 290 1 189 1 113 2 640 1 37 1 643 1 39 3 391 2 41 1 299 1 120 1 196 1 648 1 483 1 122 1 204 1 125 1 45 1 398 1 208 1 399 1 577 1 405 1 48 1 53 1 492 1 316 1 56 1 134 1 57 1 418 1 58 1 137 1 60 1 231 1 593 1 142 1 500 1 503 1 505 1 596 1 673 1 429 1 432 1 336 1 433 1 677 4 512 1 78 1 152 1 153 1 154 1 684 1 85 1 523 1 157 1 609 1 
+255 1 529 1 530 1 442 1 162 2 443 1 619 2 444 1 621 1 356 1 99 1 271 1 14 1 450 1 102 1 629 1 104 1 105 1 631 1 453 1 280 1 364 1 180 1 107 1 284 1 552 1 184 1 460 1 25 2 290 1 113 2 467 1 292 1 640 1 383 1 564 1 388 1 37 2 642 1 568 1 643 1 39 3 391 2 299 1 120 1 196 1 648 1 122 1 204 1 125 1 45 1 208 1 128 1 399 2 405 1 492 1 316 1 134 1 56 1 418 1 58 1 319 1 137 1 60 1 61 1 588 3 231 1 142 1 233 1 500 1 234 1 503 1 145 1 505 1 596 1 673 2 429 1 432 1 336 1 599 1 677 5 602 1 512 1 78 1 152 1 606 1 153 1 683 1 154 1 522 1 684 1 345 1 85 2 157 1 609 1 
+255 1 529 1 530 1 442 1 162 1 619 2 532 1 353 1 444 1 621 1 356 1 14 1 450 1 629 1 105 1 453 1 280 1 364 1 180 1 107 1 284 1 184 1 460 1 25 1 290 1 113 2 640 1 388 1 37 2 643 1 193 1 39 3 391 2 299 1 120 1 196 1 648 1 122 1 204 1 125 1 45 1 208 1 128 1 399 1 577 1 214 1 405 1 492 1 316 1 134 1 56 1 418 1 58 1 137 1 60 1 229 1 231 1 142 1 500 1 503 2 145 1 505 1 596 1 673 1 429 1 432 1 336 1 599 1 677 4 512 1 78 2 152 1 606 1 153 1 154 1 684 1 522 1 85 1 157 1 609 1 
+597 1 374 1 647 1 6 1 263 1 
+636 1 374 1 597 1 141 1 647 2 6 1 
+636 1 594 1 582 1 547 1 249 1 176 1 374 1 597 1 141 1 647 3 6 1 
+636 1 597 1 374 1 647 1 6 1 30 1 213 1 
+323 1 597 1 374 1 547 1 647 1 6 1 
+472 1 597 1 374 1 647 2 614 1 6 1 
+535 1 58 1 383 1 385 1 399 1 626 1 61 1 629 1 591 1 673 1 25 1 291 1 234 1 
+535 1 58 1 383 1 385 1 399 1 626 1 61 1 629 1 591 1 673 1 25 1 234 1 134 1 
+535 1 58 1 383 1 385 1 399 1 626 1 61 1 629 1 556 1 591 1 25 1 673 1 234 1 
+125 1 255 1 208 1 399 1 529 1 442 1 530 1 162 1 91 1 133 1 619 2 316 1 444 1 134 1 58 1 137 1 421 1 60 1 626 1 14 1 450 1 629 1 591 1 105 1 142 1 453 1 280 1 364 1 500 1 180 1 503 1 505 1 596 1 460 1 25 1 429 1 673 1 290 1 432 1 113 2 336 1 563 1 677 3 512 1 37 1 78 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 85 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 238 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 61 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 2 429 1 673 2 290 1 72 1 432 1 113 2 336 1 150 1 468 2 383 1 562 1 677 2 339 1 341 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 316 1 444 1 134 1 58 1 137 1 60 1 626 1 14 1 61 1 450 1 629 1 591 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 341 1 512 1 37 1 78 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+535 1 58 1 383 1 385 1 399 1 626 1 61 1 629 1 556 1 591 1 673 1 25 1 234 1 134 1 
+535 1 58 1 629 1 385 1 556 1 591 1 626 1 
+535 1 58 1 383 1 385 1 399 1 626 1 61 1 629 1 556 1 591 1 673 1 25 1 234 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 1 429 1 673 1 290 1 72 1 432 1 113 2 336 1 150 1 468 2 562 1 563 1 677 2 339 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 1 529 1 530 1 619 2 220 1 96 1 316 1 444 1 416 1 224 1 58 1 318 1 137 1 60 1 139 1 626 1 14 1 61 1 450 1 629 1 591 1 105 1 592 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 455 1 545 1 503 1 550 1 505 1 596 1 146 1 460 1 25 2 429 1 673 2 290 1 72 1 432 1 113 2 336 1 150 1 468 2 383 1 562 1 677 2 339 1 341 1 435 1 512 1 77 1 37 1 78 1 643 1 516 1 152 1 39 3 477 1 153 1 391 2 520 1 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 162 1 619 2 316 1 444 1 134 1 58 1 137 1 60 1 626 1 14 1 61 1 450 1 629 1 591 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 3 341 1 512 1 37 1 78 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 686 1 85 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 316 1 444 1 134 1 58 1 137 1 60 1 626 1 14 1 61 1 450 1 629 1 591 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 341 1 512 1 37 1 78 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 316 1 444 1 134 1 58 1 137 1 60 1 626 1 14 1 61 1 450 1 629 1 591 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 341 1 512 1 37 1 78 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+574 1 394 1 575 1 615 1 1 4 160 3 161 1 348 4 2 1 617 4 309 1 350 1 409 1 618 1 219 1 312 1 655 1 314 1 411 1 620 4 55 4 417 1 445 1 265 1 317 1 266 1 447 2 173 4 174 3 624 2 584 2 15 1 360 4 540 1 662 1 361 3 590 1 62 4 324 2 544 1 363 1 424 4 237 2 182 4 111 3 242 3 243 5 376 1 430 3 28 1 112 4 337 1 338 1 469 1 560 1 384 1 247 4 475 1 566 8 117 4 250 4 194 1 119 1 195 2 82 4 645 1 572 1 573 2 480 4 300 3 199 2 156 1 253 1 201 4 123 2 
+394 1 575 1 615 1 1 1 160 2 348 3 2 1 617 3 309 1 350 1 409 1 618 1 219 1 312 3 314 1 620 3 168 1 55 3 417 1 445 1 317 1 173 4 174 3 584 1 15 3 360 3 662 1 361 5 590 1 62 3 544 1 363 1 424 1 179 3 237 3 182 1 111 3 242 3 243 6 376 3 430 3 28 1 112 1 560 1 247 4 475 1 566 5 117 3 250 5 194 1 195 1 82 4 572 1 573 1 480 1 156 1 201 3 
+1 1 160 2 348 2 2 1 617 2 309 1 350 1 409 1 219 1 312 2 655 1 314 1 620 2 411 1 55 2 317 1 173 1 174 1 584 4 15 2 360 2 361 4 590 1 62 2 324 1 424 1 237 6 182 1 242 2 243 4 376 2 430 2 112 1 337 1 560 1 247 1 566 2 117 2 250 1 194 1 195 2 82 1 480 1 300 1 156 1 201 2 
+574 1 126 1 575 1 612 1 210 1 211 2 1 5 160 4 161 2 348 4 2 1 617 4 309 1 350 1 49 2 409 1 219 1 312 3 655 1 314 1 411 1 620 4 55 4 417 1 445 1 265 1 317 1 266 1 447 3 173 5 174 3 624 3 584 3 15 2 360 4 662 1 361 8 232 1 177 1 590 1 62 4 324 2 496 1 497 1 544 1 363 1 424 5 237 4 182 5 111 5 332 1 458 1 428 1 638 1 22 1 242 3 243 9 376 3 430 3 112 5 337 1 471 1 676 1 560 1 247 5 475 1 566 10 678 1 117 4 250 5 194 1 80 1 195 4 82 5 572 1 573 3 480 5 300 3 199 3 156 1 201 4 254 1 123 2 687 1 
+612 2 615 1 160 10 1 10 161 4 348 10 617 10 2 1 350 1 618 1 620 10 168 1 9 1 537 1 445 1 265 3 447 5 174 8 173 11 624 5 15 6 360 10 361 15 177 1 544 1 363 1 179 3 182 10 111 5 458 1 638 1 22 2 376 6 25 1 28 1 112 10 471 1 560 1 475 1 566 21 117 10 194 1 195 6 572 1 480 10 573 6 199 5 300 5 201 10 123 4 394 1 574 1 303 1 575 1 126 1 396 1 211 2 210 1 306 1 309 1 49 2 409 1 219 1 312 7 655 1 314 1 411 1 55 10 417 1 317 1 420 1 584 4 662 1 232 1 62 10 590 1 496 2 497 1 424 10 237 8 426 1 332 2 428 1 242 8 430 8 243 19 673 1 337 1 510 2 676 2 247 11 678 1 250 12 80 2 82 11 156 1 254 2 687 3 
+237 1 207 1 549 1 348 1 652 1 2 1 309 1 350 1 409 1 242 1 219 1 243 2 314 1 620 1 560 1 317 1 247 1 173 1 566 1 228 1 250 1 515 1 584 2 194 1 15 1 360 1 40 1 361 1 82 1 362 1 590 1 156 1 201 1 
+574 1 126 1 575 1 612 1 1 5 160 5 161 2 348 5 2 1 617 5 309 1 350 1 409 1 219 1 312 3 655 1 314 1 411 1 620 5 55 5 417 1 445 1 265 1 317 1 266 2 447 3 173 5 174 3 624 3 584 3 15 3 360 5 540 1 662 1 361 6 232 1 177 1 590 1 62 5 324 4 496 1 544 1 363 1 424 5 237 5 182 5 111 5 332 1 428 1 22 1 242 5 243 8 376 3 430 5 112 5 337 2 338 1 676 1 560 1 247 5 475 1 566 10 117 5 250 5 194 1 80 1 195 2 82 5 572 1 438 1 573 3 480 5 300 3 199 3 156 1 201 5 254 1 123 2 687 1 
+587 1 431 2 90 1 
+587 1 431 2 90 1 65 1 
+540 2 175 1 338 1 
+474 1 175 1 540 3 627 1 313 1 7 1 203 1 687 1 338 1 
+474 1 384 1 538 1 175 1 441 1 587 1 540 2 627 2 313 1 187 1 289 1 203 2 687 3 9 1 338 1 
+612 1 615 1 160 6 1 7 161 3 348 8 617 8 2 1 350 1 620 8 9 1 537 1 445 1 265 2 266 1 447 4 174 5 173 7 624 4 15 5 360 8 361 11 544 1 363 1 182 7 111 3 458 1 22 1 376 5 25 1 28 1 112 7 471 2 560 1 475 1 566 14 117 8 194 1 195 4 572 1 480 7 573 4 199 4 300 4 201 8 123 3 574 1 303 1 575 1 396 1 210 1 306 1 309 1 49 1 409 1 219 1 312 5 655 1 314 1 411 1 55 8 417 1 317 1 420 1 584 2 662 1 62 8 590 1 496 1 324 2 497 2 424 7 237 6 426 1 241 1 332 1 242 7 430 7 243 14 673 1 337 1 510 2 676 1 247 7 250 7 80 1 82 7 156 1 254 1 687 2 
+612 1 615 1 160 6 1 7 161 3 348 7 617 7 2 1 350 1 620 7 9 1 537 1 445 1 265 2 266 1 447 4 174 5 173 7 624 4 15 4 360 7 361 7 544 1 363 1 182 7 111 3 22 1 376 4 25 1 28 1 112 7 471 2 560 1 475 1 566 14 117 7 194 1 195 3 572 1 480 7 573 4 199 4 300 4 201 7 123 3 574 1 303 1 575 1 396 1 306 1 309 1 409 1 219 1 312 4 655 1 314 1 411 1 55 7 417 1 317 1 420 1 584 2 662 1 62 7 590 1 496 1 324 2 497 2 424 7 237 5 426 1 241 1 332 1 242 6 430 6 243 11 673 1 337 1 510 2 676 1 247 7 250 7 80 1 82 7 156 1 254 1 687 2 
+394 1 575 1 615 1 1 1 160 2 348 3 2 1 617 3 309 1 350 1 409 1 618 1 219 1 312 3 314 1 620 3 168 1 55 3 417 1 445 1 317 1 173 4 174 3 584 1 15 3 360 3 662 1 361 5 590 1 62 3 544 1 363 1 424 1 179 3 237 3 182 1 111 3 242 3 243 6 376 3 430 3 28 1 112 1 560 1 247 4 475 1 566 5 117 3 250 5 194 1 195 1 82 4 572 1 573 1 480 1 156 1 201 3 
+266 1 324 2 337 1 
+126 1 575 1 211 2 1 1 160 1 348 4 2 1 617 4 309 1 350 1 49 1 409 1 219 1 312 2 314 1 620 4 55 4 417 1 445 1 317 1 173 4 174 2 584 3 15 2 360 4 662 1 361 6 177 1 362 1 590 1 62 4 496 1 544 1 363 1 424 1 179 3 237 3 182 1 111 5 332 1 428 1 22 1 242 3 243 7 376 3 430 3 112 1 676 1 560 1 247 4 475 1 566 5 678 1 117 4 250 4 194 1 40 1 195 3 82 4 572 1 573 1 480 1 156 1 201 4 
+351 1 172 1 437 1 13 1 633 1 
+650 1 125 1 255 1 45 1 208 1 399 2 488 1 442 1 530 1 404 1 619 1 95 4 316 1 444 1 56 1 134 1 418 1 58 1 137 1 60 1 539 1 14 1 276 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 2 505 1 596 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 559 1 383 1 677 3 512 1 37 2 78 2 643 1 152 1 39 2 153 1 391 2 196 1 120 1 684 1 523 1 122 1 609 1 157 1 
+650 1 125 1 255 1 208 1 399 2 488 1 442 1 530 1 404 1 619 1 316 1 444 1 134 1 58 1 137 1 60 1 539 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 1 505 1 596 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 3 512 1 78 1 37 1 643 1 152 1 39 2 153 1 391 2 196 1 120 1 684 1 523 1 122 1 609 1 157 1 
+650 1 125 1 255 1 208 1 399 2 488 1 442 1 530 1 404 1 619 1 316 1 444 1 134 1 58 1 137 1 60 1 539 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 503 1 505 1 596 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 3 512 1 78 1 37 1 643 1 152 1 39 2 153 1 391 2 196 1 120 1 154 1 684 1 523 1 122 1 609 1 157 1 
+125 1 255 1 208 1 530 1 579 1 619 1 221 1 316 1 444 1 58 1 137 1 60 1 539 1 14 1 450 1 629 1 362 1 105 1 142 1 453 1 280 1 364 1 500 1 180 1 503 1 505 1 596 1 146 1 25 1 429 1 673 1 290 1 432 1 113 2 336 1 677 1 512 1 37 1 78 1 643 1 152 1 39 2 153 1 391 2 196 1 120 1 684 1 523 1 122 1 609 1 157 1 
+125 1 255 1 208 1 530 1 619 1 316 1 444 1 58 1 137 1 60 1 539 1 320 1 14 1 450 1 629 1 362 1 105 1 142 1 453 1 280 1 364 1 500 1 180 1 503 1 505 1 596 1 25 1 429 1 673 1 290 1 432 1 113 2 336 1 677 1 512 1 37 1 78 1 643 1 152 1 39 2 153 1 391 2 196 1 120 1 684 1 482 1 523 1 122 1 609 1 157 1 
+125 1 255 1 45 1 208 1 399 2 442 1 530 1 619 1 412 1 316 1 444 1 56 1 134 1 418 1 172 1 58 1 137 1 60 1 585 1 539 1 14 1 276 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 281 1 180 1 503 2 456 1 505 1 596 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 559 1 383 1 677 1 512 1 37 2 78 2 643 1 152 1 39 2 153 1 391 2 196 1 120 1 437 1 684 1 523 1 158 1 122 1 609 1 157 1 
+125 1 255 1 208 1 530 1 579 1 619 1 221 1 316 1 444 1 58 1 137 1 60 1 539 1 14 1 450 1 629 1 362 1 105 1 142 1 453 1 280 1 364 1 500 1 180 1 503 1 505 1 596 1 25 1 429 1 673 1 290 1 432 1 113 2 336 1 677 1 512 1 37 1 78 1 643 1 152 1 39 2 153 1 391 2 196 1 120 1 684 1 523 1 122 1 609 1 157 1 
+125 1 106 1 255 1 503 1 208 1 399 2 442 1 530 1 596 1 460 1 619 2 673 1 25 2 95 1 432 1 444 1 336 1 134 1 383 1 58 1 677 1 512 1 137 1 37 1 78 1 60 1 643 1 152 1 14 1 39 1 391 2 153 1 61 1 196 1 120 1 684 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 
+125 1 106 1 255 1 503 1 208 1 399 2 442 1 530 1 596 1 460 1 619 2 673 1 25 2 95 1 432 1 444 1 336 1 134 1 383 1 58 1 677 1 512 1 137 1 37 1 78 1 60 1 643 1 152 1 14 1 39 1 391 2 153 1 61 1 196 1 120 1 684 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 
+125 1 106 1 255 1 503 1 208 1 399 1 530 1 372 1 596 1 460 1 619 2 673 1 25 2 95 1 432 1 336 1 444 1 134 1 383 1 58 1 677 1 512 1 137 1 37 1 78 1 60 1 643 1 152 1 14 1 39 1 391 2 153 1 61 1 196 1 120 1 154 1 684 1 142 1 453 1 280 1 364 1 485 1 500 1 234 1 180 1 
+125 1 106 1 255 1 503 1 208 1 399 2 442 1 530 1 596 1 460 1 619 2 673 1 25 2 95 1 432 1 444 1 336 1 134 1 383 1 58 1 677 1 512 1 137 1 37 1 78 1 60 1 643 1 152 1 14 1 39 1 391 2 153 1 61 1 196 1 120 1 684 1 142 1 453 1 280 1 364 1 485 1 500 1 234 1 180 1 
+125 1 106 1 255 1 503 1 208 1 399 2 530 1 372 1 596 1 460 1 619 2 673 1 25 2 95 1 432 1 336 1 444 1 134 1 383 1 58 1 677 1 512 1 137 1 37 1 78 1 60 1 643 1 152 1 14 1 39 1 391 2 153 1 61 1 196 1 120 1 154 1 684 1 142 1 453 1 280 1 364 1 485 1 500 1 234 1 180 1 
+16 1 682 1 546 2 446 2 183 1 448 3 252 3 
+564 1 99 1 319 1 602 1 642 1 568 1 271 1 459 1 102 1 216 1 588 3 345 1 631 1 292 1 233 1 
+561 1 294 1 564 1 99 1 319 1 602 1 642 1 568 1 271 1 102 1 216 1 588 3 345 1 631 1 292 1 233 1 
+277 1 303 1 396 1 362 1 23 1 387 1 25 1 673 1 118 1 359 1 79 1 274 1 
+454 2 44 1 205 1 303 1 206 1 396 1 527 1 108 3 401 1 653 1 215 2 407 1 408 1 288 2 23 1 598 1 25 1 673 1 674 1 558 1 493 1 533 2 536 1 76 2 511 2 622 1 601 2 387 1 357 3 660 1 296 1 118 3 359 1 79 1 449 2 274 1 517 1 298 1 571 1 521 3 279 1 327 1 42 2 144 2 
+391 1 367 1 673 1 390 1 
+43 1 367 1 643 1 391 1 51 1 25 1 673 1 453 1 509 1 87 1 
+391 1 43 1 367 1 25 1 673 1 416 1 
+391 1 684 1 673 1 
+684 1 673 1 
+303 1 25 1 673 1 416 1 
+303 1 25 1 673 1 
+43 1 303 1 25 1 673 1 403 1 416 2 
+25 1 673 1 234 1 
+43 1 673 1 
+392 1 367 1 673 1 416 1 
+391 1 596 1 303 1 502 1 673 1 530 1 180 1 416 1 
+303 1 502 1 673 1 530 1 
+196 1 25 1 673 1 416 1 
+196 1 673 1 509 1 
+196 1 25 1 673 1 
+596 1 303 1 673 1 180 2 
+25 1 673 1 605 1 403 1 
+25 1 673 1 364 1 
+196 1 673 1 
+172 1 101 1 13 1 585 1 310 1 437 1 412 3 158 1 633 1 281 1 
+58 1 383 1 115 1 399 1 269 1 61 1 629 1 673 1 25 1 291 1 234 1 
+58 1 383 1 115 1 399 1 269 1 61 1 629 1 673 1 25 1 234 1 134 1 
+58 1 383 1 399 1 115 1 269 1 61 1 629 1 556 1 25 1 673 1 234 1 
+58 1 383 1 115 1 399 1 269 1 61 1 629 1 556 1 673 1 25 1 234 1 134 1 
+58 1 629 1 556 1 115 1 269 1 
+58 1 383 1 115 1 399 1 269 1 61 1 629 1 556 1 673 1 25 1 234 1 
+528 1 529 1 160 12 1 14 161 6 530 1 348 14 2 2 3 3 350 2 354 1 9 2 537 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 182 14 548 3 22 2 186 1 25 3 376 8 28 2 379 1 381 1 560 2 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 572 2 196 1 573 8 199 8 201 14 204 1 574 2 575 2 396 2 397 3 208 1 405 1 409 2 219 2 411 2 413 3 222 6 55 14 417 2 58 1 420 2 60 1 584 4 231 1 590 2 62 14 423 3 424 14 66 1 237 10 240 1 426 2 70 3 427 1 596 1 242 12 429 1 243 22 430 12 432 1 74 1 600 1 247 14 78 1 250 14 79 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 617 14 619 2 620 14 444 1 621 1 445 2 265 4 266 1 447 8 624 8 268 1 277 1 450 1 629 1 278 1 105 1 453 1 280 1 635 1 637 1 283 3 284 1 111 6 460 1 290 1 113 2 112 14 466 3 114 1 640 1 471 2 475 2 117 14 118 2 643 1 297 1 120 1 299 1 648 1 480 14 121 1 300 8 122 1 302 1 123 6 125 1 303 2 129 1 487 1 306 2 490 1 309 2 312 8 655 2 314 2 316 1 657 1 317 2 658 1 137 1 321 3 662 2 496 2 324 2 497 2 142 1 143 1 500 1 503 1 504 1 669 1 505 1 332 2 670 1 334 1 673 3 336 1 337 2 510 4 338 1 676 2 677 3 512 1 680 6 152 1 153 1 154 1 684 1 156 2 157 1 525 1 524 1 687 4 
+528 1 529 1 160 12 1 14 161 6 530 1 348 14 2 2 3 3 350 2 354 1 9 2 537 2 173 14 174 10 359 1 14 1 15 8 360 14 361 14 544 2 363 2 364 1 180 1 182 14 548 3 22 2 186 1 25 3 376 8 28 2 379 1 381 1 560 2 387 1 566 28 37 1 567 1 194 2 39 3 391 2 195 6 572 2 196 1 573 8 199 8 201 14 204 1 574 2 575 2 396 2 397 3 208 1 405 1 409 2 219 2 411 2 413 3 222 6 55 14 417 2 58 1 420 2 60 1 584 4 231 1 590 2 62 14 423 3 424 14 66 1 237 10 240 1 426 2 70 3 427 1 596 1 242 12 429 1 243 22 430 12 432 1 74 1 600 1 247 14 78 1 250 14 79 1 80 2 82 14 608 1 438 1 610 2 609 1 254 2 88 3 255 1 612 2 615 2 616 1 617 14 619 2 620 14 444 1 621 1 445 2 265 4 266 1 447 8 624 8 268 1 277 1 450 1 629 1 278 1 105 1 453 1 280 1 635 1 637 1 283 3 284 1 111 6 460 1 290 1 113 2 112 14 466 3 114 1 640 1 471 2 475 2 117 14 118 2 643 1 297 1 120 1 299 1 648 1 480 14 121 1 300 8 122 1 302 1 123 6 125 1 303 2 129 1 487 1 306 2 490 1 309 2 312 8 655 2 314 2 316 1 657 1 317 2 658 1 137 1 321 3 662 2 496 2 324 2 497 2 142 1 143 1 500 1 503 1 504 1 669 1 505 1 332 2 670 1 334 1 673 3 336 1 337 2 510 4 338 1 676 2 677 3 512 1 680 6 152 1 153 1 154 1 684 1 156 2 157 1 525 1 524 1 687 4 
+140 1 132 1 661 1 366 1 34 1 565 1 311 1 148 1 499 1 8 1 124 1 
+88 3 255 1 528 1 529 1 616 1 530 1 3 3 619 2 354 1 444 1 621 1 268 1 359 1 14 1 450 1 629 1 105 1 453 1 280 1 364 1 180 1 635 1 637 1 548 3 283 3 284 1 460 1 25 1 290 1 113 2 379 1 466 3 381 1 640 1 387 1 37 1 567 1 643 1 39 3 391 2 297 1 299 1 120 1 196 1 648 1 121 1 122 1 302 1 204 1 125 1 397 3 208 1 129 1 487 1 490 1 405 1 413 3 316 1 222 6 657 1 58 1 658 1 137 1 60 1 321 3 231 1 423 3 142 1 143 1 500 1 503 1 504 1 70 3 427 1 505 1 669 1 670 1 596 1 334 1 673 1 429 1 432 1 336 1 74 1 600 1 677 3 512 1 78 1 680 6 79 1 152 1 518 1 153 1 608 1 154 1 684 1 610 2 157 1 609 1 524 1 
+366 1 0 1 625 1 514 1 308 1 375 1 311 1 667 1 155 1 499 2 470 2 
+366 1 34 2 565 1 369 2 140 2 661 1 132 1 286 2 311 1 148 1 8 1 534 1 
+88 3 255 1 528 1 529 1 616 1 530 1 3 3 619 2 354 1 444 1 621 1 268 1 359 1 14 1 450 1 629 1 105 1 453 1 280 1 364 1 180 1 635 1 637 1 548 3 283 3 284 1 460 1 25 1 290 1 113 2 379 1 466 3 381 1 640 1 387 1 37 1 567 1 643 1 39 3 391 2 297 1 299 1 120 1 196 1 648 1 121 1 122 1 302 1 204 1 125 1 397 3 208 1 129 1 487 1 490 1 405 1 413 3 316 1 222 6 657 1 58 1 658 1 137 1 60 1 321 3 231 1 423 3 142 1 143 1 500 1 503 1 504 1 70 3 427 1 505 1 669 1 670 1 596 1 334 1 673 1 429 1 432 1 336 1 74 1 600 1 677 3 512 1 78 1 680 6 79 1 152 1 518 1 153 1 608 1 154 1 684 1 610 2 157 1 609 1 524 1 
+32 3 225 1 583 2 402 1 489 1 261 1 570 1 681 1 519 1 554 2 578 1 410 1 675 1 365 1 223 1 97 1 
+32 3 225 1 583 2 402 1 489 1 261 1 570 1 681 1 519 1 554 2 578 1 665 1 410 1 675 1 365 1 97 1 
+258 1 402 1 261 1 489 1 554 2 287 1 578 1 410 1 464 1 244 1 188 1 149 2 675 1 292 2 97 1 32 3 564 2 225 1 99 2 583 2 11 1 642 2 568 2 570 1 681 1 588 7 519 1 665 1 543 1 63 1 452 1 345 3 233 2 
+258 1 402 1 261 1 554 2 287 1 578 1 410 1 464 1 244 1 188 1 149 2 675 1 292 2 223 1 32 1 564 2 225 1 99 2 583 2 11 1 642 2 568 2 570 1 681 1 519 1 588 7 543 1 83 1 63 1 452 1 345 3 233 2 
+258 1 402 1 261 1 554 2 578 1 410 1 464 1 188 1 149 2 675 1 292 2 223 1 32 2 564 2 225 1 99 2 583 2 11 1 642 2 568 2 570 1 681 1 519 1 588 7 665 1 543 1 83 1 63 1 452 1 345 3 233 2 
+303 1 396 1 23 1 387 1 197 1 25 1 673 1 118 1 359 1 79 1 274 1 
+75 1 395 2 503 1 386 1 368 1 37 1 641 3 539 1 276 1 644 2 164 1 185 5 120 1 498 2 325 1 113 2 523 1 73 1 122 1 639 2 500 7 264 2 
+75 1 395 2 503 1 386 1 368 1 37 1 641 3 539 1 276 1 644 2 164 1 185 5 120 1 498 2 325 1 113 2 523 1 73 1 122 1 639 2 500 7 264 2 
+75 1 395 1 503 2 386 1 368 1 37 1 641 3 539 1 276 1 185 3 164 1 644 4 120 1 498 2 325 1 113 2 523 1 73 1 122 1 639 2 500 6 264 2 
+75 1 395 1 503 2 386 1 368 1 37 1 641 3 539 1 276 1 185 3 164 1 644 4 120 1 498 2 325 1 113 2 523 1 73 1 122 1 639 2 500 6 264 2 
+75 1 356 1 473 1 395 1 503 1 37 1 641 2 539 1 644 1 164 1 185 3 120 1 335 1 498 1 325 1 113 2 523 1 73 1 122 1 639 1 500 4 264 1 
+75 1 395 2 503 1 386 1 368 1 37 1 641 3 539 1 276 1 644 2 164 1 185 5 120 1 498 2 325 1 113 2 523 1 73 1 122 1 639 2 500 7 264 2 
+75 1 473 1 503 1 395 1 641 2 539 1 185 1 164 1 120 1 498 1 325 1 113 2 523 1 73 1 122 1 639 1 500 4 264 1 
+75 1 473 1 503 1 395 1 641 2 539 1 185 1 164 1 120 1 498 1 325 1 113 2 523 1 73 1 122 1 639 1 500 4 264 1 
+75 1 395 2 503 1 386 1 368 1 37 1 641 3 539 1 276 1 644 2 164 1 185 5 120 1 498 2 325 1 113 2 523 1 73 1 122 1 639 2 500 7 264 2 
+503 2 395 1 47 1 164 1 185 3 146 1 113 2 73 1 444 1 336 1 639 2 264 2 75 1 137 1 641 3 60 1 539 1 644 3 450 1 120 2 498 2 325 1 301 1 523 1 500 6 122 1 
+503 2 395 1 47 1 164 1 185 3 146 1 113 2 73 1 444 1 336 1 639 2 264 2 75 1 137 1 641 3 60 1 539 1 644 3 450 1 120 2 498 2 325 1 301 1 523 1 500 6 122 1 
+164 1 113 2 73 1 122 1 539 1 
+491 1 436 1 541 1 127 1 370 1 94 1 
+491 1 541 1 370 1 94 1 
+491 1 436 1 541 1 127 1 370 1 94 1 
+491 1 541 1 127 1 370 1 94 1 31 1 
+491 1 436 1 541 1 127 1 370 1 94 1 
+491 1 436 1 541 1 127 1 370 1 94 1 
+328 1 165 1 
+32 3 225 1 583 2 489 1 261 1 570 1 681 1 519 1 554 2 665 1 578 2 410 1 675 1 97 1 
+32 2 225 1 583 2 261 1 570 1 681 1 519 1 554 2 578 1 665 1 410 1 675 1 223 1 
+328 1 373 1 10 1 382 1 217 1 393 1 457 1 272 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 95 1 316 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 322 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 95 1 316 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 322 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+239 1 440 1 
+239 1 440 1 
+239 1 440 1 
+239 1 440 1 
+239 1 440 1 
+88 3 397 3 637 1 129 1 528 1 548 3 283 3 70 3 427 1 490 1 670 1 3 3 334 1 379 1 413 3 466 3 222 6 657 1 74 1 381 1 600 1 268 1 680 6 567 1 297 1 321 3 423 3 608 1 302 1 524 1 610 2 
+455 1 224 1 562 1 545 1 318 1 339 1 434 1 435 1 267 1 77 1 550 1 516 1 477 1 520 1 377 1 592 1 220 1 72 1 96 1 150 1 468 2 
+455 1 224 1 562 1 545 1 318 1 339 1 434 1 435 1 267 1 77 1 550 1 516 1 477 1 520 1 377 1 592 1 220 1 72 1 96 1 150 1 468 2 
+455 1 224 1 562 1 545 1 318 1 339 1 434 1 435 1 267 1 77 1 550 1 516 1 477 1 520 1 377 1 592 1 220 1 72 1 96 1 150 1 468 2 
+455 1 224 1 562 1 545 1 318 1 339 1 434 1 435 1 77 1 550 1 516 1 477 1 520 1 377 1 592 1 220 1 72 1 96 1 150 1 468 2 
+44 4 205 4 206 1 401 1 653 2 163 1 132 1 215 4 407 3 408 1 533 4 493 1 536 1 357 5 226 1 622 1 660 1 359 1 449 4 362 1 666 1 279 1 327 4 144 7 454 4 108 9 288 4 598 4 558 1 674 1 76 4 511 4 387 1 601 4 118 1 79 1 38 1 517 1 571 1 298 4 84 1 521 8 42 4 
+44 1 205 2 206 1 401 1 653 1 132 1 215 3 407 2 408 1 493 1 533 2 536 1 622 1 357 2 226 1 660 1 359 1 449 3 362 1 666 1 279 1 327 1 144 2 454 3 108 2 288 3 598 1 674 1 558 1 76 3 511 3 387 1 601 3 118 1 79 1 38 1 517 1 571 1 298 2 84 1 521 4 42 3 
+44 1 205 1 206 1 401 1 653 1 132 1 215 2 407 1 408 1 533 2 493 1 8 1 536 1 357 3 622 1 660 1 359 1 449 2 362 1 666 1 279 1 327 1 144 2 454 2 108 4 288 2 598 1 558 1 674 1 76 2 511 2 565 1 387 1 601 2 118 1 79 1 38 1 517 1 571 1 298 1 84 1 521 3 124 1 42 2 
+44 3 205 4 206 1 401 1 653 2 163 1 93 1 215 4 407 3 408 1 533 4 493 1 536 1 357 4 226 1 622 1 660 1 359 1 449 4 362 1 666 1 279 1 327 3 144 6 454 4 108 5 286 1 288 4 26 1 598 3 558 1 674 1 76 4 511 4 387 1 601 4 118 1 79 1 38 1 517 1 571 1 298 4 84 1 521 7 42 4 
+44 5 205 4 206 1 401 1 653 2 163 1 215 4 407 5 408 1 493 1 533 4 54 1 536 1 622 1 357 4 226 1 660 1 359 1 449 4 362 1 666 1 279 1 327 4 144 10 454 4 108 8 331 2 285 1 286 1 288 4 671 1 598 4 674 1 558 1 76 4 511 4 387 1 601 4 118 1 79 1 38 1 517 1 571 1 298 4 84 1 521 10 484 1 42 4 
+32 2 347 1 225 1 583 2 623 1 261 1 570 1 681 1 554 2 578 1 665 2 410 1 147 1 656 1 675 1 
+32 2 347 1 225 1 583 2 623 1 261 1 570 1 681 1 554 2 578 1 665 2 410 1 147 1 656 1 675 1 
+32 2 347 1 225 1 583 2 623 1 261 1 570 1 681 1 554 2 578 1 665 2 410 1 147 1 656 1 675 1 
+32 3 225 1 583 2 623 1 489 1 261 1 570 1 681 1 554 2 578 1 410 1 147 1 656 1 675 1 223 1 97 1 
+32 3 225 1 583 2 623 1 489 1 261 1 570 1 681 1 554 2 578 1 665 1 410 1 147 1 656 1 675 1 97 1 
+19 1 258 1 261 1 489 1 554 2 578 1 410 1 464 1 147 1 656 1 188 1 149 2 675 1 292 2 97 1 32 3 564 2 225 1 99 2 583 2 11 1 36 1 642 2 568 2 570 1 681 1 588 7 589 1 665 1 63 1 452 1 345 3 233 2 
+19 1 258 1 261 1 554 2 578 1 410 1 464 1 147 1 656 1 188 1 149 2 675 1 292 2 32 2 564 2 225 1 99 2 583 2 11 1 36 1 642 2 568 2 570 1 681 1 589 1 588 7 665 2 63 1 452 1 345 3 233 2 
+258 1 261 1 554 2 578 1 410 1 464 1 147 1 656 1 188 1 149 2 675 1 292 2 223 1 32 3 564 2 225 1 99 2 583 2 11 1 642 2 568 2 570 1 681 1 589 1 588 7 665 2 83 1 63 1 452 1 345 3 233 2 
+32 2 347 1 225 1 583 3 623 1 489 1 261 1 570 1 681 1 554 2 578 2 665 1 410 1 147 1 656 1 675 1 
+32 1 347 1 225 1 583 2 623 1 261 1 570 1 681 1 554 2 578 1 665 1 410 1 147 1 656 1 675 1 
+32 3 347 1 225 1 583 2 623 1 261 1 570 1 681 1 554 2 578 1 665 3 410 1 147 1 656 1 675 1 
+32 3 347 1 225 1 583 3 623 1 489 1 261 1 570 1 681 1 554 2 578 1 665 1 410 1 147 1 656 1 675 1 223 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 95 1 316 1 414 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 95 1 316 1 414 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 95 1 316 1 414 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+399 2 442 1 95 1 316 1 414 1 134 1 58 1 61 1 450 1 629 1 105 1 234 1 106 1 21 1 505 1 460 1 429 1 673 2 25 1 290 1 113 2 383 1 677 2 512 1 569 1 39 2 154 1 122 1 157 1 204 1 
+125 1 255 1 208 1 399 2 529 1 442 1 530 1 619 2 95 1 316 1 414 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 204 1 
+282 1 257 1 400 1 69 1 46 2 212 2 654 1 71 1 462 1 461 1 531 1 218 1 52 1 27 2 170 1 295 1 659 1 100 1 116 1 138 1 273 1 343 1 478 1 495 3 251 1 439 1 178 1 501 1 
+282 1 257 1 400 1 46 2 69 1 212 2 654 1 71 1 462 1 461 1 531 1 218 1 52 1 27 2 295 1 659 1 100 1 116 1 138 1 273 1 478 1 343 1 495 3 251 1 439 1 178 1 501 1 
+282 1 257 1 400 1 109 1 46 2 69 1 212 2 551 1 553 1 654 1 352 1 71 1 462 1 461 1 531 1 218 1 52 1 166 1 27 2 190 1 355 3 171 1 295 1 659 1 100 1 116 1 138 1 273 1 343 1 478 1 495 3 251 1 439 1 178 1 501 1 
+282 1 257 1 400 1 46 2 69 1 212 2 654 1 71 1 462 1 461 1 531 1 218 1 52 1 27 2 295 1 659 1 100 1 116 1 138 1 273 1 478 1 343 1 495 3 251 1 439 1 178 1 501 1 
+282 1 257 1 400 1 69 1 46 2 212 1 551 1 131 1 654 1 71 1 462 1 461 1 333 1 218 1 52 1 27 2 190 1 355 2 295 1 659 1 100 1 116 1 138 1 273 1 343 1 478 1 495 2 251 1 439 1 178 1 501 1 
+282 1 257 1 400 1 109 1 69 1 46 3 212 2 551 1 131 1 553 1 654 1 352 1 71 1 333 1 462 1 461 1 531 1 218 1 52 1 27 3 166 1 190 2 355 4 171 1 295 1 659 1 100 1 116 1 138 1 273 1 343 1 478 1 251 1 495 4 439 1 178 2 501 1 
+612 1 615 1 160 6 1 7 161 3 348 7 617 7 2 1 350 1 620 7 354 1 9 1 537 1 445 1 265 2 447 4 173 7 174 5 624 4 359 1 15 4 274 1 360 7 277 1 361 7 544 1 363 1 182 7 111 3 22 1 23 1 376 4 25 3 28 1 380 1 112 7 114 1 471 1 560 1 34 1 475 1 387 1 566 14 117 7 118 2 194 1 195 3 572 1 480 7 573 4 199 4 300 4 201 7 123 3 574 1 303 3 575 1 396 2 306 1 309 1 409 1 219 1 312 4 655 1 314 1 411 1 55 7 417 1 317 1 420 1 584 2 662 1 62 7 590 1 496 1 497 1 668 1 424 7 237 5 240 1 426 1 332 1 242 6 243 11 673 3 430 6 337 1 676 1 247 7 250 7 79 1 80 1 82 7 156 1 525 1 254 1 687 2 
+611 1 612 1 160 4 1 5 161 2 348 4 617 4 2 1 163 1 350 1 620 4 354 1 533 4 536 1 445 1 265 1 266 1 622 1 357 3 447 3 174 3 173 5 624 3 359 1 449 4 274 1 15 2 360 4 277 3 361 4 177 1 278 1 544 1 363 1 279 1 454 4 182 5 108 4 111 5 22 1 288 4 186 1 23 1 376 2 25 1 112 5 558 1 560 1 475 1 387 1 566 10 117 4 118 3 194 1 195 1 298 4 571 1 572 1 480 5 573 3 199 3 300 3 201 4 123 2 42 4 574 1 486 1 44 3 205 4 303 1 206 1 575 1 126 1 396 1 401 1 653 2 309 1 215 4 407 3 408 1 409 1 219 1 312 2 655 1 314 1 411 1 493 1 55 4 417 1 135 1 317 1 226 1 660 1 584 3 662 1 232 1 62 4 590 1 496 1 324 2 424 5 327 3 144 6 237 3 240 1 332 1 428 1 242 3 598 3 430 3 243 6 673 1 674 1 337 1 338 1 676 1 76 4 511 4 247 5 601 4 250 5 79 1 517 1 80 1 82 5 438 1 521 7 156 1 254 1 687 1 
+396 1 240 1 23 1 25 1 673 1 380 1 354 1 34 1 387 1 12 1 118 1 359 1 79 1 586 1 274 1 277 1 81 1 
+44 3 205 4 206 1 396 1 401 1 653 2 163 1 215 4 407 3 408 1 354 1 533 4 493 1 536 1 357 3 226 1 622 1 660 1 12 1 359 1 449 4 586 1 274 1 277 1 279 1 327 3 144 6 454 4 240 1 108 4 286 1 23 1 288 4 26 1 673 1 25 1 598 3 380 1 558 1 674 1 76 4 511 4 34 2 387 1 601 4 118 2 79 1 517 1 81 1 571 1 298 4 521 7 159 1 42 4 
+486 1 44 3 303 1 205 4 206 1 396 1 401 1 653 2 163 1 215 4 407 3 408 1 354 1 533 4 493 1 536 1 135 1 59 1 357 3 226 1 622 1 660 1 359 1 449 4 274 1 277 3 279 1 327 3 144 6 454 4 240 1 108 4 23 1 288 4 673 1 25 1 598 3 558 1 674 1 76 4 511 4 387 1 601 4 118 2 79 1 517 1 571 1 298 4 521 7 42 4 
+486 1 44 3 303 1 205 4 206 1 396 1 401 1 653 2 163 1 215 4 407 3 408 1 354 1 533 4 493 1 536 1 135 1 59 1 357 3 226 1 622 1 660 1 359 1 449 4 274 1 277 1 279 1 327 3 144 6 454 4 240 1 108 4 23 1 288 4 673 1 25 1 598 3 558 1 674 1 76 4 511 4 387 1 601 4 118 2 79 1 517 1 571 1 298 4 521 7 42 4 
+611 1 486 1 44 3 303 1 205 4 206 1 396 1 401 1 653 2 163 1 215 4 407 3 408 1 354 1 533 4 493 1 536 1 135 1 357 3 226 1 622 1 660 1 359 1 449 4 274 1 277 4 279 1 327 3 144 6 454 4 240 2 108 4 23 1 288 4 673 1 25 1 598 3 558 1 674 1 76 4 511 4 387 1 601 4 118 2 79 1 517 1 571 1 298 4 521 7 42 4 
+373 1 33 1 526 3 10 1 422 1 217 2 227 1 305 1 200 1 457 1 
+373 1 33 1 526 3 10 1 422 1 217 3 227 1 305 1 86 1 200 1 457 1 
+559 1 67 1 290 1 113 1 606 1 
+67 1 146 1 450 1 256 1 208 1 290 1 301 1 113 1 444 1 98 1 
+67 1 450 1 256 1 208 1 290 1 301 1 113 1 444 1 98 1 
+146 1 450 1 256 1 362 1 579 1 619 1 208 1 290 1 113 1 444 1 98 1 
+125 1 255 1 208 1 399 2 530 1 442 1 619 2 95 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 142 1 453 1 280 1 500 1 364 1 234 1 180 1 106 1 503 1 372 1 506 1 596 1 460 1 25 2 673 1 432 1 336 1 383 1 677 1 512 1 78 1 37 1 643 1 152 1 39 1 153 1 391 2 120 1 196 1 154 1 684 1 
+125 1 255 1 208 1 399 2 530 1 619 2 95 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 142 1 453 1 280 1 500 1 364 1 234 1 180 1 106 1 503 1 372 1 506 1 596 1 460 1 25 2 673 1 432 1 336 1 383 1 677 1 512 1 78 1 37 1 643 1 152 1 39 1 153 1 391 2 120 1 196 1 154 1 684 1 
+125 1 255 1 208 1 399 2 530 1 619 2 95 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 142 1 453 1 280 1 500 1 364 1 234 1 180 1 106 1 503 1 372 1 506 1 596 1 460 1 25 2 673 1 432 1 336 1 383 1 677 1 512 1 78 1 37 1 643 1 152 1 39 1 153 1 391 2 120 1 196 1 154 1 684 1 
+125 1 106 1 255 1 503 1 208 1 399 2 442 1 530 1 506 1 596 1 460 1 619 2 673 1 25 2 95 1 432 1 444 1 336 1 134 1 383 1 58 1 677 1 512 1 137 1 37 1 78 1 60 1 643 1 152 1 14 1 39 1 391 2 153 1 61 1 196 1 120 1 684 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 
+229 1 105 1 481 1 78 1 
+105 1 481 1 483 1 
+105 1 481 1 78 1 483 1 
+276 1 356 1 503 2 209 1 37 2 113 1 122 1 539 1 
+503 1 137 1 37 1 60 1 539 1 153 1 146 1 450 1 120 1 301 1 113 1 523 1 336 1 444 1 280 1 122 1 500 1 
+503 1 137 1 37 1 60 1 539 1 153 1 450 1 120 1 301 1 113 1 336 1 444 1 280 1 122 1 500 1 
+503 1 137 1 37 1 60 1 153 1 146 1 450 1 362 1 579 1 619 1 120 1 113 1 444 1 280 1 336 1 122 1 500 1 
+564 2 99 2 513 1 258 1 11 1 642 2 568 2 588 7 83 1 63 1 464 1 188 1 345 3 149 1 292 1 233 2 
+258 1 99 2 11 1 588 7 63 1 452 1 233 2 371 1 464 1 188 1 149 2 292 2 564 2 642 2 568 2 83 1 345 3 
+125 1 255 1 208 1 399 2 529 1 530 1 619 2 95 1 316 1 444 1 134 1 58 1 137 1 60 1 14 1 61 1 450 1 629 1 105 1 142 1 453 1 280 1 364 1 500 1 234 1 180 1 106 1 503 1 505 1 372 1 596 1 460 1 25 2 429 1 673 2 290 1 432 1 113 2 336 1 383 1 677 2 512 1 78 1 37 1 643 1 152 1 39 3 153 1 391 2 196 1 120 1 154 1 684 1 122 1 157 1 202 1 204 1 
+44 3 205 4 206 1 613 1 0 1 401 1 653 2 163 1 349 1 215 4 407 3 408 1 311 1 50 1 354 1 533 4 493 1 536 1 136 1 357 4 226 1 622 1 660 1 625 1 359 1 449 4 586 1 140 3 277 1 663 1 667 1 279 1 499 1 327 3 235 1 144 6 454 4 366 1 330 1 369 1 240 1 108 5 110 1 286 3 375 1 288 4 26 2 598 3 380 1 558 1 674 1 151 1 76 4 511 4 34 3 387 1 601 4 679 1 514 1 118 1 79 1 517 1 571 1 298 4 479 1 521 7 344 1 346 1 42 4 
