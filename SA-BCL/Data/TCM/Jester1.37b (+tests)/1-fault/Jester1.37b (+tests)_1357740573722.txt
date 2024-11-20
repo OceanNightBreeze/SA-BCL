@@ -1,0 +1,285 @@
+#tests: test_name, ' ', status(PASSED | FAILED | ERROR), ' ', [exception, { trace_mut_index | '(', { alternative_trace_mut_index, ',' }, ')' }]
+jester.tests.IgnoreListTest:testReadingEmptyIgnoreValues()V PASSED
+jester.tests.IgnoreListTest:testReadingIgnoreValues()V PASSED
+jester.tests.IgnoreListTest:testReadingIgnoreValuesEndOfLineSpecialCase()V PASSED
+jester.tests.IgnoreListTest:testReadingMultipleIgnoreValues()V PASSED
+jester.tests.IgnoreListTest:testReadingMultipleIgnoreBlankLines()V PASSED
+jester.tests.IgnoreListTest:testReadingIncorrectFile()V PASSED
+jester.tests.TestTesterTest:testTestsMustStartOffWorking()V PASSED
+jester.tests.TestTesterTest:testThatTestRunByIterator()V PASSED
+jester.tests.ReportItemTest:testXmlEncoding()V PASSED
+jester.tests.ReportItemTest:testLineNumberOneLine()V PASSED
+jester.tests.ReportItemTest:testLineNumberSomeLines()V PASSED
+jester.tests.TwoStringSwappingCodeManglerTest:testCouldntMangle()V PASSED
+jester.tests.TwoStringSwappingCodeManglerTest:testSimpleMangle1()V PASSED
+jester.tests.ReportTest:testBottomScore()V PASSED
+jester.tests.ReportTest:testCantFinishDifferentFile()V PASSED
+jester.tests.ReportTest:testCantStartTwoFiles()V PASSED
+jester.tests.ReportTest:testChangesToSameFileOrderedByIndex()V PASSED
+jester.tests.ReportTest:testFileScoreSeparateFromTotalScore()V PASSED
+jester.tests.ReportTest:testInitialScore()V PASSED
+jester.tests.ReportTest:testMediumScore()V PASSED
+jester.tests.ReportTest:testThatChangeThatCausedTestsToFailIsNotIncluded()V PASSED
+jester.tests.ReportTest:testThatChangeThatDidNotCauseTestsToFailIsIncluded()V PASSED
+jester.tests.ReportTest:testTopScore()V PASSED
+jester.tests.ReportTest:testTotalScoreForManyFiles()V PASSED
+jester.tests.ReportTest:testFileMustBeStarted()V PASSED
+jester.tests.MutationsListTest:testDefaults()V PASSED
+jester.tests.MutationsListTest:testReadMutations()V PASSED
+jester.tests.MutationsListTest:testReadMutationsIgnoreBogusLinesIncludingBlankOnes()V PASSED
+jester.tests.MainArgumentsTest:testMissingArgumentsCauseExceptionToBeThrown()V ERROR java.lang.IndexOutOfBoundsException 67 1 
+jester.tests.MainArgumentsTest:testMissingFileCauseExceptionToBeThrown()V PASSED
+jester.tests.MainArgumentsTest:testMandatoryArguments()V PASSED
+jester.tests.MainArgumentsTest:testThatMultipleMutationDirectoriesOrFilesAreAllowed()V PASSED
+jester.tests.MainArgumentsTest:testClasspathArgument()V PASSED
+jester.tests.MainArgumentsTest:testThatOneCanSpecifyOptionToNotShowProgressDialog()V PASSED
+jester.tests.MainArgumentsTest:testThatClasspathArgumentCanAppearFirst()V PASSED
+jester.tests.MainArgumentsTest:testThatClasspathArgumentCanAppearSecond()V PASSED
+jester.tests.MainArgumentsTest:testThatClasspathArgumentCanAppearLast()V PASSED
+jester.tests.MainArgumentsTest:testThatClasspathArgumentCanAppearInMiddleOfDirectoriesBecauseThereIsNoHarmInIt()V PASSED
+jester.tests.ConfigurationTest:testDefaults()V PASSED
+jester.tests.XMLReportWriterTest:testWritingChangesAsXMLHasBothGivenAndAbsoluteFilePaths()V PASSED
+jester.tests.SimpleIntCodeManglerTest:testCouldntMangle()V PASSED
+jester.tests.SimpleIntCodeManglerTest:testContinuesIfChangeFails()V PASSED
+jester.tests.SimpleIntCodeManglerTest:testContinuesIfChangeSucceeds()V PASSED
+jester.tests.SimpleIntCodeManglerTest:testDoesntTryToChangeBadlyNamedMethodCalls()V PASSED
+jester.tests.SimpleIntCodeManglerTest:testSimpleMangle()V PASSED
+jester.tests.SimpleIntCodeManglerTest:testBug955882()V PASSED
+jester.tests.IgnoreListDocumentTest:testTextIsIgnored()V PASSED
+jester.tests.IgnoreListDocumentTest:testTextIsIgnoredForMultipleIgnores()V PASSED
+jester.tests.IgnoreListDocumentTest:testCharAtReturnsSpaceInsideIgnoreRegion()V PASSED
+jester.tests.ClassTestTesterTest:testThatChangeThatFailsTestsIsNotRecorded()V PASSED
+jester.tests.ClassTestTesterTest:testThatChangeThatPassesTestsIsRecorded()V PASSED
+jester.tests.ClassTestTesterTest:testThatOriginalContentsAreNotWrittenBackIfNoChanges()V PASSED
+jester.tests.ClassTestTesterTest:testThatOriginalContentsAreWrittenBack()V PASSED
+jester.tests.ClassTestTesterTest:testThatMutationListIsUsed()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testBoolean()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testConditionFalseBranch()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testConditionTrueBranch()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testDecrement()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testEqual()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testIncrement()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testInfiniteLoop()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testInt()V PASSED
+jester.tests.acceptancetests.VeryTestedTest:testNotEqual()V PASSED
+jester.tests.functionaltests.VeryTestedTest:testNumber()V PASSED
+
+#uuts: uut_name, [ '|', mutator_class, '|', change_position_in_file_buffer, '|', change ]
+jester.SimpleCodeMangler:makeChange(ILjava.lang.String;Ljava.lang.String;)Z
+jester.MainArguments:readArguments([Ljava.lang.String;)V
+jester.tests.MockProgressReporter:setText(Ljava.lang.String;)V
+jester.tests.MockClassSourceChanger:setExpectedWriteOriginalBackCalls(I)V
+jester.TestTester:run()V
+jester.RealReport:fileScore()I
+jester.tests.acceptancetests.VeryTested:mustTakeCorrectBranchFor(Z)I
+jester.tests.MockMutationMaker:MockMutationMaker()V
+jester.SimpleCodeMangler:getOriginalContents()Ljester.IgnoreListDocument;
+jester.tests.MockClassSourceChanger:lastChangeDidNotCauseTestsToFail()V
+jester.TwoStringSwappingCodeMangler:makeSomeChangeToFileSource()Z
+jester.IgnoreListDocument:length()I
+jester.tests.MockClassIterator:verify()V
+jester.RealConfiguration:isTrueProperty(Ljava.lang.String;Z)Z
+jester.tests.MainArgumentsTest:assertEquals([Ljava.lang.String;[Ljava.lang.String;)V
+jester.ReportItem:toString()Ljava.lang.String;
+jester.IgnoreListDocument:calculateIgnoreRegions()V
+jester.IgnorePair:IgnorePair(Ljava.lang.String;Ljava.lang.String;)V
+jester.SimpleIntCodeMangler:makeSomeChangeToFileSource()Z
+jester.TestTester:TestTester(Ljester.TestRunner;Ljester.ClassIterator;Ljester.ClassTestTester;)V
+jester.RealReport:fileNumberOfChangesThatDidNotCauseTestsToFail()I
+jester.SourceChangeException:SourceChangeException(Ljava.lang.String;)V
+jester.tests.acceptancetests.VeryTested:turnIntoInfiniteLoop()V
+jester.tests.functionaltests.VeryTested:VeryTested()V
+jester.IgnorePair:equals(Ljester.IgnorePair;)Z
+jester.tests.MockClassSourceChanger:verify()V
+jester.RealReport:writeChangesToXMLFile()V
+jester.RealXMLReportWriter:writeXMLReport([Ljava.lang.Object;Ljava.lang.String;III)V
+jester.tests.MockClassSourceChanger:setExpectedFinishJestingCalls(I)V
+jester.tests.functionaltests.VeryTested:mustReturnOne()I
+jester.tests.MockProgressReporter:setColor(Ljava.awt.Color;)V
+jester.tests.MockClassSourceChanger:setExpectedWriteOverSourceReplacing(ILjava.lang.String;Ljava.lang.String;)V
+jester.SimpleCodeMangler:getIndexOfLastChange()I
+jester.IgnoreListDocument:isInIgnoreRegion(I)Z
+jester.IgnoreListDocument:IgnoreListDocument(Ljava.lang.String;Ljester.IgnoreList;)V
+jester.MainArguments:setDirectoriesOrFilesToMutateFromArguments(Ljava.util.List;)V
+jester.tests.acceptancetests.VeryTested:mustBeEqual()Z
+jester.RealLogger:RealLogger()V
+jester.MainArguments:setOptionalClasspathFromArguments(Ljava.util.List;)V
+jester.tests.MainArgumentsTest.1:exists(Ljava.lang.String;)Z
+jester.tests.MockClassSourceChanger:setExpectedLastChangeCausedTestsToFailCalls(I)V
+jester.RealConfiguration:compilationCommand()Ljava.lang.String;
+jester.tests.MockClassSourceChanger:setExpectedWriteOverSourceReplacingCalls(I)V
+jester.RealMutationsList:RealMutationsList(Ljava.lang.String;Ljava.io.PrintStream;)V
+jester.IgnoreList:ignorePairs()Ljava.util.List;
+jester.tests.ReportTest:startFile(Ljester.Report;Ljava.lang.String;Ljava.lang.String;)V
+jester.tests.MockClassSourceChanger:setOriginalContents(Ljava.lang.String;)V
+jester.RealReport:changeThatDidNotCauseTestsToFail(ILjava.lang.String;Ljava.lang.String;)V
+jester.IgnorePair:getStart()Ljava.lang.String;
+jester.RealReport:totalScore()I
+jester.tests.MockClassSourceChanger:writeOriginalContentsBack()V
+jester.tests.MainArgumentsTest.2:exists(Ljava.lang.String;)Z
+jester.MainArguments:getDirectoryOrFileNames()[Ljava.lang.String;
+jester.RealReport:fileNumberOfChanges()I
+jester.SimpleCodeMangler:makeChangeToClass()Z
+jester.tests.MockClassSourceChanger:finishJesting()V
+jester.RealConfiguration:testsPassString()Ljava.lang.String;
+jester.tests.ClassTestTesterTest:newRealClassTestTester(Ljester.TestRunner;)Ljester.ClassTestTester;
+jester.tests.TestConfiguration:shouldReportEagerly()Z
+jester.tests.MockClassSourceChanger:setOriginalContents(Ljava.lang.String;Ljester.IgnoreList;)V
+jester.TwoStringSwappingCodeMangler:TwoStringSwappingCodeMangler(Ljester.ClassSourceCodeChanger;Ljava.lang.String;Ljava.lang.String;)V
+jester.tests.MockMutationMaker:mutate(Ljava.lang.String;Ljava.lang.String;)V
+jester.IgnoreListDocument:substring(II)Ljava.lang.String;
+jester.tests.MockClassSourceChanger:startJesting()V
+jester.IgnoreList:IgnoreList(Ljava.lang.String;)V
+jester.RealConfiguration:closeUIOnFinish()Z
+jester.tests.ReportItemTest:newReportItem(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;I)Ljester.ReportItem;
+jester.MainArguments:setTestClassFromArguments(Ljava.util.List;)V | CONSTANT | 3091 | 0 -> -1
+jester.MainArguments:MainArguments([Ljava.lang.String;Ljester.FileExistenceChecker;)V
+jester.RealMutationsList:visit(Ljester.MutationMaker;)V
+jester.RealReport:sortedReportItems()[Ljava.lang.Object;
+jester.tests.IgnoreListTest:ignorePair(Ljava.lang.String;Ljava.lang.String;)Ljester.IgnorePair;
+jester.RealConfiguration:testRunningCommand()Ljava.lang.String;
+jester.tests.MockTestRunner:MockTestRunner()V
+jester.RealReport:printFileChanges()V
+jester.tests.MockClassSourceChanger:writeOverSourceReplacing(ILjava.lang.String;Ljava.lang.String;)V
+jester.RealReport:greenBar()V
+jester.SimpleIntCodeMangler:indexOfNumber(Ljester.IgnoreListDocument;)I
+jester.ReportItem:lineNumber()I
+jester.tests.acceptancetests.VeryTested:mustReturnTrue()Z
+jester.tests.MockClassIterator:setExpectedIterate(Ljester.ClassTestTester;)V
+jester.tests.MockClassSourceChanger:setExpectedStartJestingCalls(I)V
+jester.tests.MockMutationMaker:verify()V
+jester.tests.MockMutationsList:MockMutationsList()V
+jester.ReportItem:compareToReportItem(Ljester.ReportItem;)I
+jester.IgnorePair:getEnd()Ljava.lang.String;
+jester.tests.MockXMLReportWriter:writeXMLReport([Ljava.lang.Object;Ljava.lang.String;III)V
+jester.MainArguments:getTestClassName()Ljava.lang.String;
+jester.RealClassTestTester:test(Ljester.CodeMangler;Ljester.ClassSourceCodeChanger;)V
+jester.SimpleIntCodeMangler:charAsInt(C)I
+jester.IgnoreListDocument:indexOf(Ljava.lang.String;I)I
+jester.tests.MockClassIterator:MockClassIterator()V
+jester.ReportItem:asXML()Ljava.lang.String;
+jester.tests.MockTestRunner:setTestsRunWithoutFailures(Z)V
+jester.ReportItem:ReportItem(Ljava.lang.String;Ljester.IgnoreListDocument;ILjava.lang.String;Ljava.lang.String;)V
+jester.IgnoreRegion:IgnoreRegion(II)V
+jester.RealConfiguration:sourceFileExtension()Ljava.lang.String;
+jester.RealReport:RealReport(Ljester.Configuration;Ljava.io.PrintWriter;Ljester.XMLReportWriter;Ljester.ProgressReporter;)V
+jester.RealReport:totalNumberOfChanges()I
+jester.RealMutationsList:visit(Ljava.io.BufferedReader;Ljester.MutationMaker;)V
+jester.IgnoreListDocument:calculateIgnoreRegions(Ljester.IgnorePair;)V
+jester.tests.MockClassSourceChanger:setExpectedLastChangeDidNotCauseTestsToFailCalls(I)V
+jester.tests.MockMutationMaker:addExpectedMutateValues(Ljava.lang.String;Ljava.lang.String;)V
+jester.tests.MockClassSourceChanger:MockClassSourceChanger()V
+jester.RealReport:changeThatCausedTestsToFail(ILjava.lang.String;Ljava.lang.String;)V
+jester.tests.acceptancetests.VeryTested:mustNotBeEqual()Z
+jester.tests.acceptancetests.VeryTested:mustIncrement(I)I
+jester.RealReport:finishFile(Ljava.lang.String;)V
+jester.RealXMLReportWriter:RealXMLReportWriter(Ljava.io.Writer;)V
+jester.tests.MockClassSourceChanger:setThrowExceptionOnFirstChangeAttempt(Z)V
+jester.RealMutationsList:visitLine(Ljava.lang.String;Ljester.MutationMaker;)V
+jester.RealReport:startFile(Ljava.lang.String;Ljester.IgnoreListDocument;)V
+jester.tests.MockMutationsList:setExpectedVisitCalls(I)V
+jester.RealReport:redBar()V
+jester.RealConfiguration:stringProperty(Ljava.lang.String;Ljava.lang.String;)Ljava.lang.String;
+jester.tests.MockClassSourceChanger:lastChangeCausedTestsToFail()V
+jester.RealReport.1:compare(Ljava.lang.Object;Ljava.lang.Object;)I
+jester.tests.MockClassIterator:iterate(Ljester.ClassTestTester;)V
+jester.tests.ReportTest:newRealReport(Ljava.io.PrintWriter;)Ljester.Report;
+jester.RealReport:score(II)I
+jester.tests.acceptancetests.VeryTested:mustReturnOne()I
+jester.RealClassTestTester:RealClassTestTester(Ljester.TestRunner;Ljester.MutationsList;)V
+jester.JesterArgumentException:JesterArgumentException(Ljava.lang.String;)V
+jester.IgnoreListDocument:charAt(I)C
+jester.tests.MockMutationsList:visit(Ljester.MutationMaker;)V
+jester.tests.ReportItemTest:lineNumberForCharacterIndex(Ljava.lang.String;I)I
+jester.IgnoreRegion:includes(I)Z
+jester.RealConfiguration:shouldReportEagerly()Z
+jester.IgnorePair:equals(Ljava.lang.Object;)Z
+jester.MainArguments:checkDirectoriesOrFilesToMutateExist()V
+jester.tests.MockMutationsList:verify()V
+jester.RealReport:reportItemComparitor()Ljava.util.Comparator;
+jester.tests.MockTestRunner:testsRunWithoutFailures()Z
+jester.tests.TwoStringSwappingCodeManglerTest:newCodeMangler(Ljester.ClassSourceCodeChanger;)Ljester.CodeMangler;
+jester.SimpleIntCodeMangler:SimpleIntCodeMangler(Ljester.ClassSourceCodeChanger;)V
+jester.tests.TestConfiguration:TestConfiguration()V
+jester.MainArguments:setOptionalShouldShowProgressDialogFromArguments(Ljava.util.List;)V
+jester.RealConfiguration:RealConfiguration(Ljava.lang.String;Ljava.io.PrintStream;)V
+jester.tests.MainArgumentsTest:checkThatClasspathArgumentCanAppearInAnyOrder([Ljava.lang.String;)V
+jester.tests.MockProgressReporter:progress()V
+jester.SimpleCodeMangler:SimpleCodeMangler(Ljester.ClassSourceCodeChanger;)V
+jester.SimpleIntCodeMangler:incremented(I)Ljava.lang.String;
+jester.RealClassTestTester:testUsing(Ljester.ClassSourceCodeChanger;)V
+jester.tests.MockClassSourceChanger:getOriginalContents()Ljester.IgnoreListDocument;
+jester.RealReport:reportFileProgress()V
+jester.tests.acceptancetests.VeryTested:mustDecrement(I)I
+jester.ConfigurationException:ConfigurationException(Ljava.lang.String;)V
+jester.MainArguments:shouldShowProgressDialog()Z
+jester.ReportItem:xmlEncoded(Ljava.lang.String;)Ljava.lang.String;
+jester.tests.MockClassIterator:setExpectedIterateCalls(I)V
+jester.tests.ReportTest:newRealReport()Ljester.Report;
+jester.tests.MockClassTestTester:MockClassTestTester()V
+
+#matrix (1 line per test, in order of tests): { mut_index, ' ', mut_call_count, ' ' }
+64 1 44 1 
+71 1 64 1 128 1 24 1 17 2 44 1 
+71 1 64 1 128 1 24 1 17 2 44 1 
+71 1 64 1 128 1 24 1 17 2 44 1 
+71 1 64 1 128 1 24 1 17 2 44 1 
+146 1 21 1 64 1 44 1 
+93 1 19 1 132 1 4 1 73 1 21 1 
+19 1 4 1 132 1 73 1 91 1 93 1 117 1 12 1 149 1 80 1 151 1 
+94 1 34 1 64 1 66 1 148 1 16 1 92 1 44 1 
+78 1 94 1 11 1 34 1 64 1 125 1 66 1 62 1 16 1 44 1 
+78 1 94 1 11 1 34 1 64 1 125 1 66 1 62 1 16 1 44 1 
+34 1 54 1 133 1 90 1 59 1 60 1 25 1 42 1 8 1 44 1 140 1 143 1 10 1 46 1 64 1 32 1 16 1 103 1 
+33 1 0 1 34 1 75 1 44 1 8 1 10 1 46 1 16 1 54 1 133 1 59 1 90 1 60 1 140 1 143 1 64 1 31 1 32 1 103 1 
+34 1 2 1 111 1 5 1 113 1 44 1 45 1 78 1 118 1 11 2 47 1 119 2 15 1 49 1 16 1 53 1 20 2 135 1 58 1 62 2 94 1 97 1 64 1 30 1 98 1 150 1 
+34 1 107 1 111 1 21 1 135 1 44 1 45 1 118 1 97 1 64 1 16 1 150 1 
+45 1 34 1 118 1 111 1 97 1 21 1 64 1 135 1 16 1 150 1 44 1 
+34 1 2 1 107 1 111 1 74 1 5 2 113 1 116 2 44 1 45 1 78 2 118 1 11 4 119 2 47 1 15 2 16 1 84 2 53 4 86 1 131 2 20 8 135 1 58 1 26 1 62 4 139 1 94 1 144 1 97 1 64 1 30 1 70 2 
+104 1 34 1 2 2 107 1 74 1 111 1 5 3 76 1 113 1 44 1 45 1 78 3 118 1 11 6 119 4 47 1 15 3 49 1 16 1 53 5 86 1 131 2 20 10 135 1 58 1 26 1 62 6 139 1 94 2 144 1 97 1 64 1 30 2 98 1 70 2 150 1 
+34 1 111 1 20 2 5 1 135 1 44 1 45 1 118 1 119 2 97 1 64 1 49 1 98 1 16 1 150 1 53 1 
+104 1 34 1 2 2 111 1 5 1 76 1 113 1 44 1 45 1 78 2 118 1 11 4 119 2 47 1 15 2 49 1 16 1 53 1 20 2 135 1 58 1 62 4 94 2 97 1 64 1 30 2 98 1 150 1 
+104 1 34 1 2 1 107 1 111 1 74 1 5 2 76 1 44 1 45 1 78 1 118 1 11 2 119 2 15 1 16 1 53 4 86 1 131 2 20 8 135 1 26 1 62 2 139 1 94 1 144 1 97 1 64 1 30 1 70 2 
+34 1 2 1 107 1 111 1 74 1 5 2 113 1 44 1 45 1 78 2 118 1 11 4 119 2 47 1 15 2 16 1 53 4 86 1 131 2 20 8 135 1 58 1 26 1 62 4 139 1 94 1 144 1 97 1 64 1 30 1 70 2 
+104 1 34 1 2 1 111 1 5 1 76 1 44 1 45 1 78 1 118 1 11 2 119 2 15 1 49 1 16 1 53 1 20 2 135 1 62 2 94 1 97 1 64 1 30 1 98 1 150 1 
+104 1 107 1 34 1 2 2 74 1 111 1 5 3 76 1 113 1 116 2 44 1 45 1 78 3 118 1 11 6 119 4 47 1 15 3 49 1 16 1 84 2 53 5 86 1 131 2 20 10 135 1 58 1 26 1 62 6 139 1 94 2 144 1 97 1 64 1 30 2 98 1 70 2 150 1 
+104 1 118 1 47 1 97 1 21 2 135 1 150 1 
+7 1 61 1 43 1 69 1 102 1 82 1 
+110 1 7 1 43 1 82 1 61 1 99 1 102 1 
+110 1 7 1 43 1 82 1 61 1 99 1 102 1 
+1 1 67 1 68 1 
+35 1 1 1 122 1 67 1 136 1 68 1 38 1 51 1 129 1 
+1 1 35 1 87 1 136 1 38 1 39 1 14 1 67 1 68 1 129 1 52 1 
+1 1 35 1 87 1 136 1 38 1 39 1 14 1 67 1 68 1 129 1 52 1 
+1 1 35 1 87 1 136 1 38 1 39 1 14 1 67 1 68 1 129 1 52 1 
+1 1 35 1 136 1 38 1 39 1 147 1 67 1 68 1 129 1 
+1 1 35 1 87 1 136 1 38 1 39 1 138 1 14 1 67 1 68 1 129 1 52 1 
+1 1 35 1 87 1 136 1 38 1 39 1 138 1 14 1 67 1 68 1 129 1 52 1 
+1 1 35 1 87 1 136 1 38 1 39 1 138 1 14 1 67 1 68 1 129 1 52 1 
+1 1 35 1 87 1 136 1 38 1 39 1 138 1 14 1 67 1 68 1 129 1 52 1 
+56 1 72 1 37 1 137 1 41 1 114 4 13 2 96 1 65 1 127 1 
+94 1 34 1 108 1 27 1 64 1 148 1 16 1 92 1 44 1 
+33 1 34 1 54 1 134 1 59 1 25 1 42 1 77 1 44 1 8 1 140 1 143 1 11 1 46 1 123 1 64 1 32 1 16 1 18 1 103 1 
+33 4 0 2 34 1 109 1 3 1 75 2 42 1 77 2 44 1 8 2 11 2 46 1 123 4 16 1 50 1 18 2 54 1 21 1 134 1 59 1 89 2 25 1 140 1 141 2 143 2 64 1 31 1 32 2 103 1 
+33 2 0 1 34 1 109 1 3 1 75 1 42 1 77 1 44 1 8 1 11 1 46 1 123 2 16 1 50 1 18 1 54 1 134 1 59 1 89 1 25 1 140 1 141 1 143 1 64 1 31 1 32 1 103 1 
+33 1 34 1 54 1 134 1 59 1 25 1 42 1 77 1 44 1 8 1 140 1 143 1 11 1 46 1 123 1 64 1 32 1 16 1 18 1 103 1 
+33 2 0 1 34 1 75 1 77 1 8 1 44 1 11 1 46 1 123 2 16 1 18 1 54 1 134 1 59 1 89 1 140 1 141 1 143 1 64 1 31 1 32 1 103 1 
+33 2 0 1 34 1 75 1 77 1 8 1 44 1 11 1 46 1 123 2 16 1 18 1 54 1 134 1 59 1 89 1 140 1 141 1 143 1 64 1 31 1 32 1 103 1 
+33 3 34 1 90 3 44 1 95 1 64 1 48 1 126 3 16 1 100 1 17 1 85 1 
+33 7 34 1 90 7 44 1 95 1 64 1 48 1 126 7 16 1 100 1 17 1 85 1 
+33 1 34 1 44 1 95 1 123 1 64 1 48 1 126 1 16 1 100 1 17 1 85 1 
+0 1 3 1 73 1 75 1 77 1 8 1 11 1 16 1 81 1 83 1 18 1 88 1 89 1 25 1 93 1 28 1 31 1 32 1 101 1 103 1 33 2 34 1 40 1 42 1 115 1 44 1 46 1 121 1 124 1 123 2 50 1 54 1 55 1 132 1 57 1 134 1 59 1 63 1 142 1 140 1 141 1 143 1 64 1 
+0 1 3 1 73 1 75 1 77 1 8 1 9 1 11 1 16 1 81 1 83 1 18 1 88 1 89 1 25 1 93 1 28 1 31 1 32 1 101 1 103 1 33 2 34 1 40 1 42 1 44 1 46 1 121 1 124 1 123 2 50 1 54 1 55 1 132 1 57 1 134 1 59 1 63 1 142 1 140 1 141 1 143 1 64 1 
+33 1 34 1 3 1 73 1 40 1 42 1 77 1 8 1 44 1 11 1 46 1 121 1 124 1 123 1 16 1 81 1 18 1 83 1 54 1 55 1 88 1 57 1 134 1 59 1 25 1 63 1 142 1 140 1 143 1 28 1 64 1 32 1 101 1 103 1 
+0 1 3 1 73 1 75 1 77 1 8 1 11 1 16 1 81 1 83 1 18 1 88 1 89 1 25 1 28 1 31 1 32 1 101 1 103 1 33 2 34 1 40 1 42 1 115 1 44 1 46 1 121 1 124 1 123 2 50 1 54 1 55 1 132 1 57 1 134 1 59 1 63 1 142 1 140 1 141 1 143 1 64 1 
+33 1 34 1 73 1 112 1 77 1 8 1 44 1 11 1 46 1 121 1 124 1 123 1 16 1 83 1 18 1 130 1 54 1 55 1 88 1 134 1 59 1 63 1 142 1 140 1 143 1 64 1 32 1 103 1 
+79 1 
+6 1 
+6 1 
+145 1 
+36 1 
+106 1 
+22 1 
+120 1 
+105 1 
+29 1 23 1 
